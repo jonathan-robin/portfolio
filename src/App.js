@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import React, {useEffect, useRef, useState} from 'react';
+import NavigationHeader from './components/NavigationHeader';
+import About from './components/About';
+import Project from './components/Project';
 
 function App() {
+
+  const [scroll, setFirstScroll] = useState(false)
+  const refAbout = useRef();
+
+  useEffect(() => { 
+    window.addEventListener('scroll', (event) => { 
+        setFirstScroll(true)
+    })
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='content' >
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <NavigationHeader />
+        <About scrolled={scroll}/>
+        {scroll && 
+        <Project />
+        }
+     
     </div>
   );
 }

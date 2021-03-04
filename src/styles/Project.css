@@ -1,0 +1,10 @@
+.CardProject{ 
+    width:25vw;
+    margin-left:20vw;
+    margin-top:70vh;
+    padding:30px;
+    /* background-color:red; */
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    box-shadow: 8px 8px 0px 0px var(--green);
+}

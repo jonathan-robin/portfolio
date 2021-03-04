@@ -1,0 +1,76 @@
+.imgLogoNavigation{ 
+    height:8vh; 
+    width:4vw; 
+    border-radius:50%;
+}
+.headerNavigation{
+    padding:1vw 3vw 1vw 3vw;
+    display:flex;
+}
+ol{ 
+    list-style-type: none;
+    display:flex;
+    color: var(--lightest-slate);
+    font-size:14px;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-weight:100;
+}
+.NavigationBar{
+    display:flex;
+    margin-left: auto;
+    order: 2;
+    place-items: center;
+}
+li{
+    margin-right:3vw;
+    padding:10px;
+}
+.ResumeLi{ 
+    list-style: none;
+    margin-right:0px;
+}
+  ol li {
+    counter-increment: number;
+  }
+  ol li:before {
+    content: '0'counter(number) '. ';
+    padding-right:10px;
+    color:var(--green);
+    font-size:14px;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-weight:100;
+  }
+  .resumeLink{ 
+      padding-top:13px;
+      border-radius: 5px;
+      border:1px solid var(--green);
+      padding-left:15px;
+      padding-right:15px;
+      color:var(--green);
+  }
+  .resumeLink:hover{ 
+       display:block;
+      content: '';
+      text-decoration: underline;
+      color:var(--navy);
+      background:var(--green);
+      cursor:pointer;
+      transition: color 0.5s ease;
+      transition: background 0.5s ease;
+  }
+  li:hover{ 
+      cursor:pointer;
+  }
+  li:after {
+        padding-bottom:8px;
+        display:block;
+        content: '';
+        border-bottom: solid 1px rgb(255, 255, 255);  
+        transform: scaleX(0);  
+        transition: transform 550ms ease-in-out;
+        transform-origin:100% 50%
+  }
+  li:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0 50%;
+  }
