@@ -58,13 +58,7 @@ function About(props){
                     <img className={`Picture ${scrolled? 'scrolled': ''}`} src={picture}/>
                 </div>
             </div>
-        </div>
-        <div className={`lesLines ${scrolled? 'scrolled': ''}`}>
-    <div className={`line1 ${mouseMoved? 'loaded': ''}`} style={{visibility:mouseMoved?'visible':'hidden'}}>Start scrolling</div>
-    <div className={`line2 ${line2? 'loaded': ''}`} style={{visibility:line2?'visible':'hidden'}}>to visit</div>
-    <div className={`line3 ${line3? 'loaded': ''}`} style={{visibility:line3?'visible':'hidden'}}>the website</div>
-        </div>
-        {scrolled && <div className='infosContacts'> 
+            {scrolled && <div className={`infosContacts ${scrolled? 'scrolled': ''}`}> 
             <div className='cardContact'>
                 <div className='GithubLink'>
                   <img src={github} className='contactLink'/> <a href='https://github.com/jonathan-robin'>/jonathan-robin</a>
@@ -86,6 +80,13 @@ function About(props){
                 </div>
             </div>
         </div>}
+        </div>
+        <div className={`lesLines ${scrolled? 'scrolled': ''}`}>
+    <div className={`line1 ${mouseMoved? 'loaded': ''}`} style={{visibility:mouseMoved?'visible':'hidden'}}>Start scrolling</div>
+    <div className={`line2 ${line2? 'loaded': ''}`} style={{visibility:line2?'visible':'hidden'}}>to visit</div>
+    <div className={`line3 ${line3? 'loaded': ''}`} style={{visibility:line3?'visible':'hidden'}}>the website</div>
+        </div>
+        
         
 </>
     )

@@ -1,10 +1,169 @@
 .CardProject{ 
     width:25vw;
     margin-left:20vw;
-    margin-top:70vh;
+    margin-top:20vh;
     padding:30px;
     /* background-color:red; */
     border-top: 5px solid black;
     border-left: 5px solid black;
     box-shadow: 8px 8px 0px 0px var(--green);
+}
+.projectTitle{ 
+    padding-top:10px;
+    padding-left:25px;
+}
+.secondLine{
+    display:flex;
+    padding-top:10px;
+    padding-left:10px;
+}
+.dateProject{
+    margin-left: auto;
+    order: 2;
+    place-items: center;
+    margin-right:25px;
+}
+.ProjectContent{ 
+    opacity:1;
+    margin-right:20vw;
+}
+.ProjectTitre.ProjectTitre2{
+    transform:scale(2);
+    transition:transform 0.5s ease-in;
+    opacity:1;
+    
+}
+.ProjectDescription1{
+    border-top:1px solid var(--green);
+    border-right:1px solid var(--green);
+}
+.ProjectDescription2{
+    border-top:1px solid var(--green);
+    border-left:1px solid var(--green);
+}
+.ProjectTitre{ 
+    /* border-top:1px solid var(--light-slate); */
+    width:20vw;
+    margin:auto;
+    padding-top:15vh;
+    opacity:0;
+    display:flex;
+    justify-content: center;
+}
+.ProjectTitre p{ 
+    margin-right:30px;
+    color:var(--green);
+    font-size:1.2vh;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.ProjectTitre p:last-child{ 
+    color:var(--light-slate);
+    text-decoration:underline
+}
+.ProjectContent2{ 
+    opacity:1;
+    margin-left:20vw;
+
+}
+.ProjectContent.loaded{
+    /* transform: scale(1.5); */
+    /* animation:fadein 3s ease-in; */
+    /* transition:transform 3s ease; */
+}
+.ProjectContent2.loaded{
+    transform: scale(1.2);
+    animation:fadein 1s ease-in;
+    transition:transform 1s ease;
+}
+.Project{
+    width:45vw;
+    margin:200px auto 0 auto;
+    display:flex;
+}
+.ProjectContent.loaded{
+    transform: scale(1.2);
+    animation:fadein 1s ease-in;
+    transition:transform 1s ease;
+}
+.ProjectVideo{ 
+    width:60%;
+    padding:25px;
+    margin:auto;
+}
+.ProjectVideo2 .imageProjet{
+    float:right;
+}
+.ProjectVideo2{
+    width:60%;
+    padding:25px;
+}
+.ProjectDescription1, .ProjectDescription2{ 
+    width:40%;
+    padding:20px;
+
+}
+.imageProjet{ 
+    width:20vw;
+}
+.firstLine{ 
+    display:flex;
+}
+.share{ 
+    order:2;
+    margin-left:auto;
+    display:flex;
+}
+.Date{
+    float:right;
+    margin-top:2vh;
+    font-size:0.8vw;
+    color:var(--green);
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:var(--light-slate);
+}
+.FullDescription{ 
+    margin-top:7vh;
+    font-size:0.7vw;
+    color:var(--light-slate);
+}
+.Titre{
+    font-size:0.9vw;
+    font-weight:600;
+    color:white;
+}
+.tags{ 
+    margin-top:2vh;
+    display:flex;
+    justify-content:space-evenly;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:var(--green);
+    font-size:0.6vw;
+}
+.tagResources{ 
+    height:0.8vw;
+    margin-top:5px;
+    margin-left:12px;
+    filter: invert(91%) sepia(43%) saturate(599%) hue-rotate(83deg) brightness(100%) contrast(106%);
+}
+.tagResources:hover{
+    cursor:pointer; 
+    filter: invert(18%) sepia(49%) saturate(566%) hue-rotate(179deg) brightness(96%) contrast(96%);
+}
+.tag{ 
+
+}
+
+@keyframes fadein{
+    0% {opacity:0 }
+    10% {opacity:0.1 }
+    20% {opacity:0.2 }
+    30% {opacity:0.3 }
+    40% {opacity:0.4 }
+    50% {opacity:0.5 }
+    60% {opacity:0.5}
+    70%, 72% {opacity:0.6 }
+    80% { opacity:0.7 }
+    90% { opacity:0.8  }
+    95% { opacity:0.9  }
+    100% { opacity:1}
 }
