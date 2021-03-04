@@ -1,9 +1,10 @@
 .AboutPage{ 
     padding:15vh 32vw 0vh 12vw;
     display:flex;
+    margin-bottom:300px;
 }
 .AboutMe.scrolled{
-    padding:0vh 5vw 1vh 5vw;
+    /* padding:0vh 5vw 1vh 5vw; */
     background-color:#0d2241;
     border-radius:10px;
     border: 4px solid var(--light-navy);
@@ -13,7 +14,7 @@
     margin-top:5%;
     transition: all 1s ease;
     background:var(--green);
-    margin-right:20vw;
+    /* margin-right:20vw; */
     margin:0px;
     padding:0px;
 }
@@ -26,7 +27,7 @@
 .TitreAbout p{ 
     margin-right:30px;
     color:var(--green);
-    font-size:25px;
+    font-size:2.4vh;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 .TitreAbout p:last-child{ 
@@ -38,15 +39,20 @@
 }
 .AboutMe.scrolled .divName{ 
     color:var(--lightest-navy);
+    font-size:1.3vw;
 }
 .AboutMe.scrolled .divSousName{ 
     color:var(--light-navy);
+    font-size:1.2vw;
+}
+.AboutMe.scrolled .divSousTitre{ 
+    display:none;
 }
 .AboutMe.scrolled .pContent{ 
     color:var(--navy);
     padding-left:80px;
     padding-right:80px;
-    padding-bottom:25px;
+    font-size:1.1vw;
 }
 .AboutMe.scrolled .pContent p:last-child{ 
     color:var(--lightest-navy);
@@ -62,7 +68,7 @@ display:none;
 .Picture.scrolled{
     box-shadow: none;
     border:1px solid var(--green);
-    /* margin-top:19vh; */
+    margin-top:-4vh;
 }
 .mePicture.scrolled{
     transform: scale(1.3) translateX(110px) translateY(50px);
@@ -71,7 +77,6 @@ display:none;
     padding:0px;
     transition:all 1s ease;
 }
-
 .AboutMe.scrolled .pContent{
     margin:0px;
 }
@@ -200,13 +205,13 @@ display:none;
     visibility: hidden;
     opacity: 0;
 }
-
 .infosContacts{ 
-    width:20vw;
-    height:38vh;
-    margin-top:-21%;
-    margin-left:80vw;
-    z-index:10;
+    width:15vw;
+    height:24vh;
+    position:absolute;
+    left:80vw;
+    top:37vh;
+    z-index:0;
     padding:5px;
 }
 .cardContact{ 
@@ -219,9 +224,9 @@ display:none;
 }
 .contactLink{ 
     z-index:5000;
-    height:60px;
+    height:40px;
     border-radius: 50%;
-    margin-bottom:-25px;
+    margin-bottom:-15px;
     margin-right:15px;
 }
 .gmailLink a, .InstagramLink a, .GithubLink a{
