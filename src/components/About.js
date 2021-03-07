@@ -16,16 +16,16 @@ function About(props){
         setMouseMoved(true);
         setTimeout(() => {
             setLine2(true)
+            setTimeout(() => { 
+                setLine3(true)
+            },400)
         },200); 
-        setTimeout(() => { 
-            setLine3(true)
-        },400)
     }
 
     useEffect(() => { 
-        setScrolled(props.scrolled)
+        window.scrollTo(0, 0);
+        setScrolled(props.scrolled);
     },[props.scrolled])
-    console.log(scrolled)
 
     return (
         <>

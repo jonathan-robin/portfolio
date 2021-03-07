@@ -38,7 +38,7 @@ function Project(props){
     },[props.scrollFourthProject])
 
     return (
-        <>
+        <div className='ProjectOverAll'>
         
                 <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p>
             </div>
@@ -47,8 +47,10 @@ function Project(props){
                 <div className='ProjectVideo'>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
+                <div className='borderUp'>
+                    <div className='borderLeft'>
+                        <div className='ProjectCore'>
                 <div className='ProjectDescription1'>
-
                     <div className='firstLine'>
                         <div className='Titre'>
                         CopyFacebook
@@ -57,6 +59,7 @@ function Project(props){
                             <div className='tagR'><img src={github} className='tagResources'/></div>
                             <div className='tagR'><img src={upload} className='tagResources'/></div>
                         </div>
+                    </div>
                     </div>
                     <div className='Date'>
                         February 2021
@@ -70,12 +73,16 @@ function Project(props){
                         <div className='tag'>Firebase</div>
                     </div>
                 </div>
+                </div>
+                </div>
             </div>
         </div>
 
         <div className={`ProjectContent2 ${secondProject? 'loaded': ''}`} style={{visibility:secondProject?'visible':'hidden'}}>
             <div className='Project p2'>
-              
+            <div className='borderUpRight'>
+                    <div className='borderRight'>
+                        <div className='ProjectCore'>
                 <div className='ProjectDescription2'>
                     <div className='firstLine'>
                         <div className='Titre'>
@@ -89,7 +96,7 @@ function Project(props){
                     <div className='Date'>
                         January 2021
                     </div>
-                    <div className='FullDescription'>
+                    <div className='FullDescriptionL'>
                     Le Lorem Ipsum est simplement du faux texte employé dans la c osition et la mise en page avant impression. Le Lorem Ipsum est le  osition et la mise en page avant impression. Le Lorem Ipsum est le omposition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de police
                     </div>
                     <div className='tags'>
@@ -98,20 +105,24 @@ function Project(props){
                         <div className='tag'>Chart.js</div>
                     </div>
                 </div>
+                </div></div></div>
                 <div className='ProjectVideo2'>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
             </div>
+            
         </div>
 
 
         <div className={`ProjectContent ${thirdProject? 'loaded': ''}`} style={{visibility:thirdProject?'visible':'hidden'}}>
-            <div className='Project p3'>
+            <div className='Project p1'>
                 <div className='ProjectVideo'>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
+                <div className='borderUp'>
+                    <div className='borderLeft'>
+                        <div className='ProjectCore'>
                 <div className='ProjectDescription1'>
-
                     <div className='firstLine'>
                         <div className='Titre'>
                         Tracker.exe
@@ -135,10 +146,13 @@ function Project(props){
                 </div>
             </div>
         </div>
+        </div></div></div>
         
         <div className={`ProjectContent2 ${fourthProject? 'loaded': ''}`} style={{visibility:fourthProject?'visible':'hidden'}}>
             <div className='Project p2'>
-              
+            <div className='borderUpRight'>
+                    <div className='borderRight'>
+                        <div className='ProjectCore'>
                 <div className='ProjectDescription2'>
                     <div className='firstLine'>
                         <div className='Titre'>
@@ -152,7 +166,7 @@ function Project(props){
                     <div className='Date'>
                         October 2020
                     </div>
-                    <div className='FullDescription'>
+                    <div className='FullDescriptionL'>
                     Le Lorem Ipsum est simplement du faux texte employé dans la c osition et la mise en page avant impression. Le Lorem Ipsum est le  osition et la mise en page avant impression. Le Lorem Ipsum est le omposition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de police
                     </div>
                     <div className='tags'>
@@ -163,12 +177,13 @@ function Project(props){
                         <div className='tag'>PHP</div>
                     </div>
                 </div>
+                </div></div></div>
                 <div className='ProjectVideo2'>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
             </div>
         </div>
-        </>
+        </div>
     )
 }
 
