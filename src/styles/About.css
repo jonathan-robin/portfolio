@@ -3,6 +3,7 @@
     display:flex;
     margin-bottom:300px;
 }
+
 .AboutMe.scrolled{
     /* padding:0vh 5vw 1vh 5vw; */
     background-color:#0d2241;
@@ -21,8 +22,8 @@
 .TitreAbout{ 
     display:flex;
     justify-content: center;
-    margin-top:80px;
-    margin-bottom:-50px;
+    animation:opactiyUp 1s ease;
+    /* margin-bottom:-50px; */
 }
 .TitreAbout p{ 
     margin-right:30px;
@@ -237,3 +238,38 @@ display:none;
     text-decoration:underline;
 }
 
+@KeyFrames opactiyUp{
+    0%{ 
+        opacity:0%;
+    }
+    10%{ 
+        opacity:10%
+    }
+    20%{ 
+        opacity:20%
+    }
+    30%{ 
+        opacity:30%
+    }
+    40%{ 
+        opacity:40%;
+    }
+    50%{ 
+        opacity:50%
+    }
+    60%{ 
+        opacity:60%
+    }
+    70%{ 
+        opacity:70%
+    }
+    80%{ 
+        opacity:80%
+    }
+    90%{ 
+        opacity:90%
+    }
+    100%{ 
+        opacity:100%
+    }
+}

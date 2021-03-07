@@ -24,28 +24,69 @@
     margin-right:25px;
 }
 .ProjectContent{ 
+    width:fit-content;
     opacity:1;
-    margin-right:20vw;
+    margin:auto;
+    margin-left:40vw;
 }
+
 .ProjectTitre.ProjectTitre2{
     transform:scale(2);
     transition:transform 0.5s ease-in;
     opacity:1;
-    
+    width:40vw;
+    margin-left:30vw;
+}
+.ProjectOverAll{ 
+    width:100%;
+    /* padding:5px; */
+}
+.borderUp{
+    width:40vw;
+    /* background:green; */
+    border-top:1px solid var(--green);
+    /* position:absolute; */
+}
+.borderUpRight{
+    width:40vw;
+    padding-left:10vw;
+    /* background:green; */
+    border-top:1px solid var(--green);
+    /* position:absolute; */
+}
+.borderLeft{ 
+    /* background:red;  */
+    width:20vw;
+    margin-top:-10vh;
+    padding-top:10vh;
+    border-right:1px solid var(--green);
+    /* padding:vw; */
+}
+.borderRight{ 
+        /* background:red;  */
+        width:20vw;
+        margin-top:-10vh;
+        padding-top:10vh;
+        border-left:1px solid var(--green);
+        /* padding:vw; */
+}
+/* .share{
+    order: 2;
+    margin-left: auto;
+    display: flex;
+} */
+.ProjectCore{
+    /* padding-top:10vh; */
+    padding:7vh 3vh 3vh 3vh;
 }
 .ProjectDescription1{
-    border-top:1px solid var(--green);
-    border-right:1px solid var(--green);
+    margin-top:-6vh;
 }
 .ProjectDescription2{
-    border-top:1px solid var(--green);
-    border-left:1px solid var(--green);
+    margin-top:-6vh;
 }
 .ProjectTitre{ 
-    /* border-top:1px solid var(--light-slate); */
-    width:20vw;
-    margin:auto;
-    padding-top:15vh;
+    margin-top:50vh;
     opacity:0;
     display:flex;
     justify-content: center;
@@ -61,14 +102,13 @@
     text-decoration:underline
 }
 .ProjectContent2{ 
+    /* width:fit-content;
     opacity:1;
-    margin-left:20vw;
-
-}
-.ProjectContent.loaded{
-    /* transform: scale(1.5); */
-    /* animation:fadein 3s ease-in; */
-    /* transition:transform 3s ease; */
+    margin-left:20vw; */
+    width:fit-content;
+    opacity:1;
+    margin:auto;
+    margin-right:40vw;
 }
 .ProjectContent2.loaded{
     transform: scale(1.2);
@@ -79,6 +119,10 @@
     width:45vw;
     margin:200px auto 0 auto;
     display:flex;
+}
+.p1, .p2{ 
+    /* width:65vw; */
+    width:50vw;
 }
 .ProjectContent.loaded{
     transform: scale(1.2);
@@ -91,16 +135,15 @@
     margin:auto;
 }
 .ProjectVideo2 .imageProjet{
-    float:right;
+    /* float:right; */
 }
 .ProjectVideo2{
     width:60%;
     padding:25px;
+    margin:auto;
 }
 .ProjectDescription1, .ProjectDescription2{ 
-    width:40%;
-    padding:20px;
-
+    padding-top:20px;
 }
 .imageProjet{ 
     width:20vw;
@@ -125,6 +168,12 @@
     margin-top:7vh;
     font-size:0.7vw;
     color:var(--light-slate);
+}
+.FullDescriptionL{ 
+    margin-top:7vh;
+    font-size:0.7vw;
+    color:var(--light-slate);
+    text-align:right;
 }
 .Titre{
     font-size:0.9vw;

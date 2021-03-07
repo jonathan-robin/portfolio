@@ -1,0 +1,179 @@
+.Education{
+    display:flex;
+    /* justify-content: center; */
+    /* background:red; */
+    /* height:fit-content; */
+    /* width:100vw; */
+    /* padding-top:30vw; */
+}
+
+
+.experience1{ 
+    background:purple;
+}
+
+.SchoolYear{ 
+    width:fit-content;
+    /* float:left; */
+    margin-left:10vw;
+    margin-top:15vh;
+    padding:2vw;
+    border-radius:10px;
+    margin-bottom:5vh;
+
+}
+.SchoolYA{ 
+    text-align: center;
+    /* padding:0 !important; */
+}
+.SchoolYL{ 
+    color:white !important;
+    /* margin-left:5vh; */
+    margin-top:-6vh;
+    font-size:18px;
+    font-weight:600;
+}
+
+.SchoolYE{
+    font-size:16px; 
+    color:var(--green); 
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    text-align:center;
+}
+.SchoolYA{
+    color:var(--lightest-slate);
+    padding-bottom:1vh;
+}
+.SchoolY{
+    text-align:center;
+}
+.OneSchoolR{ 
+    margin-left:14vw;
+}
+
+.OneSchool{ 
+    background: var(--lightest-navy);
+    padding:2vh;
+    border-radius:10px;
+    z-index:2;
+    margin-top:5vh;
+    width:fit-content;
+    min-width:15vw;
+    /* flex-direction: column; */
+}
+.TitleSchoolY{ 
+    background:var(--light-navy);
+    padding:1vh;
+    width:fit-content;
+    border-radius:5px;
+    margin-bottom:3vh;
+}
+
+.SchoolY{ 
+    padding-bottom:1vh;
+    z-index:2;
+}
+.TSL{ 
+    z-index:5;
+    margin-left:-4.5vw;
+    box-shadow: 5px 5px var(--green);
+    z-index:20;
+}
+
+.TSR{ 
+    margin-left:-6.5vw;
+    box-shadow: 5px 5px var(--green);
+}
+.TitleSchoolY{ 
+    z-index:5;
+    color:var(--green);
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.SchoolY{ 
+    color:white;
+}
+.Experience{ 
+    margin-left:8vw;
+    width:30vw;
+    /* float:right; */
+    /* margin-right:15vw; */
+    margin-top:15vh;
+    padding:1vw;
+    /* display:flex; */
+}
+.Cission{
+    margin:3vw;
+    border-left:2px solid var(--light-slate);
+    font-size:100px;
+}
+.EducationTitre{ 
+    margin-top:45vh;
+    opacity:0;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.EducationTitre.EducationTitre2{
+    transform:scale(2);
+    transition:transform 0.5s ease-in;
+    opacity:1;
+    width:40vw;
+    margin-left:30vw;
+    display:flex;
+    margin-bottom:20vh;
+}
+.EducationTitre p{ 
+    margin-right:30px;
+    color:var(--green);
+    font-size:1.2vh;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.EducationTitre p:last-child{ 
+    color:var(--light-slate);
+    text-decoration:underline
+}
+
+.OneExperience{ 
+    background: var(--green);
+    padding:2vh;
+    border-radius:10px;
+    z-index:2;
+    margin-top:5vh;
+    width:fit-content;
+}
+.TitleExperienceY{
+    background:var(--lightest-navy);
+    padding:1vh;
+    width:fit-content;
+    border-radius:5px;
+    margin-left:-9vw;
+    box-shadow: 3px 3px var(--green);
+    color:var(--green);
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.TwoExperience{ 
+    margin-left:10vw;
+    margin-top:10vh;
+}
+.ExperienceY{
+    padding:1vh;
+    text-align:center;
+    padding-top:2.5vh;
+}
+.TitleExperience{
+    color:var(--navy) !important;
+    /* margin-left:5vh; */
+    margin-top:-6vh;
+    font-size:18px;
+    font-weight:600;
+    padding-bottom:1vh;
+}
+.RoleExperience{ 
+    padding-bottom:1vh;
+    color:var(--navy-shadow);
+    font-weight:500;
+
+}
+.TitleExperienceY{ 
+
+}
