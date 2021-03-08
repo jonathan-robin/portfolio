@@ -48,7 +48,9 @@ function Project(props){
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
                 <div className='borderUp'>
+                <div className={`ProjectBorder2 ${firstProject? 'loaded': ''}`}></div>
                     <div className='borderLeft'>
+                    <div className={`ProjectBorder ${firstProject? 'loaded': ''}`}></div>
                         <div className='ProjectCore'>
                 <div className='ProjectDescription1'>
                     <div className='firstLine'>
@@ -65,7 +67,9 @@ function Project(props){
                         February 2021
                     </div>
                     <div className='FullDescription'>
-                    Le Lorem Ipsum est simplement du faux texte employé dans la c osition et la mise en page avant impression. Le Lorem Ipsum est le  osition et la mise en page avant impression. Le Lorem Ipsum est le omposition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de police
+                        Copie CSS du site Facebook avec implémentations de logique de base. Système d'authentification avec Firebase Authentification. Système d'upload et cropping de photos, storage d'images, 
+                        avec Firebase Storage. Système de messagerie instantannée privée, de publications, de Feed d'actualité et de liste d'amis, mise en place avec Firebase Cloud Firestore. Version live hebergée via
+                        Firebase Hosting.
                     </div>
                     <div className='tags'>
                         <div className='tag'>Javascript</div>
@@ -81,7 +85,9 @@ function Project(props){
         <div className={`ProjectContent2 ${secondProject? 'loaded': ''}`} style={{visibility:secondProject?'visible':'hidden'}}>
             <div className='Project p2'>
             <div className='borderUpRight'>
+            <div className={`ProjectBorderUpRight ${secondProject? 'loaded': ''}`}></div>
                     <div className='borderRight'>
+                    <div className={`ProjectBorderRight ${secondProject? 'loaded': ''}`}></div>
                         <div className='ProjectCore'>
                 <div className='ProjectDescription2'>
                     <div className='firstLine'>
@@ -97,7 +103,9 @@ function Project(props){
                         January 2021
                     </div>
                     <div className='FullDescriptionL'>
-                    Le Lorem Ipsum est simplement du faux texte employé dans la c osition et la mise en page avant impression. Le Lorem Ipsum est le  osition et la mise en page avant impression. Le Lorem Ipsum est le omposition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de police
+                        Application web visant à représenter visuellement les sessions de travail/jeux stockées dans une base de données, sous forme de graphique, courbes, bulles, camembert. Les sessions
+                        fetch sont visuellement 'évidentes' mais peuvent être détaillées via des commentaires, des urls, des tags etc... Différents types de recherche : par fourchette de temps, domaine ou dates précises.
+                        Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur certains sujets et de retrouver des documentations/codes spécifiques pour gagner en productivité.
                     </div>
                     <div className='tags'>
                         <div className='tag'>Javascript</div>
@@ -119,8 +127,10 @@ function Project(props){
                 <div className='ProjectVideo'>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
-                <div className='borderUp'>
+                       <div className='borderUp'>
+                       <div className={`ProjectBorder2 ${thirdProject? 'loaded': ''}`}></div>
                     <div className='borderLeft'>
+                    <div className={`ProjectBorder ${thirdProject? 'loaded': ''}`}></div>
                         <div className='ProjectCore'>
                 <div className='ProjectDescription1'>
                     <div className='firstLine'>
@@ -136,7 +146,8 @@ function Project(props){
                         December 2020
                     </div>
                     <div className='FullDescription'>
-                    Le Lorem Ipsum est simplement du faux texte employé dans la c osition et la mise en page avant impression. Le Lorem Ipsum est le  osition et la mise en page avant impression. Le Lorem Ipsum est le omposition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de police
+                        Application C# permettant d'enregistrer les données des sessions passées sur le PC. Système de timer avec possibilité de pause, reset, restart avec formulaire
+                        détaillé à remplir après chaque session. Données stockées en localhost sur phpMyAdmin destinées à être fetch via l'application web Tracker. 
                     </div>
                     <div className='tags'>
                         <div className='tag'>.NET</div>
@@ -151,7 +162,9 @@ function Project(props){
         <div className={`ProjectContent2 ${fourthProject? 'loaded': ''}`} style={{visibility:fourthProject?'visible':'hidden'}}>
             <div className='Project p2'>
             <div className='borderUpRight'>
+            <div className={`ProjectBorderUpRight ${fourthProject? 'loaded': ''}`}></div>
                     <div className='borderRight'>
+                    <div className={`ProjectBorderRight ${fourthProject? 'loaded': ''}`}></div>
                         <div className='ProjectCore'>
                 <div className='ProjectDescription2'>
                     <div className='firstLine'>
@@ -167,7 +180,10 @@ function Project(props){
                         October 2020
                     </div>
                     <div className='FullDescriptionL'>
-                    Le Lorem Ipsum est simplement du faux texte employé dans la c osition et la mise en page avant impression. Le Lorem Ipsum est le  osition et la mise en page avant impression. Le Lorem Ipsum est le omposition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de police
+                        Application web permettant de retrouver le résultat de n'importe quel match masculin qui s'est joué à Roland Garros depuis 1968, ainsi qu'afficher le tableau de n'importe
+                        quelle édition. Recherche par joueur pouvant être filtré avec une année ou un tour spécifique. Recherche de confrontation entre deux joueurs. Recherche par tableau. 
+                        Affichage de profil avec détails sur le joueur selectionné ; nationalité, première participation, pire résultat, ratio de victoire, nombre de matchs gagnés etc...
+
                     </div>
                     <div className='tags'>
                     <div className='tag'>Javascript</div>

@@ -61,7 +61,7 @@ function About(props){
             {scrolled && <div className={`infosContacts ${scrolled? 'scrolled': ''}`}> 
             <div className='cardContact'>
                 <div className='GithubLink'>
-                  <img src={github} className='contactLink'/> <a href='https://github.com/jonathan-robin'>/jonathan-robin</a>
+                  <img src={github} className='contactLink'/> <a href='https://github.com/jonathan-robin' target="_blank" >/jonathan-robin</a>
                 </div>
             </div>
             <div className='cardContact'>
