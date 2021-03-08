@@ -10,7 +10,7 @@ function About(props){
     const [mouseMoved, setMouseMoved] = useState(false);
     const [line2, setLine2] = useState(false); 
     const [line3, setLine3] = useState(false);
-    const [scrolled, setScrolled] = useState(props.scrolled);
+    const [scrolled, setScrolled] = useState(false);
 
     var firstMouseMove = () => {
         setMouseMoved(true);

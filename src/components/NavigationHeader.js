@@ -6,7 +6,9 @@ import $ from 'jquery';
 function NavigationHeader(props){
     const [scroll, setScroll] = useState(false); 
     const [scrollProject, setScrollProject] = useState(false);
-    const [scrollAbout, setScrollAbout] = useState();
+    const [scrollAbout, setScrollAbout] = useState(false);
+    const [scrollEducation, setScrollEducation] = useState(false);
+    const [trigger, setTrigger] = useState(true);
 
     var handleClickAbout = () => { 
         window.scrollTo({
@@ -21,26 +23,60 @@ function NavigationHeader(props){
             behavior: 'smooth',
         })
     }
+    var handleClickEducation = () => {
+        // if(trigger){
+            // setTimeout(()=> {
+                window.scrollTo({
+                    top:3800, 
+                    behavior:'smooth'
+                })
+            // },700)
+        //         window.scrollTo({
+        //         top: 3000,
+        //         behavior: 'smooth',
+        //     })
+        //     setTrigger(false);
+        // }
+        // window.scrollTo({
+        //     top:3800, 
+        //     behavior:'smooth'
+        // })
+    }
 
     useEffect(() => { 
         window.addEventListener('scroll', (event) => { 
             if ($('html').scrollTop() < 600) { 
                 setScrollProject(false);
+                setScrollEducation(false);
                 setScrollAbout(true);
             }
-            if ($('html').scrollTop() > 1100) { 
+            if ($('html').scrollTop() > 1100 && $('html').scrollTop() < 3250) { 
                 setScrollProject(true);
                 setScrollAbout(false);
+                setScrollEducation(false);
+            }
+            if ($('html').scrollTop() > 3250) { 
+                setScrollProject(false);
+                setScrollAbout(false);
+                setScrollEducation(true);
             }
         })
       },[])
 
+      useEffect(() => {
+        setScrollEducation(props.scrollEducation)
+        if(props.scrollEducation){ 
+            setScrollAbout(false);
+            setScrollProject(false);
+        }
+      },[props.scrollEducation])
 
     useEffect(() => { 
         setScroll(props.scroll);
         setScrollAbout(props.scroll);
         if(props.scroll){ 
-            setScrollProject(false)
+            setScrollProject(false);
+            setScrollEducation(true);
         }
         console.log('scroll:' , props.scroll);
     },[props.scroll])
@@ -49,6 +85,7 @@ function NavigationHeader(props){
         setScrollProject(props.scrollProject);
         if(props.scrollProject){ 
             setScrollAbout(false);
+            setScrollEducation(false)
         }
         console.log('scrollProject :', props.scrollProject);
     },[props.scrollProject])
@@ -62,7 +99,7 @@ function NavigationHeader(props){
                 <ol className='olNav'>
                     <li className={`NavigationTag ${scrollAbout? 'scroll':''}`} onClick={handleClickAbout}>About</li>
                     <li className={`NavigationTag ${scrollProject? 'scrollProject':''}`} onClick={handleClickProject}>Project</li>
-                    <li className='NavigationTag'>Education</li>
+                    <li className={`NavigationTag ${scrollEducation? 'scrollEducation':''}`} onClick={handleClickEducation}>Education</li>
                     <li className='NavigationTag'>Contact</li>
                     <div className={`resumeLink ${scroll? 'scroll':''}`}>
                         Resume

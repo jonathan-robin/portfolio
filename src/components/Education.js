@@ -5,10 +5,16 @@ import React, {useState, useEffect} from 'react';
 
 function About(props){
     
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        setScroll(props.scrollEducation);
+    },[props.scrollEducation])
+
     return (
         <>
-        <div className='EducationTitre EducationTitre2'><p>03. </p><p>Education</p></div>
-        <div className='Education'>
+        <div className={`EducationTitre ${scroll? 'EducationTitre2' : ''}`}><p>03. </p><p>Education</p></div>
+        <div className={`Education ${scroll? 'EducationScroll' : ''}`}>
                 <div className='SchoolYear'>
                        
                         <div className='OneSchool'>
@@ -67,7 +73,7 @@ function About(props){
 
                     <div className='OneExperience'>
                         <div className='TitleExperienceY'>
-                            March - September 2019
+                            March-September 2019
                         </div>
                         <div className='ExperienceY'>
                             <div className='TitleExperience'>
@@ -84,7 +90,7 @@ function About(props){
 
                         <div className='OneExperience TwoExperience'>
                         <div className='TitleExperienceY'>
-                            June - September 2018
+                            June-September 2018
                         </div>
                         <div className='ExperienceY'>
                             <div className='TitleExperience'>
