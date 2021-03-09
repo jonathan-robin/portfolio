@@ -39,14 +39,14 @@ function NavigationHeader(props){
 
     var handleClickAbout = () => { 
         window.scrollTo({
-            top: 100,
+            top: 0,
             behavior: 'smooth',
         })
     }
 
     var handleClickProject = () => { 
         window.scrollTo({
-            top: 1200,
+            top: 1000,
             behavior: 'smooth',
         })
     }
@@ -58,7 +58,7 @@ function NavigationHeader(props){
     }
     var handleClickEducation = () => {
                 window.scrollTo({
-                    top:4100, 
+                    top:3300, 
                     behavior:'smooth'
                 })
     }
@@ -71,19 +71,19 @@ function NavigationHeader(props){
                 setScrollEducation(false);
                 setScrollContact(false);
             }
-            if ($('html').scrollTop() > 1100 && $('html').scrollTop() < 3250) { 
+            if ($('html').scrollTop() > 700 && $('html').scrollTop() < 3250) { 
                 setScrollProject(true);
                 setScrollAbout(false);
                 setScrollEducation(false);
                 setScrollContact(false);
             }
-            if ($('html').scrollTop() > 3250  && $('html').scrollTop() < 5000) { 
+            if ($('html').scrollTop() > 2750  && $('html').scrollTop() < 5000) { 
                 setScrollEducation(true);
                 setScrollProject(false);
                 setScrollAbout(false);
                 setScrollContact(false);
             }
-            if ($('html').scrollTop() > 5000) { 
+            if ($('html').scrollTop() > 3900) { 
                 setScrollContact(true);
                 setScrollProject(false);
                 setScrollAbout(false);

@@ -9,9 +9,13 @@ import Linkedin from '../resources/LinkedIn-Logo.png';
 function Contact(props){
 
     const [scroll, setScroll] = useState(false);
+    const [animation, setAnimation] = useState(false);
 
     useEffect(() => {
         setScroll(props.scrollContact);
+        setTimeout(() => { 
+            setAnimation(props.scrollContact);
+        },500)
     },[props.scrollContact])
 
     var handleSubmit = () => { 
@@ -21,8 +25,11 @@ function Contact(props){
     return (
         <>
         <div className={`ContactTitre ${scroll? 'ContactTitre2' : ''}`}><p>04. </p><p>Contact</p></div>
-        {/* <div className='ContactComponent'> */}
-        <div className={`ContactComponent ${scroll? 'scrolled' : ''}`} style={{visibility:scroll?'visible':'hidden'}}>
+        <div className={`ContactComponent ${animation? 'scrolled' : ''}`} style={{visibility:animation?'visible':'hidden'}}>
+        <div className='ContactAdress'>
+            <div className='ContactAd'><img className='imgReseau' src={github}/></div>
+            <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
+            </div>
             <div className='ContactForm'>
             <form id="contact-form" onSubmit={handleSubmit()} method="POST">
             <label className="name" htmlFor='name'>Name</label>
@@ -40,10 +47,7 @@ function Contact(props){
                 <button type="submit" className="butonSubmit">Send</button>
             </form>
             </div>
-            <div className='ContactAdress'>
-            <div className='ContactAd'><img className='imgReseau' src={github}/></div>
-            <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
-            </div>
+        
             </div>
         </>
     )
