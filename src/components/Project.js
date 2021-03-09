@@ -12,45 +12,82 @@ function Project(props){
     const [secondProject, setSecondProject] = useState(false);
     const [thirdProject, setThirdProject] = useState(false);
     const [fourthProject, setFourthProject] = useState(false);
+    const [animation1, setAnimation1] = useState(false);
+    const [animation12, setAnimation12] = useState(false);
+    const [animation13, setAnimation13] = useState(false);
+    const [animation2, setAnimation2] = useState(false);
+    const [animation21, setAnimation21] = useState(false);
+    const [animation3, setAnimation3] = useState(false);
+    const [animation31, setAnimation31] = useState(false);
+    const [animation4, setAnimation4] = useState(false);
+    const [animation41, setAnimation41] = useState(false);
     const [scrollToPosition, setScrollToPosition] = useState(false);
     const [scrollToPosition2, setScrollToPosition2] = useState(false);
     const [scrollToPosition3, setScrollToPosition3] = useState(false);
     const [startProject, setStartProject] = useState(false); 
 
     useEffect(() => {
-        setStartProject(props.scrollStartProject)
+        setStartProject(props.scrollStartProject);
+        setFirstProject(props.scrollStartProject)
+            setTimeout(() => { 
+                setAnimation1(props.scrollStartProject);
+            },200)
+            setTimeout(() => { 
+                setAnimation12(props.scrollStartProject);
+            },400)
+            setTimeout(() => { 
+                setAnimation13(props.scrollStartProject);
+            },1000)
+            // setTimeout(() => {
+            // setFirstProject(props.scrollStartProject)
+            // setAnimation1(true);
+        // }, 100);
     },[props.scrollStartProject])
-    useEffect(() => {
-        setFirstProject(props.scrollFirstProject)
-        setScrollToPosition(true);
-    },[props.scrollFirstProject])
+    // useEffect(() => {
+    //     setFirstProject(props.scrollFirstProject)
+    //     setScrollToPosition(true);
+    // },[props.scrollFirstProject])
     useEffect(() => {
         setSecondProject(props.scrollSecondProject)
+        setTimeout(() => { 
+            setAnimation2(props.scrollSecondProject);
+        },200)
+        setTimeout(() => { 
+            setAnimation21(props.scrollSecondProject);
+        },600)
         setScrollToPosition2(true)
     },[props.scrollSecondProject])
 
     useEffect(() => {
         setThirdProject(props.scrollThirdProject)
+        setTimeout(() => { 
+            setAnimation3(props.scrollThirdProject);
+        },200)
+        setTimeout(() => { 
+            setAnimation31(props.scrollThirdProject);
+        },600)
     },[props.scrollThirdProject])
 
     useEffect(() => { 
         setFourthProject(props.scrollFourthProject);
+        setTimeout(() => { 
+            setAnimation4(props.scrollThirdProject);
+        },200)
+        setTimeout(() => { 
+            setAnimation41(props.scrollThirdProject);
+        },600)
     },[props.scrollFourthProject])
 
     return (
         <div className='ProjectOverAll'>
-        
-                <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p>
-            </div>
-        <div className={`ProjectContent ${firstProject? 'loaded': ''}`} style={{visibility:firstProject?'visible':'hidden'}}>
+                <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p></div>
+        <div className={`ProjectContent ${animation1? 'loaded' : ''}`} style={{visibility:animation1?'visible':'hidden'}}>
             <div className='Project p1'>
-                <div className='ProjectVideo'>
-                    <img src={imageProject1} className='imageProjet'/>
-                </div>
+       
+
                 <div className='borderUp'>
-                <div className={`ProjectBorder2 ${firstProject? 'loaded': ''}`}></div>
                     <div className='borderLeft'>
-                    <div className={`ProjectBorder ${firstProject? 'loaded': ''}`}></div>
+                    <div className={`ProjectBorder ${animation13? 'loaded': ''}`}></div>
                         <div className='ProjectCore'>
                 <div className='ProjectDescription1'>
                     <div className='firstLine'>
@@ -78,16 +115,19 @@ function Project(props){
                     </div>
                 </div>
                 </div>
+                <div className={` ${animation13? 'ProjectBorderLeft': ''}`}></div>
+                </div>
+                <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
+                    <img src={imageProject1} className='imageProjet'/>
                 </div>
             </div>
         </div>
-
         <div className={`ProjectContent2 ${secondProject? 'loaded': ''}`} style={{visibility:secondProject?'visible':'hidden'}}>
             <div className='Project p2'>
             <div className='borderUpRight'>
-            <div className={`ProjectBorderUpRight ${secondProject? 'loaded': ''}`}></div>
+            <div className={`ProjectBorderUpRight ${animation21? 'loaded': ''}`}></div>
                     <div className='borderRight'>
-                    <div className={`ProjectBorderRight ${secondProject? 'loaded': ''}`}></div>
+                    <div className={`ProjectBorderRight ${animation21? 'loaded': ''}`}></div>
                         <div className='ProjectCore'>
                 <div className='ProjectDescription2'>
                     <div className='firstLine'>
@@ -113,8 +153,10 @@ function Project(props){
                         <div className='tag'>Chart.js</div>
                     </div>
                 </div>
-                </div></div></div>
-                <div className='ProjectVideo2'>
+                </div></div>
+                </div>
+                {/* {`ProjectVideo2 ${secondProject? 'loaded': ''}`} */}
+                <div className={` ${animation2? 'ProjectVideo2': ''}`}  style={{visibility:animation2?'visible':'hidden'}}>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
             </div>
@@ -124,13 +166,26 @@ function Project(props){
 
         <div className={`ProjectContent ${thirdProject? 'loaded': ''}`} style={{visibility:thirdProject?'visible':'hidden'}}>
             <div className='Project p1'>
-                <div className='ProjectVideo'>
+
+
+{/* 
+            <div className='Project p1'>
+            <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
-                       <div className='borderUp'>
-                       <div className={`ProjectBorder2 ${thirdProject? 'loaded': ''}`}></div>
+                <div className='borderUp'>
                     <div className='borderLeft'>
-                    <div className={`ProjectBorder ${thirdProject? 'loaded': ''}`}></div>
+                    <div className={`ProjectBorder ${animation13? 'loaded': ''}`}></div> */}
+
+
+                <div className={` ${animation3? 'ProjectVideo': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
+                    <img src={imageProject1} className='imageProjet'/>
+                </div>
+
+                <div className='borderUp'>
+                    <div className='borderLeft'>
+                    <div className={`ProjectBorder ${animation31? 'loaded': ''}`}></div>
+
                         <div className='ProjectCore'>
                 <div className='ProjectDescription1'>
                     <div className='firstLine'>
@@ -157,14 +212,26 @@ function Project(props){
                 </div>
             </div>
         </div>
-        </div></div></div>
+        <div className={` ${animation31? 'ProjectBorderLeft': ''}`}></div>
+        </div>
+        </div>
+        </div>
         
+        {/* <div className={`ProjectContent2 ${fourthProject? 'loaded': ''}`} style={{visibility:fourthProject?'visible':'hidden'}}></div> */}
         <div className={`ProjectContent2 ${fourthProject? 'loaded': ''}`} style={{visibility:fourthProject?'visible':'hidden'}}>
-            <div className='Project p2'>
-            <div className='borderUpRight'>
+        <div className='Project p2'>
+            
+            
+        <div className='borderUpRight'>
+            <div className={`ProjectBorderUpRight ${animation4? 'loaded': ''}`}></div>
+                    <div className='borderRight'>
+                    <div className={`ProjectBorderRight ${animation4? 'loaded': ''}`}></div>
+
+
+            {/* <div className='borderUpRight'>
             <div className={`ProjectBorderUpRight ${fourthProject? 'loaded': ''}`}></div>
                     <div className='borderRight'>
-                    <div className={`ProjectBorderRight ${fourthProject? 'loaded': ''}`}></div>
+                    <div className={`ProjectBorderRight ${fourthProject? 'loaded': ''}`}></div> */}
                         <div className='ProjectCore'>
                 <div className='ProjectDescription2'>
                     <div className='firstLine'>
@@ -194,7 +261,8 @@ function Project(props){
                     </div>
                 </div>
                 </div></div></div>
-                <div className='ProjectVideo2'>
+                {/* <div className={` ${animation4? 'ProjectVideo2': ''}`}  style={{visibility:animation2?'visible':'hidden'}}></div> */}
+                <div className={` ${animation4? 'ProjectVideo2': ''}`}  style={{visibility:animation4?'visible':'hidden'}}>
                     <img src={imageProject1} className='imageProjet'/>
                 </div>
             </div>
