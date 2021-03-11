@@ -3,17 +3,21 @@
     border-radius:50%;
     display:flex;
     place-items: center;
-    /* margin-top:1vh; */
 }
 .logoNavigation{
     display:flex; 
     float:left;
-
 }
 li:first-of-type.scroll:after{
     animation:underlineNav 1.5s infinite;
 }
 li:nth-of-type(2).scrollProject:after{
+    animation:underlineNav 1.5s infinite;
+}
+li:nth-of-type(3).scrollEducation:after{
+    animation:underlineNav 1.5s infinite;
+}
+li:nth-of-type(4).scrollContact:after{
     animation:underlineNav 1.5s infinite;
 }
 .resumeLink.scroll{ 
@@ -28,6 +32,24 @@ li:nth-of-type(2).scrollProject:after{
 }
 li.NavigationTag{ 
     margin-top:0.7vh;
+    /* opacity:0; */
+}
+li:first-of-type{
+    animation:in 0.1s ease-in;
+    /* animation-delay:0.5s; */
+}
+
+li:nth-of-type(2){
+    animation:in 0.1s ease-in;
+    animation-delay:0.1s;
+}
+li:nth-of-type(3){
+    animation:in 0.1s ease-in;
+    animation-delay:0.2s;
+}
+li:nth-of-type(4){
+    animation:in 0.1s ease-in;
+    animation-delay:0.3s;
 }
 .headerNavigation{
     padding:1vw 3vw 1vw 3vw;
@@ -36,12 +58,17 @@ li.NavigationTag{
     top:0px;
     background:var(--navy);
     z-index:100;
-    margin-bottom:7vh;
+    margin-bottom:10vh;
     place-items: center;
 }
 .headerNavigation.scroll{
+    padding:1vw 3vw 1vw 3vw;
+    /* position:sticky; */
     height:2vh;
     margin-bottom:10vh;
+    opacity:0.95;
+    width:fit-content;
+    /* width:80vw; */
 }
 ol{ 
     list-style-type: none;
@@ -59,10 +86,6 @@ li{
     margin-right:3vw;
     padding:10px;
 }
-.ResumeLi{ 
-    list-style: none;
-    margin-right:0px;
-}
   ol li {
     counter-increment: number;
   }
@@ -75,15 +98,19 @@ li{
     font-weight:100;
   }
   .resumeLink{ 
-      padding-top:13px;
+      padding:1vh;
       border-radius: 5px;
       border:1px solid var(--green);
       padding-left:15px;
       padding-right:15px;
       color:var(--green);
+      animation:in 0.1s ease-in;
+      animation-delay:0.4s;
   }
   li{ 
     place-items: center;
+    /* visibility:hidden; */
+    /* opacity:0; */
   }
   .resumeLink:hover{ 
        display:block;
@@ -98,6 +125,7 @@ li{
   li:hover{ 
       cursor:pointer;
   }
+
   li:after {
         padding-bottom:8px;
         display:block;
@@ -128,5 +156,17 @@ li{
     100%{ 
         transform: scaleX(0); 
         transform-origin:100% 0%;
+    }
+}
+@keyFrames in {
+    0%{
+        transform: translateY(-10px);
+        opacity:0;
+        /* transform:scaleY(2) */
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+        /* transform:scaleY(1) */
     }
 }

@@ -1,88 +1,93 @@
 .Education{
     display:flex;
-    /* justify-content: center; */
-    /* background:red; */
-    /* height:fit-content; */
-    /* width:100vw; */
-    /* padding-top:30vw; */
-}
-
-
-.experience1{ 
-    background:purple;
 }
 
 .SchoolYear{ 
-    width:fit-content;
-    /* float:left; */
-    margin-left:10vw;
-    margin-top:15vh;
-    padding:2vw;
-    border-radius:10px;
-    margin-bottom:5vh;
-
+    /* width:25vw; */
+    /* margin-top:7.5vh; */
+    /* padding:1vw; */
+    padding-top:6vh;
+    width:25vw;
+    padding-right:5vw;
+    /* border-radius:5px; */
+    /* padding-left:4.5vw; */
+    /* width:18vw; */
+    /* margin-bottom:2.5vh; */
 }
 .SchoolYA{ 
     text-align: center;
-    /* padding:0 !important; */
 }
 .SchoolYL{ 
     color:white !important;
-    /* margin-left:5vh; */
-    margin-top:-6vh;
-    font-size:18px;
+    margin-top:-3.2vh;
+    font-size:1.6vh;
     font-weight:600;
 }
-
+.LocationExperience{
+    font-size:1.4vh;
+}
 .SchoolYE{
-    font-size:16px; 
+    font-size:1.4vh; 
     color:var(--green); 
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     text-align:center;
 }
 .SchoolYA{
     color:var(--lightest-slate);
-    padding-bottom:1vh;
+    padding-bottom:0.2vh;
+    font-size:1.6vh;
 }
 .SchoolY{
     text-align:center;
 }
 .OneSchoolR{ 
-    margin-left:14vw;
-}
+    margin-left:7vw;
+    margin-right:0 !important;
+    /* width:10vw; */
 
+    /* display:flex; */
+    /* margin-right:0px !important; */
+    /* width:8vw !important; */
+    /* padding-right:50px; */
+}
+.OneSchoolR.loaded{ 
+    visibility:visible;
+}
 .OneSchool{ 
     background: var(--lightest-navy);
-    padding:2vh;
-    border-radius:10px;
+    padding:1vh 2vw 1vh 2vw;
+    border-radius:5px;
     z-index:2;
-    margin-top:5vh;
+    margin-top:2.7vh;
     width:fit-content;
-    min-width:15vw;
-    /* flex-direction: column; */
+    animation:outUp 0.3s ease-in;
 }
 .TitleSchoolY{ 
     background:var(--light-navy);
-    padding:1vh;
+    padding:0.5vh;
     width:fit-content;
-    border-radius:5px;
-    margin-bottom:3vh;
+    border-radius:2.5px;
+    margin-bottom:1vh;
+    font-size:1.4vh;
+}
+.TitleExperienceY{ 
+    font-size:1.4vh;
 }
 
 .SchoolY{ 
-    padding-bottom:1vh;
+    padding-bottom:0.2vh;
     z-index:2;
 }
 .TSL{ 
     z-index:5;
-    margin-left:-4.5vw;
-    box-shadow: 5px 5px var(--green);
+    margin-left:-5vw;
+    box-shadow: 0.2vh 0.2vh var(--green);
     z-index:20;
 }
 
 .TSR{ 
-    margin-left:-6.5vw;
-    box-shadow: 5px 5px var(--green);
+    margin-left:-5.5vw;
+    box-shadow: 0.2vh 0.2vh var(--green);
 }
 .TitleSchoolY{ 
     z-index:5;
@@ -93,39 +98,64 @@
     color:white;
 }
 .Experience{ 
-    margin-left:8vw;
-    width:30vw;
-    /* float:right; */
-    /* margin-right:15vw; */
-    margin-top:15vh;
-    padding:1vw;
-    /* display:flex; */
+    /* margin-left:4vw; */
+    width:25vw;
+    padding-left:4vw;
+
+    /* width:15vw; */
+    /* margin-top:3.5vh; */
+    /* padding:0.3vw; */
 }
 .Cission{
-    margin:3vw;
-    border-left:2px solid var(--light-slate);
-    font-size:100px;
+    animation:animationCission 0.5s ease-in;
+    /* animation: delay 500ms; */
+    /* margin:-2vh 2vw -3vw 3vw; */
+    border-left:0.1vw solid var(--light-slate);
+}
+.Education{
+    opacity:0;
+    display:flex;
+    padding:1vh 0vh 0vh 3vw;
 }
 .EducationTitre{ 
-    margin-top:45vh;
+    margin-top:42.5vh;
     opacity:0;
     display:flex;
     flex-direction:row;
     justify-content: center;
 }
 .EducationTitre.EducationTitre2{
-    transform:scale(2);
-    transition:transform 0.5s ease-in;
+    /* transform:scale(2);
+    transition:transform 0.5s ease-in; */
     opacity:1;
     width:40vw;
     margin-left:30vw;
     display:flex;
-    margin-bottom:20vh;
+    margin-bottom:8vh;
+    margin-top:30vh;
+    animation:outUp 1s ease-in;
+    /* animation:fadein 1.5s ease-in; */
 }
+.Education-experience{ 
+
+}
+.Education.EducationScroll{
+    /* transform:scale(2);
+    transition:transform 2s ease-in; */
+    opacity:1;
+    width:96.1vw;
+    /* margin:auto; */
+    justify-content: center;
+    display:flex;
+    margin-bottom:26vh;
+    /* animation:outUp 1s ease-in; */
+    /* animation:fadein 2s ease-in; */
+}
+
 .EducationTitre p{ 
     margin-right:30px;
     color:var(--green);
-    font-size:1.2vh;
+    font-size:2.4vh;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 .EducationTitre p:last-child{ 
@@ -135,45 +165,65 @@
 
 .OneExperience{ 
     background: var(--green);
-    padding:2vh;
-    border-radius:10px;
+    border-radius:0.225vw;
     z-index:2;
-    margin-top:5vh;
+    padding:1vh 2vw 1vh 2vw;
+    margin-top:6.5vh;
+    /* margin-left:-1.5vw; */
     width:fit-content;
+    animation:outUp 0.3s ease-in;
+}
+.Experience{
+    padding-top:6vh;
+    padding-left:10vw;
 }
 .TitleExperienceY{
     background:var(--lightest-navy);
-    padding:1vh;
+    padding:0.5vh;
     width:fit-content;
-    border-radius:5px;
-    margin-left:-9vw;
-    box-shadow: 3px 3px var(--green);
+    border-radius:0.125vw;
+    margin-left:-7.8vw;
+    box-shadow: 0.2vh 0.2vh var(--green),  0.3vh 0.3vh 0.3vh var(--navy);
     color:var(--green);
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 .TwoExperience{ 
-    margin-left:10vw;
-    margin-top:10vh;
+    margin-left:3.2vw;
+    margin-top:5vh;
 }
 .ExperienceY{
-    padding:1vh;
+    /* padding:0.5vh; */
     text-align:center;
-    padding-top:2.5vh;
+    padding-top:1vh;
 }
 .TitleExperience{
     color:var(--navy) !important;
-    /* margin-left:5vh; */
-    margin-top:-6vh;
-    font-size:18px;
-    font-weight:600;
-    padding-bottom:1vh;
+    margin-top:-3vh;
+    font-size:1.8vh;
+    font-weight:700;
+    /* padding-bottom:0.2vh; */
 }
 .RoleExperience{ 
-    padding-bottom:1vh;
+    padding-bottom:0.2vh;
     color:var(--navy-shadow);
-    font-weight:500;
-
+    font-weight:600;
+    font-size:1.6vh;
 }
-.TitleExperienceY{ 
-
+@keyframes fadein{
+    0% {opacity:0 }
+    10% {opacity:0.1 }
+    20% {opacity:0.2 }
+    30% {opacity:0.3 }
+    40% {opacity:0.4 }
+    50% {opacity:0.5 }
+    60% {opacity:0.5}
+    70%, 72% {opacity:0.6 }
+    80% { opacity:0.7 }
+    90% { opacity:0.8  }
+    95% { opacity:0.9  }
+    100% { opacity:1}
+}
+@keyframes animationCission{
+    0% {transform:scaleY(0) }
+    100% {transform:scaleY(1) }
 }
