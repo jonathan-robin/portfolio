@@ -21,8 +21,9 @@
 }
 .TitreAbout{ 
     display:flex;
+    MARGIN-TOP:10vh;
     justify-content: center;
-    animation:opactiyUp 1s ease;
+    /* animation:opactiyUp 1s ease; */
     /* margin-bottom:-50px; */
 }
 .TitreAbout p{ 
@@ -37,6 +38,18 @@
 }
 .selfThaught p{
     line-height: 1;
+}
+.firstPhrase{ 
+    margin:0.8vh 0vh 0vh 0vh;
+}
+.ProjectOpo{
+    margin:0.8vh 0vh 0vh 0vh;
+}
+.spentMonths{
+    margin:0.8vh 0vh 0vh 0vh;
+}
+.Name{
+    margin:2vh 0vh 0vh 0vh;
 }
 .AboutMe.scrolled .divName{ 
     color:var(--lightest-navy);

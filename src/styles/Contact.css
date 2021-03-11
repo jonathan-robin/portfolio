@@ -1,0 +1,92 @@
+.ContactTitre{
+opacity:0;
+}
+.ContactTitre{ 
+    margin-top:12.5vh;
+    opacity:0;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.ContactTitre.ContactTitre2{
+    opacity:1;
+    width:40vw;
+    margin-top:0 !important;
+    margin-left:30vw;
+    display:flex;
+    margin-top:60vh;
+    animation:outUp 0.5s ease-in;
+}
+
+.ContactTitre p{ 
+    margin-right:30px;
+    color:var(--green);
+    font-size:2.4vh;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.ContactTitre p:last-child{ 
+    color:var(--light-slate);
+    text-decoration:underline
+}
+.ContactForm{ 
+    width:fit-content;
+    padding:2vh;
+    margin:auto;
+}
+.ContactAdress{ 
+    justify-content: center;
+    margin-top:5vh;
+    display:flex;
+}
+.Name-group, .email-group, .Message-group{ 
+    padding-bottom:2vh;
+}
+.name, .message, .email{ 
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:var(--green);
+    font-weight: 400;
+    font-size:1.8vh;
+    margin-left:-0.4vw;
+}
+.fc-Message{ 
+    height:15vh !important;
+}
+.form-control{ 
+    height:2.5vh;
+    border-radius:5px;
+    margin-top:1vh;
+    width:15vw;
+}
+.butonSubmit{ 
+    float:right;
+    padding:0.8vh 1.5vh 0.8vh 1.5vh;
+    background:var(--green);
+    font-size:1.6vh;
+    color:var(--navy);
+    font-weight:600;
+    border-radius:5px;
+}
+.butonSubmit:hover{ 
+    cursor:pointer; 
+    background:var(--lightest-navy); 
+    color:var(--green);
+}
+.GitHubAccount, .LinkedinAccount{ 
+    color:var(--lightest-slate);
+    font-size:1.8vh;
+}
+.imgReseau{ 
+    height:4vh;
+    border-radius:50px;
+    margin-top:-6px;
+}
+.ContactComponent.scrolled{
+    visibility:visible;
+    animation:outUp 0.5s ease-in;
+    padding-bottom:20vh;
+}
+.ContactAd{
+    padding:1.5vh;
+    width:fit-content;
+    display:flex;
+}
