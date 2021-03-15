@@ -1,11 +1,11 @@
 import './styles/App.css';
 import React, {useEffect, useRef, useState} from 'react';
-import NavigationHeader from './components/NavigationHeader';
-import About from './components/About';
-import AboutTwo from './components/AboutTwo';
-import Project from './components/Project';
-import Education from './components/Education'; 
-import Contact from './components/Contact';
+import NavigationHeader from '../src/components/NavigationHeader';
+import About from '../src/components/About';
+import AboutTwo from '../src/components/AboutTwo';
+import Project from '../src/components/Project';
+import Education from '../src/components/Education'; 
+import Contact from '../src/components/Contact';
 import $ from 'jquery';
 
 function App() {
@@ -24,6 +24,11 @@ function App() {
   const [scrollThirdProject, setScrollThirdProject] = useState(false);
   const [scrollFourthProject, setScrollFourthProject] = useState(false);
   const refAbout = useRef();
+
+  useEffect(() =>{ 
+    
+  },[])
+
 
   useEffect(() => { 
     window.addEventListener('scroll', (event) => { 
