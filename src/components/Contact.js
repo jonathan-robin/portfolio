@@ -2,14 +2,19 @@ import '../styles/Contact.css';
 import '../styles/About.css';
 import '../styles/Education.css';
 import '../styles/Project.css'
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import github from '../resources/GitHub-Mark.png'; 
 import Linkedin from '../resources/LinkedIn-Logo.png'; 
+import $ from 'jquery';
 
 function Contact(props){
 
     const [scroll, setScroll] = useState(false);
     const [animation, setAnimation] = useState(false);
+    const emailRef = useRef(''); 
+    const messageRef = useRef(''); 
+    const nameRef = useRef(''); 
+    const [messageSent, setMessageSent] = useState('');
 
     useEffect(() => {
         setScroll(props.scrollContact);
@@ -19,7 +24,17 @@ function Contact(props){
     },[props.scrollContact])
 
     var handleSubmit = () => { 
-        console.log("handleSubmit");
+        setTimeout(() => {
+            emailRef.current.value = ''; 
+            messageRef.current.value = ''; 
+            nameRef.current.value = '';
+            setTimeout(() => {
+                setMessageSent('');
+            },3000)
+        },1000)
+        setMessageSent(<>
+            <div className='messageSent'>Merci, votre message a bien été envoyé !</div>
+        </>)
     }
 
     return (
@@ -30,28 +45,28 @@ function Contact(props){
             <div className='ContactAd'><img className='imgReseau' src={github}/></div>
             <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
             </div>
+            {messageSent}
             <div className='ContactForm'>
-            <form id="contact-form" onSubmit={handleSubmit()} method="POST">
+            <iframe name="hiddenFrame" style={{width:"0", height:'0', border:'0', display:'none'}}></iframe>
+            <form id="contact-form" method="POST" action="/send" target='hiddenFrame' onSubmit={handleSubmit}>
             <label className="name" htmlFor='name'>Name</label>
                 <div className="Name-group">
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required ref={nameRef} name="name"/>
                 </div>
                 <label htmlFor="exampleInputEmail1" className='email'>Email address</label>
                 <div className="email-group">
-                    <input type="email" className="form-control" aria-describedby="emailHelp" />
+                    <input type="email" className="form-control"  ref={emailRef} required aria-describedby="emailHelp" name="email" />
                 </div>
                 <label htmlFor="message" className='message'>Message</label>
                 <div className="Message-group">
-                    <textarea className="form-control fc-Message" ></textarea>
+                    <textarea className="form-control fc-Message" ref={messageRef} required name="message"></textarea>
                 </div>
                 <button type="submit" className="butonSubmit">Send</button>
             </form>
             </div>
-        
             </div>
         </>
     )
-
 }
 
 export default Contact
