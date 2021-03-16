@@ -44,7 +44,7 @@ function AboutTwo(props){
                     </div>
                     <div className='pContent'>
                     <div className='selfThaught'>
-                    <div className='firstPhrase'>I'm a self-thaught junior web-dev with communication&Marketing background.</div>
+                    <div className='firstPhrase'>I'm a self-thaught junior web-dev with communication & Marketing background.</div>
                     <div className='ProjectOpo'>I'm looking for jobs, internships or project opportunities!</div>
                     <div className='spentMonths'> I Spent the last months working with javascript/react & nodejs.</div>
                     <div className='dive'>Let's dive in my project !</div></div> 

@@ -1,18 +1,100 @@
+@media (max-width:1600px){ 
+    .OneSchool.OneSchoolR{
+        width:250px;
+    }
+    .TitleExperienceY{
+        margin-left:-130px !important;
+    }
+}
+@media (max-width:1305px){ 
+    .Education.EducationScroll{
+        display:flex !important;
+        padding-right:5vw !important;
+        padding-left:5vw !important;
+    }
+    .Experience{
+        padding-left:0 !important;
+        margin-left:150px !important;
+    }
+    .SchoolYear{
+        padding-right: 0 !important;
+        margin-right:150px !important;
+    }
+    .Education.EducationScroll{ 
+        width:95vw !important;
+        padding: 0!important;
+    }
+    .TitleSchoolY{
+        margin-left:-8vw !important;
+    }
+    .TitleExperienceY{
+        margin-left:-160px !important;
+    }
+}
+@media (max-width:990px){ 
+    .Education.EducationScroll{ 
+        width:99vw !important;
+        padding:0vh 0vw 5vh 0vw !important; 
+        display:block !important;
+    }
+    .SchoolYear{
+        width:80vw !important; 
+        padding-left: 10vw !important; 
+        padding-right:10vw !important;
+        display:flex !important;
+        justify-content:center !important;
+        height:fit-content !important;
+    }
+    .Experience{
+        margin:0 !important;
+        width:80vw !important; 
+        padding-top:2vh !important;
+        padding-left: 10vw !important; 
+        padding-right:10vw !important;
+        display:flex !important;
+        justify-content:space-around !important;
+        height:fit-content !important;
+    }
+    .TitleExperienceY{
+        margin-top:-2.5vh !important;
+        margin-left:-6vh !important;
+    }
+    .TitleExperience{
+        padding-top:3vh !important;
+    }
+    .OneSchool{
+        margin-top:3vh !important;
+        margin-left:7vw !important;
+        height: fit-content !important;
+    }
+    .TSL{
+        margin-top:-2vh !important;
+    }
+    .TSR{
+        margin-top:-2vh !important;
+    }
+    .SchoolY{
+        margin-top:-1vh !important;
+    }
+    .Cission{
+        padding-top:5vh !important;
+        justify-content: center !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+        width:50vw !important;
+        height:2vh !important;
+        border-bottom: 1px solid var(--light-slate);
+        border-right:none !important; 
+        border-left: none !important;
+    }
+}
 .Education{
     display:flex;
 }
-
 .SchoolYear{ 
-    /* width:25vw; */
-    /* margin-top:7.5vh; */
-    /* padding:1vw; */
     padding-top:6vh;
     width:25vw;
     padding-right:5vw;
-    /* border-radius:5px; */
-    /* padding-left:4.5vw; */
-    /* width:18vw; */
-    /* margin-bottom:2.5vh; */
 }
 .SchoolYA{ 
     text-align: center;
@@ -43,12 +125,6 @@
 .OneSchoolR{ 
     margin-left:7vw;
     margin-right:0 !important;
-    /* width:10vw; */
-
-    /* display:flex; */
-    /* margin-right:0px !important; */
-    /* width:8vw !important; */
-    /* padding-right:50px; */
 }
 .OneSchoolR.loaded{ 
     visibility:visible;
@@ -73,7 +149,6 @@
 .TitleExperienceY{ 
     font-size:1.4vh;
 }
-
 .SchoolY{ 
     padding-bottom:0.2vh;
     z-index:2;
@@ -84,7 +159,6 @@
     box-shadow: 0.2vh 0.2vh var(--green);
     z-index:20;
 }
-
 .TSR{ 
     margin-left:-5.5vw;
     box-shadow: 0.2vh 0.2vh var(--green);
@@ -98,18 +172,11 @@
     color:white;
 }
 .Experience{ 
-    /* margin-left:4vw; */
     width:25vw;
     padding-left:4vw;
-
-    /* width:15vw; */
-    /* margin-top:3.5vh; */
-    /* padding:0.3vw; */
 }
 .Cission{
     animation:animationCission 0.5s ease-in;
-    /* animation: delay 500ms; */
-    /* margin:-2vh 2vw -3vw 3vw; */
     border-left:0.1vw solid var(--light-slate);
 }
 .Education{
@@ -118,38 +185,25 @@
     padding:1vh 0vh 0vh 3vw;
 }
 .EducationTitre{ 
-    margin-top:42.5vh;
-    opacity:0;
     display:flex;
     flex-direction:row;
     justify-content: center;
+    opacity:0;
 }
 .EducationTitre.EducationTitre2{
-    /* transform:scale(2);
-    transition:transform 0.5s ease-in; */
-    opacity:1;
-    width:40vw;
-    margin-left:30vw;
     display:flex;
+    justify-content: center;
     margin-bottom:8vh;
     margin-top:30vh;
     animation:outUp 1s ease-in;
-    /* animation:fadein 1.5s ease-in; */
-}
-.Education-experience{ 
-
+    opacity:1;
 }
 .Education.EducationScroll{
-    /* transform:scale(2);
-    transition:transform 2s ease-in; */
     opacity:1;
-    width:96.1vw;
-    /* margin:auto; */
+    width:94vw;
     justify-content: center;
     display:flex;
     margin-bottom:26vh;
-    /* animation:outUp 1s ease-in; */
-    /* animation:fadein 2s ease-in; */
 }
 
 .EducationTitre p{ 
