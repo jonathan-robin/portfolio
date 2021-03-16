@@ -66,16 +66,10 @@ function App() {
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <NavigationHeader scrollStartProject={scrollStartProject} scroll={scroll} scrollProject={scrollProject} scrollEducation={scrollEducation} scrollContact={scrollContact}/>
-        {/* {scroll && <NavigationHeader2 scrollStartProject={scrollStartProject} scroll={scroll} scrollProject={scrollProject} scrollEducation={scrollEducation} scrollContact={scrollContact}/>} */}
-        {/* <About scrolled={scroll}/> */}
         <AboutTwo scrolled={scroll}/>
-        {/* {scroll &&  */}
         <Project scrollFirstProject={scrollFirstProject} scrollSecondProject={scrollSecondProject} scrollThirdProject={scrollThirdProject}
         scrollStartProject={scrollStartProject} scrollFourthProject={scrollFourthProject}/>
-        {/* }     */}
-        {/* {scrollFourthProject &&  */}
         <Education scrollEducation={scrollEducation} scrollExperience={scrollExperience}/>
-        {/* } */}
         <Contact scrollContact={scrollContact}/>
         </> 
   );

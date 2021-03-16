@@ -1,11 +1,50 @@
+@media (max-width:990px){
+    .AboutMe{
+    margin-left:auto !important;
+    }
+    .Picture{
+        position:absolute !important; 
+        top:28vh !important;
+        left:57vw !important; 
+        height:20vh !important;
+    }
+}
+@media (max-width:1600px){
+    .AboutMe{
+        min-width:480px !important; 
+        min-height:300px !important;
+    }
+    .pContent{
+        margin-right:5% !important;
+    }
+    .Name{
+        font-size:48px !important;
+    }
+    .firstPhrase{
+        width:100% !important;
+    }
+    .dive{
+        width:100% !important;
+    }
+    .ProjectOpo{
+        width:100% !important;
+    }
+    .spentMonths{
+        width:100% !important;
+    }
+    .selfThaught{
+        font-size:17px !important; 
+    }
+    .Picture{
+        height:17vw;
+    }
+    .mePicture{
+        height:fit-content !important;
+    }
+}
+@media (max-width:5000px){
 .AboutPage{ 
     display:flex;
-}
-.mePicture{
-    /* position:absolute; */
-    /* top:48vh;
-    left:58vw; */
-
 }
 .AboutMe{
     width:30vw;
@@ -17,24 +56,21 @@
     width:25vw;
 }
 .ProjectOpo{
-    width:30vw !important;
+    width:30vw;
 }
 .AboutMe{
     padding:0 2vw 0 2vw;
-    /* padding:0; */
 }
 .spentMonths{
-    width:35vw !important;
+    width:35vw;
 }
 .dive{
-    width:30vw!important;
-    /* text-align: center; */
+    width:30vw;
 }
 .firstPhrase{
-    width:30vw!important;
+    width:30vw;
 }
 .TitreAbout
-/* , .AboutPage */
 {
     animation:out 1s ease-in;
     animation-delay:0.6s;
@@ -47,39 +83,30 @@
     animation:out 1s ease-in;
     animation-delay:0.8s;
 }
-/* .AboutPage{
-    animation:out 1s ease-in;
-    animation-delay:0.7s;
-} */
 @keyFrames out {
     0%{
         transform: translateY(30px);
         opacity:0;
-        /* transform:scaleY(2) */
     }
     20%{
         transform: translateY(30px);
         opacity:0.1;
-        /* transform:scaleY(2) */
     }
     40%{
         transform: translateY(30px);
         opacity:0.1;
-        /* transform:scaleY(2) */
     }
     60%{
         transform: translateY(30px);
         opacity:0.2;
-        /* transform:scaleY(2) */
     }
     80%{
         transform: translateY(30px);
         opacity:0.2;
-        /* transform:scaleY(2) */
     }
     100%{
         transform: translateY(0px);
         opacity:1;
-        /* transform:scaleY(1) */
     }
+}
 }

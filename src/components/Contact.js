@@ -48,7 +48,7 @@ function Contact(props){
             {messageSent}
             <div className='ContactForm'>
             <iframe name="hiddenFrame" style={{width:"0", height:'0', border:'0', display:'none'}}></iframe>
-            <form id="contact-form" method="POST" action="/send" target='hiddenFrame' onSubmit={handleSubmit}>
+            <form className='meform' id="contact-form" method="POST" action="/send" target='hiddenFrame' onSubmit={handleSubmit}>
             <label className="name" htmlFor='name'>Name</label>
                 <div className="Name-group">
                     <input type="text" className="form-control" required ref={nameRef} name="name"/>

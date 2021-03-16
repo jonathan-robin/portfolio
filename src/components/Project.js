@@ -108,7 +108,6 @@ function Project(props){
         <div className='ProjectOverAll'>
 
             <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p></div>
-
             <div className={` ${animation125? 'overLayProject1': ''}`}  style={{visibility:animation125?'visible':'hidden'}} id='Overlay1'></div>
             <div className={`ProjectContent ${animation1? 'loaded' : ''}`} style={{visibility:animation1?'visible':'hidden'}}>
                 <div className='Project p1' >

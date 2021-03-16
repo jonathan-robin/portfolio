@@ -17,7 +17,10 @@ opacity:0;
     margin-top:60vh;
     animation:outUp 0.5s ease-in;
 }
-
+.meform{
+    min-width:280px !important; 
+    min-height:355px !important;
+}
 .ContactTitre p{ 
     margin-right:30px;
     color:var(--green);
@@ -29,9 +32,13 @@ opacity:0;
     text-decoration:underline
 }
 .ContactForm{ 
-    width:fit-content;
-    padding:2vh;
-    margin:auto;
+    display:flex;
+    justify-content: center;
+    min-width:280px; 
+    min-height:355px;
+    /* width:fit-content; */
+    /* padding:2vh; */
+    /* margin:auto; */
 }
 .ContactAdress{ 
     justify-content: center;
@@ -45,11 +52,10 @@ opacity:0;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     color:var(--green);
     font-weight: 400;
-    font-size:1.8vh;
-    margin-left:-0.4vw;
+    font-size:18px;
 }
 .fc-Message{ 
-    height:15vh !important;
+    height:180px !important;
 }
 .messageSent{
     background:var(--green);
@@ -68,16 +74,16 @@ opacity:0;
 }
 
 .form-control{ 
-    height:2.5vh;
+    height:25px;
     border-radius:5px;
-    margin-top:1vh;
-    width:15vw;
+    margin-top:10px;
+    width:280px;
 }
 .butonSubmit{ 
     float:right;
     padding:0.8vh 1.5vh 0.8vh 1.5vh;
     background:var(--green);
-    font-size:1.6vh;
+    font-size:16px;
     color:var(--navy);
     font-weight:600;
     border-radius:5px;
@@ -89,20 +95,20 @@ opacity:0;
 }
 .GitHubAccount, .LinkedinAccount{ 
     color:var(--lightest-slate);
-    font-size:1.8vh;
+    font-size:15px;
 }
 .imgReseau{ 
-    height:4vh;
+    height:40px;
     border-radius:50px;
     margin-top:-6px;
 }
 .ContactComponent.scrolled{
     visibility:visible;
     animation:outUp 0.5s ease-in;
-    padding-bottom:20vh;
+    padding-bottom:200px;
 }
 .ContactAd{
-    padding:1.5vh;
+    padding:15px;
     width:fit-content;
     display:flex;
 }
