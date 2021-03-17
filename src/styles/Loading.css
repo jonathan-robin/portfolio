@@ -1,0 +1,42 @@
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation:dash 2s infinite;
+    display:flex;
+    justify-content: center;
+    width:400px;
+}
+.container{ 
+    justify-content: center;
+    display:flex;
+}
+svg{ 
+    width:400px;
+}
+.loadingBar{ 
+    display:flex;
+    justify-content: center;
+    width:400px;
+    height:20px;
+    border-radius: 10px; 
+    background:var(--green); 
+    margin-top:-45vh;
+    animation: loadingBar 3.5s ease-out
+}
+  @keyframes dash {
+      from{
+        stroke-dashoffset: 1000;
+      }
+to{ 
+    stroke-dashoffset: 500;
+
+}  }
+@keyframes loadingBar{ 
+    0%{
+        width:0px;
+    }
+    100%{
+        width:400px;
+    }
+}
+ 

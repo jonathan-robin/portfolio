@@ -23,7 +23,7 @@
         .ProjectVideo2{
             width:fit-content !important;
             position:absolute !important;
-            margin-left:5vw !important;
+            margin-left:5vw;
             left:36vw !important;
         }
         .overLayProject2{
@@ -47,17 +47,43 @@
 
     }
 }
+@media (max-width:1500px){
+    .ProjectBorder.loaded{
+        content:'';
+        width:140% !important;
+        display:flex;
+        border-top:1px solid var(--green);
+        animation:borderUp 0.5s ease-in;
+        margin-left:-6vw;
+    }
+    .overLayProject2{
+        margin: 18.2vh 1.5vw 2vh 9.5vw !important;
+    }
+    .overLayProject4{
+        margin: 18.2vh 1.5vw 2vh 9.5vw !important;
+    }
+    .videoProject{
+        margin-left:-0.5vw !important; 
+    }
+}
 @media (max-width:1370px){
+    .FullDescription{ 
+        text-align: center;
+    }
+    .FullDescriptionL{ 
+        text-align: center !important;
+    }
     .ProjectVideo{
         padding:0 !important; 
         margin: 0!important;
         justify-content: center;
         width:auto !important;
         display:flex;
+        margin-left:0 !important;
     }
     .ProjectVideo2{ 
         justify-content: center;
-        width:fit-content !important;
+        width:auto !important;
         display:flex;
         position:inherit !important;
     }
@@ -98,12 +124,12 @@
     .ProjectContent.loaded{
         margin:0 !important; 
         padding:0 !important;
-        width:99vw !important;
+        width:98vw;
     }
     .ProjectContent2.loaded{
         margin:0 !important; 
         padding:0 !important;
-        width:99vw !important;
+        width:98vw;
     }
     .videoProject2{ 
         padding: 0 !important; 
@@ -112,6 +138,9 @@
         height:300px !important;
         display:flex !important; 
         justify-content: center;
+    }
+    .videoProject{
+        
     }
     .videoProject1{
         margin:0!important;
@@ -128,7 +157,7 @@
         height:295px !important;
         width:549.609px !important;
         top:57vh;
-        left:0 !important;
+        left:-0.3vw !important;
         position:relative !important;
         margin:auto !important;
         display: flex !important;
@@ -139,7 +168,7 @@
         height:295px !important;
         width:533.594px !important;
         top:56.8vh;
-        left:0 !important;
+        left:-0.3vw !important;
         position:relative !important;
         margin:auto !important;
         display: flex !important;
@@ -150,7 +179,7 @@
         height:300px !important;
         width:549.609px !important;
         top:114.2vh;
-        left:2.5vw !important;
+        left:2.1vw !important;
         position:relative !important;
         margin:auto !important;
         display: flex !important;
@@ -164,7 +193,7 @@
         height:300px !important;
         width:533.328px !important;
         top:114.2vh;
-        left:2.5vw !important;
+        left:2.1vw !important;
         position:relative !important;
         margin:auto !important;
         display: flex !important;
@@ -173,6 +202,198 @@
         z-index:0 !important;
     }
 }
+@media (max-width:970px){
+    .overLayProject1, .overLayProject3{
+        left: 0.15vw !important;
+    }
+    .overLayProject2, .overLayProject4{
+        left: 2.3vw !important;
+    }
+}
+@media (max-width:825px){
+    .ProjectOverAll{
+        width:90vw !important;
+    }
+    .ProjectContent{ 
+        width:90vw !important;
+    }
+    .ProjectContent2{
+        width:90vw !important;
+    }
+    .videoProject2{ 
+        margin-left:5vw !important;
+    }
+    .videoProject{ 
+        margin-left:2vw !important;
+    }
+    .overLayProject1, .overLayProject3{
+        left:2.5vw !important;
+    }
+    .overLayProject2{ 
+        left:3.5vw !important;
+    }
+    .overLayProject4{
+        left:3.5vw !important;
+    }
+}
+@media (max-width:640px){
+    .videoProject{
+        height:250px !important;
+    }
+    .videoProject2{
+        height:250px !important;
+    }
+    .overLayProject1{
+        height:250px !important;
+        width:458px !important;
+        top:52vh !important;
+    }
+    .overLayProject2{
+        height:250px !important;
+        width:458px !important;
+        top:108.75vh !important;
+    }
+    .overLayProject3{
+        height:250px !important;
+        width:444.438px !important;
+        top:52vh !important;
+    }
+    .overLayProject4{
+        height:250px !important;
+        width:444.438px !important;
+        top:108.6vh !important;
+    }
+}
+@media(max-width:602px){
+    .borderUp{
+        margin-left:-10vw !important;
+        padding-left:0vw !important;
+    }
+    .borderLeft{
+        padding-left:2vw !important;
+    }
+    .ProjectBorder.loaded{
+        width:128% !important;
+    }
+    .ProjectCore{
+        padding-left:0px !important;
+        /* padding-right:0px !important; */
+    }
+    .Project.p2 .ProjectCore{ 
+        /* background:red !important; */
+        padding-left: 6vw !important;
+        padding-right: 0vw !important;
+        /* padding:inherit 0vw 1vh 5vw !important; */
+    }
+    .Project.p2 .ProjectBorderUpRight.loaded{ 
+        width:80% !important;
+        margin-left: 5% !important;
+    }
+}
+@media (max-width:510px){
+    .overLayProject1{
+        left:2vw !important;
+    }
+    .overLayProject2{
+        left:3vw !important;
+    }
+}
+
+
+
+@media (max-width:500px){
+    .ProjectOverAll{ 
+        padding-top:3vh!important;
+        padding-bottom:50vh !important;
+    }
+    
+    .ProjectTitre.ProjectTitre2{
+        margin-top:0px !important;
+    }
+    .overLayProject1, .overLayProject2, .overLayProject3, .overLayProject4{
+        display:none !important;
+    }
+    .ProjectContent, .ProjectContent2{
+        width:100vw !important;
+    }
+    .Project.p1 {
+        padding:0px !important;
+        margin:0px !important;
+        width:100vw !important;
+    }
+    .Project.p2 {
+        padding:0px !important;
+        margin:0px !important;
+        width:100vw !important;
+    }
+    .videoProject1, .videoProject2, .videoProject{
+        height:45vw !important;
+        padding:0px !important; 
+        margin:0px !important;
+    }
+    .ProjectVideo{ 
+        margin-top:30vh !important;
+    }
+    .FullDescription, .FullDescriptionL{
+        font-size:1.8vh !important;
+    }
+    .Date, .tag{ 
+        font-size:1.6vh !important; 
+    }
+    .Titre{
+        font-size:1.9vh !important;
+    }
+    .videoProject{ 
+        margin-bottom:10vh !important; 
+        /* margin-top:20vh !important; */
+    }
+    .Project.p2 .tags{ 
+        /* padding-bottom:35vh!important;
+        border-bottom:2px solid var(--green); */
+    }
+    .borderUp{
+        margin:0px !important; 
+        padding:0px!important;
+        justify-content: center !important;
+    }
+    .Project.p1 .ProjectCore{
+        border-bottom:2px solid var(--green);
+    }
+    .Project.p2:after{
+        content : "";
+        position: absolute;
+        /* left    : 0;
+        bottom  : 0; */
+        justify-content:center;
+        height  : 2px;
+        margin-left:8%;
+        margin-top:-5vh;
+        width   : 84%;  /* or 100px */
+        /* width:50% !important; */
+        border-bottom:2px solid var(--green);
+    }
+    .ProjectBorder.loaded{ 
+        display:none !important;
+    }
+    .ProjectBorderLeft{ 
+        display:none !important;
+    }
+    .ProjectCore{
+        width:60vw!important; 
+        padding-right:0px !important;
+        padding-left:0px !important;
+    }
+    .ProjectBorderUpRight.loaded{ 
+        display:none !important;
+    }
+    .ProjectBorderRight{ 
+        display:none !important;
+    }
+}
+
+
+
+
 @media(max-width:5000px){
 .projectTitle{ 
     padding-top:10px;
@@ -188,6 +409,7 @@
     place-items: center;
 }
 .ProjectTitre.ProjectTitre2{
+    padding-top:10vh!important;
     animation:out 0.5s ease-in;
     opacity:1;
     width:40vw;
@@ -214,7 +436,7 @@
     height:0;
 }
 .ProjectVideo2{ 
-    width:fit-content !important;
+    width:fit-content;
 }
 .ProjectBorderRight.loaded{
     display:flex;
@@ -306,7 +528,7 @@
     background:RGBA(100,255,218,0.6);
     width:796px;
     height:435px;
-    left:25vw;
+    left:26vw;
     margin:18.2vh 2vw 2vh 10vw;
     border-radius:10px;
 }
@@ -325,7 +547,7 @@
     background:RGBA(100,255,218,0.6);
     width:773.328px;
     height:435px;
-    left:25vw;
+    left:26vw;
     margin:18vh 2vw 2vh 10vw;
     border-radius:10px;
 }

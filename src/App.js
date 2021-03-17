@@ -6,6 +6,7 @@ import AboutTwo from '../src/components/AboutTwo';
 import Project from '../src/components/Project';
 import Education from '../src/components/Education'; 
 import Contact from '../src/components/Contact';
+import Loading from '../src/components/Loading';
 import $ from 'jquery';
 
 function App() {
@@ -23,16 +24,39 @@ function App() {
   const [scrollSecondProject, setScrollSecondProject] = useState(false);
   const [scrollThirdProject, setScrollThirdProject] = useState(false);
   const [scrollFourthProject, setScrollFourthProject] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+
+useEffect(() => { 
+  setTimeout(() => {
+    setLoading(true);
+  }, 3500);
+},[])
+
   const refAbout = useRef();
 
   useEffect(() =>{ 
-    
+    if(window.innerWidth <= 500){
+      setScrollProject(true);
+      setScrollEducation(true);
+      setScrollExperience(true);
+      setScrollContact(true); 
+      setScrollStartProject(true); 
+      setScrollFirstProject(true); 
+      setScrollSecondProject(true); 
+      setScrollThirdProject(true); 
+      setScrollFourthProject(true); 
+    }
   },[])
 
+	
+  var tailleEcranX = window.innerWidth;
+  var tailleEcranY = window.innerHeight;
+
+  console.log(tailleEcranX, tailleEcranY)
 
   useEffect(() => { 
     window.addEventListener('scroll', (event) => { 
-        // setFirstScroll(true)
         if ($('html').scrollTop() > 400) { 
           setScrollStartProject(true)
           setScrollProject(true);
@@ -65,12 +89,17 @@ function App() {
     <>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        <NavigationHeader scrollStartProject={scrollStartProject} scroll={scroll} scrollProject={scrollProject} scrollEducation={scrollEducation} scrollContact={scrollContact}/>
+        {!loading && <Loading/>}
+       {loading && 
+        <>
+       <NavigationHeader scrollStartProject={scrollStartProject} scroll={scroll} scrollProject={scrollProject} scrollEducation={scrollEducation} scrollContact={scrollContact}/>
         <AboutTwo scrolled={scroll}/>
         <Project scrollFirstProject={scrollFirstProject} scrollSecondProject={scrollSecondProject} scrollThirdProject={scrollThirdProject}
         scrollStartProject={scrollStartProject} scrollFourthProject={scrollFourthProject}/>
         <Education scrollEducation={scrollEducation} scrollExperience={scrollExperience}/>
         <Contact scrollContact={scrollContact}/>
+        </>
+        }
         </> 
   );
 }

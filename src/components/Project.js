@@ -108,7 +108,8 @@ function Project(props){
         <div className='ProjectOverAll'>
 
             <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p></div>
-            <div className={` ${animation125? 'overLayProject1': ''}`}  style={{visibility:animation125?'visible':'hidden'}} id='Overlay1'></div>
+            
+            {/* <div className={` ${animation125? 'overLayProject1': ''}`}  style={{visibility:animation125?'visible':'hidden'}} id='Overlay1'></div> */}
             <div className={`ProjectContent ${animation1? 'loaded' : ''}`} style={{visibility:animation1?'visible':'hidden'}}>
                 <div className='Project p1' >
                     <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
@@ -151,7 +152,7 @@ function Project(props){
                 </div>
             </div>
 
-            <div className={` ${animation215? 'overLayProject2': ''}`}  style={{visibility:animation215?'visible':'hidden'}}></div>
+            {/* <div className={` ${animation215? 'overLayProject2': ''}`}  style={{visibility:animation215?'visible':'hidden'}}></div> */}
             <div className={`ProjectContent2 ${secondProject? 'loaded': ''}`} style={{visibility:secondProject?'visible':'hidden'}}>
                 <div className='Project p2'>
                     <div className='borderUpRight'>
@@ -194,7 +195,7 @@ function Project(props){
                 </div>
             </div>
 
-            <div className={` ${animation315? 'overLayProject3': ''}`}  style={{visibility:animation315?'visible':'hidden'}}></div>
+            {/* <div className={` ${animation315? 'overLayProject3': ''}`}  style={{visibility:animation315?'visible':'hidden'}}></div> */}
             <div className={`ProjectContent ${thirdProject? 'loaded': ''}`} style={{visibility:thirdProject?'visible':'hidden'}}>
                 <div className='Project p1'>
                     <div className={` ${animation3? 'ProjectVideo': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
@@ -236,7 +237,7 @@ function Project(props){
                 </div>
             </div>
         
-            <div className={` ${animation415? 'overLayProject4': ''}`}  style={{visibility:animation415?'visible':'hidden'}}></div>
+            {/* <div className={` ${animation415? 'overLayProject4': ''}`}  style={{visibility:animation415?'visible':'hidden'}}></div> */}
             <div className={`ProjectContent2 ${fourthProject? 'loaded': ''}`} style={{visibility:fourthProject?'visible':'hidden'}}>
                 <div className='Project p2'>
                     <div className='borderUpRight'>
