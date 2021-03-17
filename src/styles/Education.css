@@ -33,12 +33,12 @@
 }
 @media (max-width:990px){ 
     .Education.EducationScroll{ 
-        width:99vw !important;
+        /* width:90vw !important; */
         padding:0vh 0vw 5vh 0vw !important; 
         display:block !important;
     }
     .SchoolYear{
-        width:80vw !important; 
+        width:75vw !important; 
         padding-left: 10vw !important; 
         padding-right:10vw !important;
         display:flex !important;
@@ -47,7 +47,7 @@
     }
     .Experience{
         margin:0 !important;
-        width:80vw !important; 
+        width:75vw !important; 
         padding-top:2vh !important;
         padding-left: 10vw !important; 
         padding-right:10vw !important;
@@ -88,6 +88,19 @@
         border-left: none !important;
     }
 }
+
+@media(max-width:500px){ 
+    .Experience{
+        width:98vw !important; 
+        justify-content: center!important;
+        padding-right:1vw !important;
+        padding-left:1vw !important;
+    }
+    .EducationTitre.EducationTitre2{
+        padding-top:5vh !important;
+    }
+}
+
 .Education{
     display:flex;
 }
@@ -195,6 +208,7 @@
     justify-content: center;
     margin-bottom:8vh;
     margin-top:30vh;
+    padding-top:10vh !important;
     animation:outUp 1s ease-in;
     opacity:1;
 }
