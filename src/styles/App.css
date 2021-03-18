@@ -9,6 +9,82 @@ html{
 .headerNavigation { 
   color: var(--navy)
 }
+
+.resumeLink-2{
+    display:flex;
+    border-radius: 5px;
+    border:1px solid var(--green);
+    color:var(--green);
+    background:var(--navy);
+    width:fit-content;
+    height:fit-content; 
+    margin-left:auto;
+    margin-right:auto;
+    padding:2px 4px 2px 4px;
+}
+.tag-shortcut{ 
+  height:40px;
+  border-radius:50px;
+  padding:0.1vw;
+
+}
+.tag-shortcut{
+  filter: invert(91%) sepia(43%) saturate(599%) hue-rotate(83deg) brightness(100%) contrast(106%);
+}
+.shortcut{ 
+  position:fixed;   
+  display:inline;
+  /* display:column; */
+  top:70vh;
+  right:.08vw;
+  /* background-color:var(--navy-shadow); */
+  border-radius:15px;
+  z-index:100;
+  padding:0.3vw;
+  animation:out-2 1s ease-in;
+}
+.shortcut-2{ 
+  position:fixed; 
+  display:inline;
+  top:50vh;
+  left:3.5vw;
+  border-radius:15px;
+  height:350px;
+  z-index:100;  
+  animation:out-2 1s ease-in;
+}
+.git{
+  padding-bottom:0.5vh;
+}
+.git:hover, .Lnkdn:hover, .resumeLink-2:hover, .svgNav:hover{
+  cursor:pointer;
+}
+.git:hover, .Lnkdn:hover{
+  filter: invert(85%) sepia(19%) saturate(585%) hue-rotate(194deg) brightness(98%) contrast(97%);
+}
+.Lnkdn{
+  padding-bottom:0.5vh; 
+  padding-top:0.5vh;
+}
+.dottedLine-2{
+  width:50%;
+  height:100%;
+  background-image: linear-gradient(var(--green) 33%, rgba(255,255,255,0) 0%);
+  background-position: right;
+  background-size: 1px 30px;
+  background-repeat: repeat-y;
+}
+.dottedLine{
+  /* background:red; */
+  height:155px;
+  margin-top:20px;
+  width:52%;
+  background-image: linear-gradient(var(--green) 33%, rgba(255,255,255,0) 0%);
+  background-position: right;
+  background-size: 1px 30px;
+  background-repeat: repeat-y;
+}
+
 :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;

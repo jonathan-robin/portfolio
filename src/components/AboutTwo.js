@@ -1,4 +1,4 @@
-import picture from '../resources/picture.jpg';
+import picture from '../resources/picture.png';
 import github from '../resources/GitHub-Mark.png'; 
 import Instagram from '../resources/ig-logo-email.png'; 
 import Linkedin from '../resources/LinkedIn-Logo.png'; 
@@ -21,9 +21,6 @@ function AboutTwo(props){
             setAnimation2(false);
         },1200)
     },[])
-    // useEffect(() => { 
-    //     setScroll(props.scrolled)
-    // },[props.scrolled])
 
     var firstMouseMove = () => {
         setMouseMoved(true);

@@ -3,8 +3,8 @@ import '../styles/About.css';
 import '../styles/Education.css';
 import '../styles/Project.css'
 import React, {useState, useEffect, useRef} from 'react';
-import github from '../resources/GitHub-Mark.png'; 
-import Linkedin from '../resources/LinkedIn-Logo.png'; 
+import github from '../resources/github.svg'; 
+import Linkedin from '../resources/Linkedin.svg'; 
 import $ from 'jquery';
 
 function Contact(props){
@@ -42,7 +42,7 @@ function Contact(props){
         <div className={`ContactTitre ${scroll? 'ContactTitre2' : ''}`}><p>04. </p><p>Contact</p></div>
         <div className={`ContactComponent ${animation? 'scrolled' : ''}`} style={{visibility:animation?'visible':'hidden'}}>
         <div className='ContactAdress'>
-            <div className='ContactAd'><img className='imgReseau' src={github}/></div>
+            <div className='ContactAd'><a href='https://github.com/jonathan-robin' target='_blank'><img className='imgReseau' src={github}/></a></div>
             <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
             </div>
             {messageSent}

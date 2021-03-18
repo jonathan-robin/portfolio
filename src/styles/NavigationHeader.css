@@ -12,12 +12,24 @@
     }
     .olNav{
         float:none !important;
-        
-        /* width:95vw !important; */
+        width:100%;
+        display:flex; 
+        justify-content: space-around;
     }
-
+    .shortcut{
+        opacity:1;
+        top:80vh;
+        animation:out ease-in-out 1s;
+    }
+    .shortcut.scrolled{
+        opacity:1;
+    }
+    .shortcut-2{
+        display:none; 
+    }
     .NavigationBar{
-        justify-content: space-between;
+        display:flex;
+        justify-content: center;
     }
     .NavigationTag { 
         margin-right:2vw !important;
@@ -215,7 +227,6 @@ li{
   
 
 
-
   .pathNav {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
@@ -226,6 +237,13 @@ li{
     animation-delay:0.5s;
     transform-origin: center center;
   }
+  .pathNav-2 {
+    stroke-width: 3.75;
+    fill-opacity: 0;
+    fill: var(--navy);
+    animation-delay:0.5s;
+    transform-origin: center center;
+  }
   .svgNav {
     margin-top:20px;
     width: 100px;
@@ -233,10 +251,23 @@ li{
     display: block;
   }
 
-  .pathNav:hover{
+  .pathNav:hover, .pathNav-2:hover{
       cursor:pointer; 
       animation:dash2 1s ease-in-out infinite;
   }
+
+  .headerNavigation-2{
+      position:sticky; 
+      top:50px;
+      z-index:100;
+      width:98vw;
+      margin-left:auto;
+      margin-right:auto;    
+      height:fit-content;
+      display:flex;
+      background:red;
+  }
+
   
   @keyframes dash2 {
     0% {

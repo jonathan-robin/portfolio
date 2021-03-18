@@ -114,7 +114,7 @@ function Project(props){
                 <div className='Project p1' >
                     <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
                         <video id='videoProject1' controls className='videoProject2' preload='auto'>
-                            <source src={videoRGSTATS}  preload='auto' type="video/mp4"/>
+                            <source src={videoCopyFacebook}  preload='auto' type="video/mp4"/>
                         </video>
                     </div>
                     <div className='borderUp'>
@@ -163,7 +163,7 @@ function Project(props){
                                 <div className='ProjectDescription2'>
                                     <div className='firstLine'>
                                         <div className='Titre'>
-                                            Tracker
+                                            RG STATS
                                         </div>
                                         <div className='share'>
                                             <div className='tagR'><a href='https://github.com/jonathan-robin/tracker' target='_blank' ><img src={github} className='tagResources'/></a></div>
@@ -171,17 +171,16 @@ function Project(props){
                                         </div>
                                     </div>
                                     <div className='Date'>
-                                        January 2021
+                                        Octobre 2020
                                     </div>
                                     <div className='FullDescriptionL'>
-                                        Application web visant à représenter visuellement les sessions de travail/jeux stockées dans une base de données, sous forme de graphique, courbes, bulles, camembert. Les sessions
-                                        fetch sont visuellement 'évidentes' mais peuvent être détaillées via des commentaires, des urls, des tags etc... Différents types de recherche : par fourchette de temps, domaine ou dates précises.
-                                        Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur certains sujets et de retrouver des documentations/codes spécifiques pour gagner en productivité.
+                                    Application web permettant de retrouver le résultat de n'importe quel match masculin qui s'est joué à Roland Garros depuis 1968, ainsi qu'afficher le tableau de n'importe quelle édition. Recherche par joueur pouvant être filtré avec une année ou un tour spécifique. Recherche de confrontation entre deux joueurs. Recherche par tableau. Affichage de profil avec détails sur le joueur selectionné ; nationalité, première participation, pire résultat, ratio de victoire, nombre de matchs gagnés etc...
                                     </div>
                                     <div className='tags'>
                                         <div className='tag'>Javascript</div>
                                         <div className='tag'>React</div>
-                                        <div className='tag'>Chart.js</div>
+                                        <div className='tag'>Python</div>
+                                        <div className='tag'>PHP</div>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +188,7 @@ function Project(props){
                     </div>
                     <div className={` ${animation2? 'ProjectVideo2': ''}`}  style={{visibility:animation2?'visible':'hidden'}}>
                         <video controls id='videoProject2' className='videoProject' preload='auto'>
-                            <source src={videoTRACKER} type="video/mp4"/>
+                            <source src={videoRGSTATS} type="video/mp4"/>
                         </video>
                     </div>
                 </div>
@@ -200,7 +199,7 @@ function Project(props){
                 <div className='Project p1'>
                     <div className={` ${animation3? 'ProjectVideo': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
                         <video id='videoProject3' controls className='videoProject2' preload='auto'>
-                            <source src={videoTRACKEREXE} type="video/mp4"/>
+                            <source src={videoTRACKER} type="video/mp4"/>
                         </video>
                     </div>
                     <div className='borderUp'>
@@ -210,7 +209,7 @@ function Project(props){
                                 <div className='ProjectDescription1'>
                                     <div className='firstLine'>
                                         <div className='Titre'>
-                                            Tracker.exe
+                                            Tracker
                                         </div>
                                         <div className='share'>
                                             <div className='tagR'><a href='https://github.com/jonathan-robin/tracker_soft' target='_blank'><img src={github} className='tagResources'/></a></div>
@@ -218,16 +217,15 @@ function Project(props){
                                         </div>
                                     </div>
                                     <div className='Date'>
-                                        December 2020
+                                        January 2020
                                     </div>
                                     <div className='FullDescription'>
-                                        Application C# permettant d'enregistrer les données des sessions passées sur le PC. Système de timer avec possibilité de pause, reset, restart avec formulaire
-                                        détaillé à remplir après chaque session. Données stockées en localhost sur phpMyAdmin destinées à être fetch via l'application web Tracker. 
+                                    Application web visant à représenter visuellement les sessions de travail/jeux stockées dans une base de données, sous forme de graphique, courbes, bulles, camembert. Les sessions fetch sont visuellement 'évidentes' mais peuvent être détaillées via des commentaires, des urls, des tags etc... Différents types de recherche : par fourchette de temps, domaine ou dates précises. Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur certains sujets et de retrouver des documentations/codes spécifiques pour gagner en productivité.
                                     </div>
                                     <div className='tags'>
-                                        <div className='tag'>.NET</div>
-                                        <div className='tag'>C#</div>
-                                        <div className='tag'>PHP</div>
+                                        <div className='tag'>Javascript</div>
+                                        <div className='tag'>React</div>
+                                        <div className='tag'>Chart.js</div>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +246,7 @@ function Project(props){
                                 <div className='ProjectDescription2'>
                                     <div className='firstLine'>
                                             <div className='Titre'>
-                                                RG STATS
+                                                Tracker.exe
                                             </div>
                                             <div className='share'>
                                                 <div className='tagR'><a href='https://github.com/jonathan-robin/rg_stats' target='_blank'><img src={github} className='tagResources'/></a></div>
@@ -256,18 +254,14 @@ function Project(props){
                                             </div>
                                         </div>
                                     <div className='Date'>
-                                            October 2020
+                                            December 2020
                                         </div>
                                     <div className='FullDescriptionL'>
-                                            Application web permettant de retrouver le résultat de n'importe quel match masculin qui s'est joué à Roland Garros depuis 1968, ainsi qu'afficher le tableau de n'importe
-                                            quelle édition. Recherche par joueur pouvant être filtré avec une année ou un tour spécifique. Recherche de confrontation entre deux joueurs. Recherche par tableau. 
-                                            Affichage de profil avec détails sur le joueur selectionné ; nationalité, première participation, pire résultat, ratio de victoire, nombre de matchs gagnés etc...
+                                    Application C# permettant d'enregistrer les données des sessions passées sur le PC. Système de timer avec possibilité de pause, reset, restart avec formulaire détaillé à remplir après chaque session. Données stockées en localhost sur phpMyAdmin destinées à être fetch via l'application web Tracker.
                                         </div>
                                     <div className='tags'>
-                                            <div className='tag'>Javascript</div>
-                                            <div className='tag'>React</div>
-                                            <div className='tag'>Node.js</div>
-                                            <div className='tag'>Python</div>
+                                            <div className='tag'>.NET</div>
+                                            <div className='tag'>C#</div>
                                             <div className='tag'>PHP</div>
                                         </div>
                                 </div>
@@ -281,7 +275,7 @@ function Project(props){
                     </div> */}
                     <div className={` ${animation41? 'ProjectVideo2': ''}`}  style={{visibility:animation41?'visible':'hidden'}}>
                         <video id='videoProject4' controls className='videoProject' preload='auto'>
-                            <source src={videoCopyFacebook}  preload='auto' type="video/mp4"/>
+                            <source src={videoTRACKEREXE}  preload='auto' type="video/mp4"/>
                         </video>
                     </div>
                     {/* <div className={` ${animation4? 'ProjectVideo2': ''}`}  style={{visibility:animation4?'visible':'hidden'}}>
