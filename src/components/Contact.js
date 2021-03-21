@@ -45,15 +45,17 @@ function Contact(props){
             <div className='ContactAd'><a href='https://github.com/jonathan-robin' target='_blank'><img className='imgReseau' src={github}/></a></div>
             <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
             </div>
+            <div className='sendMessage'>
+            N'hésitez pas à me contacter !</div>
             {messageSent}
             <div className='ContactForm'>
             <iframe name="hiddenFrame" style={{width:"0", height:'0', border:'0', display:'none'}}></iframe>
             <form className='meform' id="contact-form" method="POST" action="/send" target='hiddenFrame' onSubmit={handleSubmit}>
-            <label className="name" htmlFor='name'>Name</label>
+            <label className="name" htmlFor='name'>Nom</label>
                 <div className="Name-group">
                     <input type="text" className="form-control" required ref={nameRef} name="name"/>
                 </div>
-                <label htmlFor="exampleInputEmail1" className='email'>Email address</label>
+                <label htmlFor="exampleInputEmail1" className='email'>Email</label>
                 <div className="email-group">
                     <input type="email" className="form-control"  ref={emailRef} required aria-describedby="emailHelp" name="email" />
                 </div>

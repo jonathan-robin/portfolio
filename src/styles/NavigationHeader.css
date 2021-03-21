@@ -89,12 +89,12 @@
     }
 .imgLogoNavigation{ 
     height:5vh;
-    margin-top:2vh;
     border-radius:50%;
     place-items: center;
 }
 .logoNavigation{
     float:left;
+    /* margin-top:1vh; */
 }
 li:first-of-type.scroll:after{
     animation:underlineNav 1.5s infinite;
@@ -236,7 +236,8 @@ li{
     animation: dash2 3.5s ease-in infinite;
     animation-delay:0.5s;
     transform-origin: center center;
-  }
+
+}
   .pathNav-2 {
     stroke-width: 3.75;
     fill-opacity: 0;
@@ -246,9 +247,10 @@ li{
   }
   .svgNav {
     margin-top:20px;
-    width: 100px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: block;
+    margin-top:2.5vh;
   }
 
   .pathNav:hover, .pathNav-2:hover{

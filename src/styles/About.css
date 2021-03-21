@@ -48,8 +48,17 @@
 .spentMonths{
     margin:0.8vh 0vh 0vh 0vh;
 }
+.dive{
+    margin:0.8vh 0vh 0vh 0vh;
+}
+.getInTouch{
+    margin:0.8vh 0vh 0vh 0vh;
+}
 .Name{
     margin:2vh 0vh 0vh 0vh;
+}
+.getInTouchLink{
+    padding-left:1vw ;
 }
 .AboutMe.scrolled .divName{ 
     color:var(--lightest-navy);
@@ -156,7 +165,7 @@ display:none;
 }
 .getInTouchLink{ 
     text-decoration: none;
-    padding:0.5vw 0.5vw 0.5vw 0.5vw;
+    padding:0.5vw 1.5vw 0.5vw 1.5vw;
     color:var(--green);
     font-size:18px;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
