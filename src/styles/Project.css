@@ -345,11 +345,20 @@
     }
     .videoProject{ 
         margin-bottom:10vh !important; 
-        /* margin-top:20vh !important; */
     }
-    .Project.p2 .tags{ 
-        /* padding-bottom:35vh!important;
-        border-bottom:2px solid var(--green); */
+    .ProjectOverAll{
+        width:90vw !important;
+    }
+    .ProjectContent.loaded{
+        margin-bottom:15vh !important;
+    }
+    #videoProject2{
+        margin-top:18vh !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+    #videoProject4{
+        margin-top:8vh !important;
     }
     .borderUp{
         margin:0px !important; 
@@ -362,14 +371,11 @@
     .Project.p2:after{
         content : "";
         position: absolute;
-        /* left    : 0;
-        bottom  : 0; */
         justify-content:center;
         height  : 2px;
         margin-left:8%;
         margin-top:-5vh;
-        width   : 84%;  /* or 100px */
-        /* width:50% !important; */
+        width   : 84%; 
         border-bottom:2px solid var(--green);
     }
     .ProjectBorder.loaded{ 
@@ -391,9 +397,6 @@
     }
 }
 
-
-
-
 @media(max-width:5000px){
 .projectTitle{ 
     padding-top:10px;
@@ -414,9 +417,6 @@
     opacity:1;
     width:40vw;
     margin-left:30vw;
-}
-.ProjectOverAll{ 
-    /* width:100vw; */
 }
 .borderUp{
     order:2;
@@ -569,7 +569,6 @@
 }
 .ProjectContent2.loaded{
     animation:outUp 0.5s ease-in;
-    /* margin-left:13vw; */
 }
 
 .Project{
@@ -590,7 +589,6 @@
     -webkit-filter: drop-shadow(5px 5px 10px black);
     }
 .ProjectVideo2{
-    /* margin:auto; */
     animation:outUp 0.5s ease-in;
 }
 .ProjectDescription1, .ProjectDescription2{ 

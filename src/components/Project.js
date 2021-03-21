@@ -133,12 +133,14 @@ function Project(props){
                                         </div>
                                     </div>
                                 <div className='Date'>
-                                        February 2021
+                                        Février 2021
                                     </div>
                                 <div className='FullDescription'>
-                                        Copie CSS du site Facebook avec implémentations de logique de base. Système d'authentification avec Firebase Authentification. Système d'upload et cropping de photos, storage d'images, 
-                                        avec Firebase Storage. Système de messagerie instantannée privée, de publications, de Feed d'actualité et de liste d'amis, mise en place avec Firebase Cloud Firestore. Version live hebergée via
-                                        Firebase Hosting.
+                                        Copie CSS du site Facebook avec implémentation de logique de base. <br/>
+                                        Système d'authentification avec Firebase-auth. <br/>
+                                        Système d'upload, de cropping de photos et de storage de fichiers avec Firebase Storage. <br/>
+                                        Système de messagerie instantannée privée, de publications, de Feed d'actualité et de liste d'amis, mise en place avec Firebase Cloud Firestore. <br/>
+                                        Version live hebergée via Firebase Hosting. <br/>
                                     </div>
                                 <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -174,7 +176,11 @@ function Project(props){
                                         Octobre 2020
                                     </div>
                                     <div className='FullDescriptionL'>
-                                    Application web permettant de retrouver le résultat de n'importe quel match masculin qui s'est joué à Roland Garros depuis 1968, ainsi qu'afficher le tableau de n'importe quelle édition. Recherche par joueur pouvant être filtré avec une année ou un tour spécifique. Recherche de confrontation entre deux joueurs. Recherche par tableau. Affichage de profil avec détails sur le joueur selectionné ; nationalité, première participation, pire résultat, ratio de victoire, nombre de matchs gagnés etc...
+                                    Application web permettant de retrouver le résultat de n'importe quel match masculin qui s'est joué à Roland Garros depuis 1968, ainsi que
+                                    le tableau complet de l'édition. <br/>
+                                    Recherche par joueur pouvant être filtré avec une année ou un tour spécifique.  <br/>
+                                    Recherche des confrontations entre deux joueurs. <br/>
+                                    Recherche de tableau par année. Affichage de profil avec détails sur le joueur selectionné ; nationalité, première participation, pire résultat, ratio de victoire, nombre de matchs gagnés etc...
                                     </div>
                                     <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -217,10 +223,19 @@ function Project(props){
                                         </div>
                                     </div>
                                     <div className='Date'>
-                                        January 2020
+                                        Janvier 2020
                                     </div>
                                     <div className='FullDescription'>
-                                    Application web visant à représenter visuellement les sessions de travail/jeux stockées dans une base de données, sous forme de graphique, courbes, bulles, camembert. Les sessions fetch sont visuellement 'évidentes' mais peuvent être détaillées via des commentaires, des urls, des tags etc... Différents types de recherche : par fourchette de temps, domaine ou dates précises. Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur certains sujets et de retrouver des documentations/codes spécifiques pour gagner en productivité.
+                                    Application web permettant de représenter de manière visuelle les sessions de travail passés sur le poste.  <br/>
+                                    Les sessions sont affichées sous forme de graphique, de courbes, de bulles ou de pie.  <br/>
+                                    Les sessions affichées permettent d'avoir une vue d'ensemble pour une période donnée et chaque session est détaillée via des commentaires, urls, tags etc...  <br/>
+                                    Différents type de recherche : période, domaine, dates précises...  <br/>
+                                    Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur chaque projet, retrouver des documentations/codes spécifiques.  <br/>
+
+                                    {/* Application web visant à représenter visuellement les sessions de travail/jeux stockées dans une base de données, sous forme de graphique, courbes, 
+                                    bulles, camembert. Les sessions fetch sont visuellement 'évidentes' mais peuvent être détaillées via des commentaires, des urls, des tags etc... 
+                                    Différents types de recherche : par fourchette de temps, domaine ou dates précises. Permet de suivre le temps nécessaire pour certaines tâches, 
+                                    le temps passé sur certains sujets et de retrouver des documentations/codes spécifiques pour gagner en productivité. */}
                                     </div>
                                     <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -254,10 +269,11 @@ function Project(props){
                                             </div>
                                         </div>
                                     <div className='Date'>
-                                            December 2020
+                                            Décembre 2020
                                         </div>
                                     <div className='FullDescriptionL'>
-                                    Application C# permettant d'enregistrer les données des sessions passées sur le PC. Système de timer avec possibilité de pause, reset, restart avec formulaire détaillé à remplir après chaque session. Données stockées en localhost sur phpMyAdmin destinées à être fetch via l'application web Tracker.
+                                    Application C# permettant d'enregistrer les données des sessions passées sur le PC. Système de timer avec possibilité de pause, reset, restart avec 
+                                    formulaire détaillé à remplir après chaque session. Données stockées en localhost sur phpMyAdmin destinées à être fetch via l'application web Tracker.
                                         </div>
                                     <div className='tags'>
                                             <div className='tag'>.NET</div>

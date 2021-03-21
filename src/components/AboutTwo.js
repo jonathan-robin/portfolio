@@ -41,12 +41,25 @@ function AboutTwo(props){
                     </div>
                     <div className='pContent'>
                     <div className='selfThaught'>
-                    <div className='firstPhrase'>I'm a self-thaught junior web-dev with communication & Marketing background.</div>
-                    <div className='ProjectOpo'>I'm looking for jobs, internships or project opportunities!</div>
-                    <div className='spentMonths'> I Spent the last months working with javascript/react & nodejs.</div>
-                    <div className='dive'>Let's dive in my project !</div></div> 
+                    <div className='firstPhrase'>
+                        {/* I'm a self-thaught junior web-dev with communication & Marketing background. */}
+                        Développeur web junior autodidacte avec une appétence pour le front ! 
+                    </div>
+                    <div className='ProjectOpo'>
+                        {/* I'm looking for jobs, internships or project opportunities! */}
+                        Je recherche un stage, une alternance ou toute opportunité de projets !
+                        </div>
+                    <div className='spentMonths'>
+                        {/* I Spent the last months working with javascript/react & nodejs. */}
+                        J'ai passé les derniers mois à travailler en Javascript sur React avec Nodejs
+                        </div>
+                    <div className='dive'>
+                        {/* Let's dive in my project ! */}
+                        Découvrez mes projets !
+                        </div>
+                    </div> 
                         <div className='getInTouch'>
-                            <a href="mailto:robinjonathan1993@gmail.com" className='getInTouchLink'> Get in touch </a> 
+                            <a href="mailto:robinjonathan1993@gmail.com" className='getInTouchLink'>Contactez-moi !</a> 
                         </div>
                     </div>
                    

@@ -60,7 +60,7 @@ function About(props){
                             2016 - 2019
                         </div>
                         <div className='SchoolY SchoolYL'>
-                            Marketing & Communication <br/> bachelor
+                            Bachelor <br/> Marketing & Communication
                             </div>
                         <div className="SchoolYA">
                             Sport Management - ISEFAC
@@ -74,7 +74,7 @@ function About(props){
                             2013 - 2016
                         </div>
                         <div className='SchoolY SchoolYL'>
-                            Applied Foreign Languages <br/> English & Chineese
+                            Langues étrangères appliquées <br/> Anglais & Chinois
                             </div>
                             <div className="SchoolYA">
                             Relations Internationales, Université Bordeaux-Montaigne
@@ -90,13 +90,13 @@ function About(props){
                 <div className={` ${animation3? 'OneExperience': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
                         <div className='ExperienceY'>
                         <div className='TitleExperienceY'>
-                            March-September 2019
+                            Mars-Septembre 2019
                         </div>
                             <div className='TitleExperience'>
-                            Communications officer
+                            Chargé de communication
                             </div>
                             <div className='RoleExperience'>
-                            Internship
+                            Stage
                             </div>
                             <div className='LocationExperience'>
                             Union Bordeaux Métropole - Bordeaux 33000
@@ -109,10 +109,10 @@ function About(props){
                         </div>
                         <div className='ExperienceY'>
                             <div className='TitleExperience'>
-                            Communications officer
+                            Chargé de communication
                             </div>
                             <div className='RoleExperience'>
-                            Internship
+                            Stage
                             </div>
                             <div className='LocationExperience'>
                             Ligue Réunionnaise de Golf - Réunion 97426 </div>
