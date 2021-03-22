@@ -14,7 +14,7 @@ function Contact(props){
     const emailRef = useRef(''); 
     const messageRef = useRef(''); 
     const nameRef = useRef(''); 
-    const [messageSent, setMessageSent] = useState('');
+    const [messageSent, setMessageSent] = useState("N'hésitez pas à me contacter !");
 
     useEffect(() => {
         setScroll(props.scrollContact);
@@ -41,13 +41,11 @@ function Contact(props){
                 xhr.open('GET', 'https://jonathan-robin.com/api/index.php?email='+data.email+'&name='+data.name+'&message='+data.message);
                 xhr.send();
 
-
         setTimeout(() => {
-                setMessageSent('');
+            document.getElementById('sendMessage').style.visibility = 'hidden';   
         },3000)
-        setMessageSent(<>
-            <div className='messageSent'>Merci, votre message a bien été envoyé !</div>
-        </>)
+        setMessageSent('Votre message a bien été envoyé !')
+        document.getElementById('sendMessage').style.animation = 'fade-out 3s ease-in-out';
     }
 
     return (
@@ -58,9 +56,8 @@ function Contact(props){
             <div className='ContactAd'><a href='https://github.com/jonathan-robin' target='_blank'><img className='imgReseau' src={github}/></a></div>
             <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
             </div>
-            <div className='sendMessage'>
-            N'hésitez pas à me contacter !</div>
-            {messageSent}
+            <div className='sendMessage' id='sendMessage'>
+            {messageSent}</div>
             <div className='ContactForm'>
             <iframe name="hiddenFrame" style={{width:"0", height:'0', border:'0', display:'none'}}></iframe>
             <form className='meform' id="contact-form" target='hiddenFrame' onSubmit={handleSubmit}>

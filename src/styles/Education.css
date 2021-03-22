@@ -14,14 +14,12 @@
     }
     .Experience{
         padding-left:0 !important;
-        margin-left:150px !important;
     }
     .SchoolYear{
         padding-right: 0 !important;
-        margin-right:150px !important;
+        /* margin-right:150px !important; */
     }
     .Education.EducationScroll{ 
-        width:95vw !important;
         padding: 0!important;
     }
     .TitleSchoolY{
@@ -107,7 +105,6 @@
 .SchoolYear{ 
     padding-top:6vh;
     width:25vw;
-    padding-right:5vw;
 }
 .SchoolYA{ 
     text-align: center;
@@ -138,6 +135,10 @@
 .OneSchoolR{ 
     margin-left:7vw;
     margin-right:0 !important;
+}
+.Cission{ 
+    margin-left:10vw; 
+    margin-right:10vw;
 }
 .OneSchoolR.loaded{ 
     visibility:visible;
@@ -186,7 +187,6 @@
 }
 .Experience{ 
     width:25vw;
-    padding-left:4vw;
 }
 .Cission{
     animation:animationCission 0.5s ease-in;
@@ -195,7 +195,6 @@
 .Education{
     opacity:0;
     display:flex;
-    padding:1vh 0vh 0vh 3vw;
 }
 .EducationTitre{ 
     display:flex;
@@ -214,7 +213,6 @@
 }
 .Education.EducationScroll{
     opacity:1;
-    width:94vw;
     justify-content: center;
     display:flex;
     margin-bottom:26vh;
@@ -243,7 +241,6 @@
 }
 .Experience{
     padding-top:6vh;
-    padding-left:10vw;
 }
 .TitleExperienceY{
     background:var(--lightest-navy);
