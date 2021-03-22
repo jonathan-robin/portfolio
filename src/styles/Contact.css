@@ -18,6 +18,9 @@ opacity:0;
     margin-top:60vh;
     animation:outUp 0.5s ease-in;
 }
+
+
+
 .sendMessage{
     margin:1vh auto;
     text-align: center;
@@ -129,4 +132,13 @@ opacity:0;
     padding:15px;
     width:fit-content;
     display:flex;
+}
+
+@keyframes fade-out {
+    from{
+        opacity:1; 
+    }
+    to{
+        opacity:0;
+    }
 }
