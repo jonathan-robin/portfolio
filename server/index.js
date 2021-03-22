@@ -27,14 +27,13 @@ app.post('/send', (req,res) => {
         secure: false,
         auth: {
           user: "robin.jonathan.dev@gmail.com",
-          pass: "************",
+          pass: "Zx$%98asVLm!#"
         },
         tls:{
           rejectUnauthorized: false
         }
       });
     
-      // send mail with defined transport object
       let mailOptions = transporter.sendMail({
         from: "'NodeMailer Contact' <contact@jonathan-robin.com>", // sender address
         to: "robin.jonathan.dev@gmail.com", // list of receivers
@@ -52,6 +51,6 @@ app.post('/send', (req,res) => {
       })
 })
 
-app.listen(5000, () => {
+app.listen(5001, () => {
   console.log("server started on port 5000");
 });
