@@ -17,7 +17,6 @@
     }
     .SchoolYear{
         padding-right: 0 !important;
-        /* margin-right:150px !important; */
     }
     .Education.EducationScroll{ 
         padding: 0!important;
@@ -31,7 +30,6 @@
 }
 @media (max-width:990px){ 
     .Education.EducationScroll{ 
-        /* width:90vw !important; */
         padding:0vh 0vw 5vh 0vw !important; 
         display:block !important;
     }
@@ -86,7 +84,6 @@
         border-left: none !important;
     }
 }
-
 @media(max-width:500px){ 
     .Experience{
         width:98vw !important; 
@@ -98,7 +95,6 @@
         padding-top:5vh !important;
     }
 }
-
 .Education{
     display:flex;
 }
@@ -189,7 +185,7 @@
     width:25vw;
 }
 .Cission{
-    animation:animationCission 0.5s ease-in;
+    animation:animationCission 1.5s ease-in;
     border-left:0.1vw solid var(--light-slate);
 }
 .Education{
@@ -228,14 +224,12 @@
     color:var(--light-slate);
     text-decoration:underline
 }
-
 .OneExperience{ 
     background: var(--green);
     border-radius:0.225vw;
     z-index:2;
     padding:1vh 2vw 1vh 2vw;
     margin-top:6.5vh;
-    /* margin-left:-1.5vw; */
     width:fit-content;
     animation:outUp 0.3s ease-in;
 }
@@ -257,7 +251,6 @@
     margin-top:5vh;
 }
 .ExperienceY{
-    /* padding:0.5vh; */
     text-align:center;
     padding-top:1vh;
 }
@@ -266,7 +259,6 @@
     margin-top:-3vh;
     font-size:1.8vh;
     font-weight:700;
-    /* padding-bottom:0.2vh; */
 }
 .RoleExperience{ 
     padding-bottom:0.2vh;

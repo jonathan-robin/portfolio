@@ -38,8 +38,8 @@ useEffect(() => {
     setAnimationLateral(true) 
     setTimeout(() => {
       setAnimationLateral2(true) 
-    }, 500)
-  }, 5000)
+    }, 200)
+  }, 4800)
 },[])
 
   const refAbout = useRef();
@@ -65,34 +65,31 @@ useEffect(() => {
     }
   },[])
 
-  var tailleEcranX = window.innerWidth;
-  var tailleEcranY = window.innerHeight;
-
   useEffect(() => { 
     window.addEventListener('scroll', (event) => { 
         if ($('html').scrollTop() > 400) { 
           setScrollStartProject(true)
           setScrollProject(true);
         }
-        if ($('html').scrollTop() > 700) { 
+        if ($('html').scrollTop() > 900) { 
           setScrollFirstProject(true)
         }
-        if ($('html').scrollTop() > 900) { 
+        if ($('html').scrollTop() > 1650) { 
           setScrollSecondProject(true)
         }
-        if ($('html').scrollTop() > 1400) { 
+        if ($('html').scrollTop() > 2200) { 
           setScrollThirdProject(true)
         }
-        if ($('html').scrollTop() > 2000) { 
+        if ($('html').scrollTop() > 2800) { 
           setScrollFourthProject(true)
         }
-        if ($('html').scrollTop() > 3150) { 
+        if ($('html').scrollTop() > 3450) { 
           setScrollEducation(true)
         }
-        if ($('html').scrollTop() > 3150) { 
+        if ($('html').scrollTop() > 3650) { 
           setScrollExperience(true)
         }
-        if ($('html').scrollTop() > 3700) { 
+        if ($('html').scrollTop() > 5000) { 
           setScrollContact(true)
         }
     })

@@ -44,7 +44,6 @@
     .overLayProject4{
         left:31vw !important; 
         z-index:2 !important;
-
     }
 }
 @media (max-width:1500px){
@@ -148,9 +147,6 @@
     }
     .ProjectBorder.loaded{
         width:130% !important;
-    }
-    .ProjectOverAll{
-        /* width:100vw !important; */
     }
     .overLayProject1
     {
@@ -277,13 +273,10 @@
     }
     .ProjectCore{
         padding-left:0px !important;
-        /* padding-right:0px !important; */
     }
     .Project.p2 .ProjectCore{ 
-        /* background:red !important; */
         padding-left: 6vw !important;
         padding-right: 0vw !important;
-        /* padding:inherit 0vw 1vh 5vw !important; */
     }
     .Project.p2 .ProjectBorderUpRight.loaded{ 
         width:80% !important;
@@ -298,15 +291,11 @@
         left:3vw !important;
     }
 }
-
-
-
 @media (max-width:500px){
     .ProjectOverAll{ 
         padding-top:3vh!important;
         padding-bottom:50vh !important;
     }
-    
     .ProjectTitre.ProjectTitre2{
         margin-top:0px !important;
     }
@@ -688,7 +677,7 @@
         transform:scaleY(1)
     }
 }
-@keyFrames out {
+@keyframes out {
     0%{
         transform: translateY(30px);
         opacity:0;
@@ -714,7 +703,7 @@
         opacity:1;
     }
 }
-@keyFrames outUp {
+@keyframes outUp {
     0%{
         transform: translateY(100px);
         opacity:0;
@@ -724,7 +713,7 @@
         opacity:1;
     }
 }
-@keyFrames outUpVideo {
+@keyframes outUpVideo {
     0%{
         transform: translateY(100px);
         opacity:0;

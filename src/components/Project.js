@@ -106,10 +106,7 @@ function Project(props){
 
     return (
         <div className='ProjectOverAll'>
-
             <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p></div>
-            
-            {/* <div className={` ${animation125? 'overLayProject1': ''}`}  style={{visibility:animation125?'visible':'hidden'}} id='Overlay1'></div> */}
             <div className={`ProjectContent ${animation1? 'loaded' : ''}`} style={{visibility:animation1?'visible':'hidden'}}>
                 <div className='Project p1' >
                     <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
@@ -154,7 +151,6 @@ function Project(props){
                 </div>
             </div>
 
-            {/* <div className={` ${animation215? 'overLayProject2': ''}`}  style={{visibility:animation215?'visible':'hidden'}}></div> */}
             <div className={`ProjectContent2 ${secondProject? 'loaded': ''}`} style={{visibility:secondProject?'visible':'hidden'}}>
                 <div className='Project p2'>
                     <div className='borderUpRight'>
@@ -200,7 +196,6 @@ function Project(props){
                 </div>
             </div>
 
-            {/* <div className={` ${animation315? 'overLayProject3': ''}`}  style={{visibility:animation315?'visible':'hidden'}}></div> */}
             <div className={`ProjectContent ${thirdProject? 'loaded': ''}`} style={{visibility:thirdProject?'visible':'hidden'}}>
                 <div className='Project p1'>
                     <div className={` ${animation3? 'ProjectVideo': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
@@ -231,11 +226,6 @@ function Project(props){
                                     Les sessions affichées permettent d'avoir une vue d'ensemble pour une période donnée et chaque session est détaillée via des commentaires, urls, tags etc...  <br/>
                                     Différents type de recherche : période, domaine, dates précises...  <br/>
                                     Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur chaque projet, retrouver des documentations/codes spécifiques.  <br/>
-
-                                    {/* Application web visant à représenter visuellement les sessions de travail/jeux stockées dans une base de données, sous forme de graphique, courbes, 
-                                    bulles, camembert. Les sessions fetch sont visuellement 'évidentes' mais peuvent être détaillées via des commentaires, des urls, des tags etc... 
-                                    Différents types de recherche : par fourchette de temps, domaine ou dates précises. Permet de suivre le temps nécessaire pour certaines tâches, 
-                                    le temps passé sur certains sujets et de retrouver des documentations/codes spécifiques pour gagner en productivité. */}
                                     </div>
                                     <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -250,7 +240,6 @@ function Project(props){
                 </div>
             </div>
         
-            {/* <div className={` ${animation415? 'overLayProject4': ''}`}  style={{visibility:animation415?'visible':'hidden'}}></div> */}
             <div className={`ProjectContent2 ${fourthProject? 'loaded': ''}`} style={{visibility:fourthProject?'visible':'hidden'}}>
                 <div className='Project p2'>
                     <div className='borderUpRight'>
@@ -284,22 +273,13 @@ function Project(props){
                             </div>
                         </div>
                     </div>
-                    {/* <div className={` ${animation2? 'ProjectVideo2': ''}`}  style={{visibility:animation2?'visible':'hidden'}}>
-                        <video controls id='videoProject2' className='videoProject' preload='auto'>
-                            <source src={videoTRACKER} type="video/mp4"/>
-                        </video>
-                    </div> */}
                     <div className={` ${animation41? 'ProjectVideo2': ''}`}  style={{visibility:animation41?'visible':'hidden'}}>
                         <video id='videoProject4' controls className='videoProject' preload='auto'>
                             <source src={videoTRACKEREXE}  preload='auto' type="video/mp4"/>
                         </video>
                     </div>
-                    {/* <div className={` ${animation4? 'ProjectVideo2': ''}`}  style={{visibility:animation4?'visible':'hidden'}}>
-                        <img id='videoProject4' src={imageProject1} className='imageProjet'/>
-                    </div> */}
                 </div>
             </div>
-        
         </div>
     )
 }
