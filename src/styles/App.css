@@ -9,7 +9,6 @@ html{
 .headerNavigation { 
   color: var(--navy)
 }
-
 .resumeLink-2{
     display:flex;
     border-radius: 5px;
@@ -34,7 +33,6 @@ html{
   height:40px;
   border-radius:50px;
   padding:0.1vw;
-
 }
 .tag-shortcut{
   filter: invert(91%) sepia(43%) saturate(599%) hue-rotate(83deg) brightness(100%) contrast(106%);
@@ -42,10 +40,8 @@ html{
 .shortcut{ 
   position:fixed;   
   display:inline;
-  /* display:column; */
   top:70vh;
   right:1.08vw;
-  /* background-color:var(--navy-shadow); */
   border-radius:15px;
   z-index:100;
   padding:0.3vw;
@@ -96,7 +92,6 @@ html{
   background-size: 1px;
   background-repeat: repeat-y;
 }
-
 :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;

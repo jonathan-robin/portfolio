@@ -24,20 +24,16 @@ function Contact(props){
     },[props.scrollContact])
 
     var handleSubmit = () => { 
-
         var data = {email : emailRef.current.value, 
                     name: nameRef.current.value, 
                     message: messageRef.current.value
-                }
-
+                    }
                 var xhr = new XMLHttpRequest();
-
                 xhr.addEventListener('load', () => { 
                     emailRef.current.value = ''; 
                     messageRef.current.value = ''; 
                     nameRef.current.value = '';
                 });
-
                 xhr.open('GET', 'https://jonathan-robin.com/api/index.php?email='+data.email+'&name='+data.name+'&message='+data.message);
                 xhr.send();
 

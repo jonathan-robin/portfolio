@@ -48,25 +48,18 @@
         position:absolute !important;
         top: 260.4px !important; 
         left:488.5px !important;
-        /* top:65vh !important;  
-        left:50% !important;       */
-        /* display:none !important; */
     }
     .AboutPage{
         padding-left:100px !important; 
         padding-right:32vw !important;
     }
     .mainContent{
-        /* min-width:480px !important;  */
         min-height:302.719px !important;
     }
 }
 @media(max-width:695px){ 
     .Picture{ 
-        /* position:absolute !important; */
-         /* top:23vh !important; */
         left:60vw !important; 
-        /* left:54vw !important; */
     }
     .AboutPage{
        justify-content: center !important;
@@ -82,10 +75,6 @@
     }
 }
 @media (max-width:600px){
-    /* .MainContent{
-        width:300px !important;
-        height:400px !important;
-    } */
     .AboutMe{ 
         min-width:370px !important; 
         margin-left:0px !important;
@@ -97,24 +86,7 @@
         left:50vw !important;
     }
 }
-
-
-
 @media (max-width:500px){
-    /* .AboutMe{ 
-        justify-content: center !important;
-        margin:0vh 5vw 0vh 5vw !important;
-    }
-    .Picture{ 
-        height:25vh !important;
-        position:absolute !important;
-        top:25vh !important;
-        left:50vw !important;
-    }
-    .AboutPage, .Picture, .PictureMe, .AboutMe{ 
-        padding:0px !important;
-        margin:0px !important;
-    } */
     .Picture{ 
         height:15vh !important;
         top:32vh !important;
@@ -137,10 +109,6 @@
         font-size:2vh !important;
     }
 }
-
-
-
-
 @media (max-width:5000px){
 .AboutPage{ 
     display:flex;
@@ -156,6 +124,10 @@
 }
 .ProjectOpo{
     width:30vw;
+}
+.emph{
+    color:var(--green);
+    font-weight:600;
 }
 .AboutMe{
     padding:0 2vw 0 2vw;
@@ -208,7 +180,7 @@
         opacity:0;
     }
 }
-@keyFrames out {
+@keyframes out {
     0%{
         transform: translateY(30px);
         opacity:0;
@@ -234,7 +206,7 @@
         opacity:1;
     }
 }
-@keyFrames out-2 {
+@keyframes out-2 {
     0%{
         transform: translateY(100px);
         opacity:0;

@@ -4,7 +4,6 @@ import '../styles/Project.css'
 import React, {useState, useEffect} from 'react';
 
 function About(props){
-    
     const [scroll, setScroll] = useState(false);
     const [secondScroll, setSecondScroll] = useState(props.scrollExperience);
     const [animation, setAnimation] = useState(false); 
@@ -16,6 +15,7 @@ function About(props){
 
     useEffect(() => {
         setScroll(props.scrollEducation);
+        setAnimation_cission(props.scrollEducation)
         setTimeout(() => {
             setAnimation(props.scrollEducation);
         }, 200);
@@ -31,9 +31,6 @@ function About(props){
         setTimeout(() => {
             setAnimation4(props.scrollEducation);
         }, 1000);
-        setTimeout(() => {
-            setAnimation_cission(props.scrollEducation)
-        },1200)
     },[props.scrollEducation])
 
     return (
@@ -122,7 +119,5 @@ function About(props){
                 </div>
 </>
     )
-
 }
-
 export default About

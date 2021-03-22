@@ -54,10 +54,6 @@
         width:96vw !important;
     }
 }
-
-
-
-
 @media (max-width:500px){
     .headerNavigation.scroll, .headerNavigation{
         width:100vw !important;
@@ -78,11 +74,6 @@
     }
 
 }
-
-
-
-
-
 @media (max-width:5000px){
     .path2{ 
         background-size:50px;
@@ -94,7 +85,6 @@
 }
 .logoNavigation{
     float:left;
-    /* margin-top:1vh; */
 }
 li:first-of-type.scroll:after{
     animation:underlineNav 1.5s infinite;
@@ -224,9 +214,6 @@ li{
     transform: scaleX(1);
     transform-origin:0 50%;
   }
-  
-
-
   .pathNav {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
@@ -236,7 +223,6 @@ li{
     animation: dash2 3.5s ease-in infinite;
     animation-delay:0.5s;
     transform-origin: center center;
-
 }
   .pathNav-2 {
     stroke-width: 3.75;
@@ -252,12 +238,10 @@ li{
     display: block;
     margin-top:2.5vh;
   }
-
   .pathNav:hover, .pathNav-2:hover{
       cursor:pointer; 
       animation:dash2 1s ease-in-out infinite;
   }
-
   .headerNavigation-2{
       position:sticky; 
       top:50px;
@@ -269,8 +253,6 @@ li{
       display:flex;
       background:red;
   }
-
-  
   @keyframes dash2 {
     0% {
         stroke-dashoffset: 300;
@@ -295,7 +277,6 @@ li{
         transform: rotate(-180deg);
       }
   }
-  
   @keyframes fade {
     0% {
       opacity: 0;
@@ -306,7 +287,6 @@ li{
       margin-top: 0px;
     }
   }
-
 @keyframes underlineNav{ 
     0%{ 
         transform: scaleX(0);

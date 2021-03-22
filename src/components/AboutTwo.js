@@ -1,8 +1,4 @@
 import picture from '../resources/picture.png';
-import github from '../resources/GitHub-Mark.png'; 
-import Instagram from '../resources/ig-logo-email.png'; 
-import Linkedin from '../resources/LinkedIn-Logo.png'; 
-import Gmail from '../resources/gmail-logo.jpg';
 import '../styles/About.css';
 import '../styles/AboutTwo.css';
 import React, {useState, useEffect} from 'react';
@@ -42,27 +38,22 @@ function AboutTwo(props){
                     <div className='pContent'>
                     <div className='selfThaught'>
                     <div className='firstPhrase'>
-                        {/* I'm a self-thaught junior web-dev with communication & Marketing background. */}
-                        Développeur web junior autodidacte avec une appétence pour le front ! 
+                        Front web Développeur junior ! Objectif <b className='emph'>Full-stack</b> ! 
                     </div>
                     <div className='ProjectOpo'>
-                        {/* I'm looking for jobs, internships or project opportunities! */}
-                        Je recherche un stage, une alternance ou toute opportunité de projets !
+                        A la recherche d'un <b className='emph'>stage</b>, d'une <b className='emph'>alternance</b> ou toute <br/>opportunité de <b className='emph'>projets</b> !
                         </div>
                     <div className='spentMonths'>
-                        {/* I Spent the last months working with javascript/react & nodejs. */}
-                        J'ai passé les derniers mois à travailler en Javascript sur React avec Nodejs
+                        J'ai passé les derniers mois à travailler en <b className='emph'>Javascript</b> sur  <b className='emph'>React</b><br/> avec <b className='emph'>Node.js/PHP</b>.
                         </div>
                     <div className='dive'>
-                        {/* Let's dive in my project ! */}
-                        Découvrez mes projets !
+                        Scrollez et découvrez mes projets !
                         </div>
                     </div> 
                         <div className='getInTouch'>
                             <a href="mailto:robinjonathan1993@gmail.com" className='getInTouchLink'>Contactez-moi !</a> 
                         </div>
                     </div>
-                   
                 </div>
             </div>
             <div className='mePicture'>
