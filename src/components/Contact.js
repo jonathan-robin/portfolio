@@ -24,14 +24,27 @@ function Contact(props){
     },[props.scrollContact])
 
     var handleSubmit = () => { 
+
+        var data = {email : emailRef.current.value, 
+                    name: nameRef.current.value, 
+                    message: messageRef.current.value
+                }
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.addEventListener('load', () => { 
+                    emailRef.current.value = ''; 
+                    messageRef.current.value = ''; 
+                    nameRef.current.value = '';
+                });
+
+                xhr.open('GET', 'https://jonathan-robin.com/api/index.php?email='+data.email+'&name='+data.name+'&message='+data.message);
+                xhr.send();
+
+
         setTimeout(() => {
-            emailRef.current.value = ''; 
-            messageRef.current.value = ''; 
-            nameRef.current.value = '';
-            setTimeout(() => {
                 setMessageSent('');
-            },3000)
-        },1000)
+        },3000)
         setMessageSent(<>
             <div className='messageSent'>Merci, votre message a bien été envoyé !</div>
         </>)
@@ -50,20 +63,20 @@ function Contact(props){
             {messageSent}
             <div className='ContactForm'>
             <iframe name="hiddenFrame" style={{width:"0", height:'0', border:'0', display:'none'}}></iframe>
-            <form className='meform' id="contact-form" method="POST" action="/send" target='hiddenFrame' onSubmit={handleSubmit}>
-            <label className="name" htmlFor='name'>Nom</label>
-                <div className="Name-group">
-                    <input type="text" className="form-control" required ref={nameRef} name="name"/>
-                </div>
-                <label htmlFor="exampleInputEmail1" className='email'>Email</label>
-                <div className="email-group">
-                    <input type="email" className="form-control"  ref={emailRef} required aria-describedby="emailHelp" name="email" />
-                </div>
-                <label htmlFor="message" className='message'>Message</label>
-                <div className="Message-group">
-                    <textarea className="form-control fc-Message" ref={messageRef} required name="message"></textarea>
-                </div>
-                <button type="submit" className="butonSubmit">Send</button>
+            <form className='meform' id="contact-form" target='hiddenFrame' onSubmit={handleSubmit}>
+                <label className="name" htmlFor='name'>Nom</label>
+                    <div className="Name-group">
+                        <input type="text" className="form-control" required ref={nameRef} name="name"/>
+                    </div>
+                    <label htmlFor="exampleInputEmail1" className='email'>Email</label>
+                    <div className="email-group">
+                        <input type="email" className="form-control"  ref={emailRef} required aria-describedby="emailHelp" name="email" />
+                    </div>
+                    <label htmlFor="message" className='message'>Message</label>
+                    <div className="Message-group">
+                        <textarea className="form-control fc-Message" ref={messageRef} required name="message"></textarea>
+                    </div>
+                    <button type="submit" className="butonSubmit">Send</button>
             </form>
             </div>
             </div>
