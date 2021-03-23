@@ -139,12 +139,14 @@ function NavigationHeader(props) {
                             </g>
                         </svg>
                     </div>
+                    <nav>
                     <ol className='olNav' id='olNav'>
                         <li className={`NavigationTag ${scrollAbout ? 'scroll' : ''}`} onClick={handleClickAbout}>About</li>
                         <li className={`NavigationTag ${scrollProject ? 'scrollProject' : ''}`} style={{ visibility: animation1 ? 'visible' : 'hidden' }} onClick={handleClickProject}>Projets</li>
                         <li className={`NavigationTag ${scrollEducation ? 'scrollEducation' : ''}`} style={{ visibility: animation2 ? 'visible' : 'hidden' }} onClick={handleClickEducation}>Expériences</li>
                         <li className={`NavigationTag ${scrollContact ? 'scrollContact' : ''}`} style={{ visibility: animation3 ? 'visible' : 'hidden' }} onClick={handleClickContact}>Contact</li>
                     </ol>
+                    </nav>
                 </div>
             </div>
         </>

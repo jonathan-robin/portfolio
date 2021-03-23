@@ -46,7 +46,7 @@ function Contact(props){
 
     return (
         <>
-        <div className={`ContactTitre ${scroll? 'ContactTitre2' : ''}`}><p>04. </p><p>Contact</p></div>
+        <div className={`ContactTitre ${scroll? 'ContactTitre2' : ''}`}><h1 style={{display:'flex', fontWeight:'inherit'}}><p>04. </p><p>Contact</p></h1></div>
         <div className={`ContactComponent ${animation? 'scrolled' : ''}`} style={{visibility:animation?'visible':'hidden'}}>
         <div className='ContactAdress'>
             <div className='ContactAd'><a href='https://github.com/jonathan-robin' target='_blank'><img className='imgReseau' src={github}/></a></div>

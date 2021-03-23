@@ -35,10 +35,11 @@ function About(props){
 
     return (
         <>
-        <div className={`EducationTitre ${scroll? 'EducationTitre2' : ''}`}><p>03. </p><p>Education</p></div>
+        <div className={`EducationTitre ${scroll? 'EducationTitre2' : ''}`}><h1 style={{display:'flex', fontWeight:'inherit'}}><p>03. </p><p>Expériences</p></h1></div>
         <div className={`Education ${scroll? 'EducationScroll' : ''}`}> 
                 <div className='SchoolYear'>
                     <div className={` ${animation? 'OneSchool': ''}`}  style={{visibility:animation?'visible':'hidden'}}>
+                            <article>
                             <div className='TitleSchoolY TSL'>
                                 2020 - Now
                             </div>
@@ -51,8 +52,10 @@ function About(props){
                                 <div className='SchoolYE'>
                                     La Réunion - 97434 France
                                 </div>
+                                </article>
                 </div>
                 <div className={` ${animation1? 'OneSchool OneSchoolR': ''}`}  style={{visibility:animation1?'visible':'hidden'}}>
+                <article>
                         <div className='TitleSchoolY TSR'>
                             2016 - 2019
                         </div>
@@ -65,8 +68,10 @@ function About(props){
                         <div className='SchoolYE'>
                             Nantes  - 44000 France
                         </div>
+                        </article>
                         </div>
                         <div className={` ${animation2? 'OneSchool': ''}`}  style={{visibility:animation2?'visible':'hidden'}}>
+                        <article>
                         <div className='TitleSchoolY TSL'>
                             2013 - 2016
                         </div>
@@ -79,12 +84,14 @@ function About(props){
                             <div className="SchoolYE">
                             Bordeaux 33300 - France
                         </div>
+                        </article>
                         </div>
                 </div>  
                 <div className={` ${animation_cission? 'Cission': ''}`}  style={{visibility:animation_cission?'visible':'hidden'}}>
                 </div>
                 <div className='Experience'>
                 <div className={` ${animation3? 'OneExperience': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
+                        <article>
                         <div className='ExperienceY'>
                         <div className='TitleExperienceY'>
                             Mars-Septembre 2019
@@ -99,8 +106,10 @@ function About(props){
                             Union Bordeaux Métropole - Bordeaux 33000
                             </div>
                         </div>
+                        </article>
                         </div>
                 <div className={` ${animation4? 'OneExperience TwoExperience': ''}`}  style={{visibility:animation4?'visible':'hidden'}}>
+                <article>
                         <div className='TitleExperienceY'>
                             June-September 2018
                         </div>
@@ -114,6 +123,7 @@ function About(props){
                             <div className='LocationExperience'>
                             Ligue Réunionnaise de Golf - Réunion 97426 </div>
                         </div>
+                        </article>
                         </div>
                 </div>
                 </div>

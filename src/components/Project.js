@@ -3,11 +3,10 @@ import React, {useState, useEffect} from 'react';
 import '../styles/Project.css'
 import upload from '../resources/upload.svg'; 
 import github from '../resources/github.svg'
-import imageProject1 from '../resources/imagefbcopy.png'; 
-import videoRGSTATS from '../resources/RG_STATS.mp4'; 
-import videoTRACKER from '../resources/Tracker.mp4'; 
-import videoTRACKEREXE from '../resources/Tracker.exe.mp4';
-import videoCopyFacebook from '../resources/copyFacebook.mkv';
+import videoRGSTATS from '../resources/RG_STATS.m4v'; 
+import videoTRACKER from '../resources/TRACKER.m4v'; 
+import videoTRACKEREXE from '../resources/TRACKER_EXE.m4v';
+import videoCopyFacebook from '../resources/copyFacebook.m4v';
 import $ from 'jquery';
 
 function Project(props){
@@ -106,7 +105,7 @@ function Project(props){
 
     return (
         <div className='ProjectOverAll'>
-            <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><p>02. </p><p>Project</p></div>
+            <div className={`ProjectTitre ${startProject? 'ProjectTitre2': ''}`}><h1 style={{display:'flex', fontWeight:'inherit'}}><p>02. </p><p>Projets</p></h1></div>
             <div className={`ProjectContent ${animation1? 'loaded' : ''}`} style={{visibility:animation1?'visible':'hidden'}}>
                 <div className='Project p1' >
                     <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
@@ -121,7 +120,7 @@ function Project(props){
                                 <div className='ProjectDescription1'>
                                         <div className='firstLine'>
                                             <div className='Titre'>
-                                                CopyFacebook
+                                                <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>CopyFacebook</h2>
                                             </div>
                                             <div className='share'>
                                                 <div className='tagR'><a target='_blank' href='https://github.com/jonathan-robin/copyFacebook' ><img src={github} className='tagResources'/></a></div>
@@ -133,11 +132,13 @@ function Project(props){
                                         Février 2021
                                     </div>
                                 <div className='FullDescription'>
+                                    <article>
                                         Copie CSS du site Facebook avec implémentation de logique de base. <br/>
                                         Système d'authentification avec Firebase-auth. <br/>
                                         Système d'upload, de cropping de photos et de storage de fichiers avec Firebase Storage. <br/>
                                         Système de messagerie instantannée privée, de publications, de Feed d'actualité et de liste d'amis, mise en place avec Firebase Cloud Firestore. <br/>
                                         Version live hebergée via Firebase Hosting. <br/>
+                                    </article>
                                     </div>
                                 <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -161,7 +162,7 @@ function Project(props){
                                 <div className='ProjectDescription2'>
                                     <div className='firstLine'>
                                         <div className='Titre'>
-                                            RG STATS
+                                        <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>RG STATS</h2>
                                         </div>
                                         <div className='share'>
                                             <div className='tagR'><a href='https://github.com/jonathan-robin/tracker' target='_blank' ><img src={github} className='tagResources'/></a></div>
@@ -172,11 +173,13 @@ function Project(props){
                                         Octobre 2020
                                     </div>
                                     <div className='FullDescriptionL'>
+                                    <article>
                                     Application web permettant de retrouver le résultat de n'importe quel match masculin qui s'est joué à Roland Garros depuis 1968, ainsi que
                                     le tableau complet de l'édition. <br/>
                                     Recherche par joueur pouvant être filtré avec une année ou un tour spécifique.  <br/>
                                     Recherche des confrontations entre deux joueurs. <br/>
                                     Recherche de tableau par année. Affichage de profil avec détails sur le joueur selectionné ; nationalité, première participation, pire résultat, ratio de victoire, nombre de matchs gagnés etc...
+                                    </article>
                                     </div>
                                     <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -210,7 +213,7 @@ function Project(props){
                                 <div className='ProjectDescription1'>
                                     <div className='firstLine'>
                                         <div className='Titre'>
-                                            Tracker
+                                        <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>Tracker</h2>
                                         </div>
                                         <div className='share'>
                                             <div className='tagR'><a href='https://github.com/jonathan-robin/tracker_soft' target='_blank'><img src={github} className='tagResources'/></a></div>
@@ -221,11 +224,13 @@ function Project(props){
                                         Janvier 2020
                                     </div>
                                     <div className='FullDescription'>
+                                        <article>
                                     Application web permettant de représenter de manière visuelle les sessions de travail passés sur le poste.  <br/>
                                     Les sessions sont affichées sous forme de graphique, de courbes, de bulles ou de pie.  <br/>
                                     Les sessions affichées permettent d'avoir une vue d'ensemble pour une période donnée et chaque session est détaillée via des commentaires, urls, tags etc...  <br/>
                                     Différents type de recherche : période, domaine, dates précises...  <br/>
                                     Permet de suivre le temps nécessaire pour certaines tâches, le temps passé sur chaque projet, retrouver des documentations/codes spécifiques.  <br/>
+                                    </article>
                                     </div>
                                     <div className='tags'>
                                         <div className='tag'>Javascript</div>
@@ -250,7 +255,7 @@ function Project(props){
                                 <div className='ProjectDescription2'>
                                     <div className='firstLine'>
                                             <div className='Titre'>
-                                                Tracker.exe
+                                            <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>Tracker.exe</h2>
                                             </div>
                                             <div className='share'>
                                                 <div className='tagR'><a href='https://github.com/jonathan-robin/rg_stats' target='_blank'><img src={github} className='tagResources'/></a></div>
@@ -261,8 +266,10 @@ function Project(props){
                                             Décembre 2020
                                         </div>
                                     <div className='FullDescriptionL'>
+                                        <article>
                                     Application C# permettant d'enregistrer les données des sessions passées sur le PC. Système de timer avec possibilité de pause, reset, restart avec 
                                     formulaire détaillé à remplir après chaque session. Données stockées en localhost sur phpMyAdmin destinées à être fetch via l'application web Tracker.
+                                    </article>
                                         </div>
                                     <div className='tags'>
                                             <div className='tag'>.NET</div>
