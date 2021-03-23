@@ -89,7 +89,7 @@ useEffect(() => {
         if ($('html').scrollTop() > 3650) { 
           setScrollExperience(true)
         }
-        if ($('html').scrollTop() > 5000) { 
+        if ($('html').scrollTop() > 4200) { 
           setScrollContact(true)
         }
     })
@@ -122,7 +122,7 @@ useEffect(() => {
           </div>
         <div className={`${animationLateral2 ? 'shortcut': ''} ${shortcutAnimation ? 'scrolled':''}`}>
         <div className='resumeLink-2'>
-                Resume
+        <a href='https://jonathan-robin.com/ROBIN_JONATHAN_CV.pdf' target='_blank' className='resume'>Resume</a>
             </div>
             <div className='logoNavigation-2' onClick={handleClickBack}>
                 <svg className='svgNav' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150px" height="80px" viewBox="0 0 87.59 99.306">
@@ -132,11 +132,8 @@ useEffect(() => {
                 </svg>
             </div>
             <div className='dottedLine'>
-              
             </div>
-           
           </div>
-         
         </>
         }
         </> 

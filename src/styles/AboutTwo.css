@@ -1,3 +1,9 @@
+.getInTouchLink:hover{ 
+    color:var(--navy); 
+    background:var(--green); 
+    cursor:pointer;
+}
+
 @media (max-width:1600px){
     .AboutMe{
         min-width:480px !important; 
@@ -133,7 +139,7 @@
     padding:0 2vw 0 2vw;
 }
 .spentMonths{
-    width:35vw;
+    width:30vw;
 }
 .dive{
     width:30vw;

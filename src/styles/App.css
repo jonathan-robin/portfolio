@@ -29,6 +29,9 @@ html{
   transition: color 0.5s ease;
   transition: background 0.5s ease;
 }
+.resumeLink-2:hover a{
+  color:var(--navy);
+}
 .tag-shortcut{ 
   height:40px;
   border-radius:50px;
@@ -91,6 +94,10 @@ html{
   background-position: right;
   background-size: 1px;
   background-repeat: repeat-y;
+}
+.resume{
+  text-decoration:none; 
+  color:var(--green);
 }
 :root {
   --dark-navy: #020c1b;
