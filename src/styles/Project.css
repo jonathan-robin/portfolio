@@ -1,17 +1,229 @@
+/* Iphone 5, 5c 5se, 5s - Landscapes  */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .ProjectBorder.loaded{
+        width:120% !important;
+    }
+}
+/* Iphone 6,7,8 - Landscapes  */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape){
+    .videoProject2, .videoProject{
+        height:120px !important;
+    }
+    #root > div.ProjectOverAll > div:nth-child(5){
+        margin-top:275px !important;
+    }
+}
+/* Iphone 6+,7+,8+ - Landscapes */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+    .videoProject2, .videoProject{
+        height:160px !important;
+    }
+}
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px)
+                    and (max-device-width: 812px) 
+                    and (-webkit-min-device-pixel-ratio: 3)
+                    and (orientation: landscape), 
+/* Iphone 6,7,8 - Landscapes  */
+        only screen 
+                    and (min-device-width: 375px) 
+                    and (max-device-width: 667px) 
+                    and (-webkit-min-device-pixel-ratio: 2)
+                    and (orientation: landscape)
+              { 
+    .videoProject{
+        margin-top:50px !important;
+    }
+    .ProjectCore{ 
+        margin-right:25px;
+        margin-left:25px;
+    }
+    .Date, .tags{ 
+        margin:20px 0px 20px 0px !important;
+        width:100%;
+        text-align: right;
+    }
+    .ProjectBorderRight.loaded{ 
+        height: 110% !important;
+        margin-top:-50px !important;
+    }
+    .Project.p2{
+        margin:200px 0px 0px 70px;
+    }
+    .ProjectBorderLeft{
+        height: 290% !important;
+        margin-top:-60px !important;
+    }
+    .ProjectBorderRight.loaded{
+        height:300px !important;
+    }
+    .ProjectTitre.ProjectTitre2 p{
+        font-size:16px;
+    }
+    .videoProject, .videoProject2{
+        height:200px;
+        margin-top:25px !important;
+    }
+    .ProjectContent.loaded, .ProjectContent2.loaded{
+        margin:0 0 0 20px !important;
+        padding:0px;
+    }
+    .Titre, .Date{ 
+        font-size:14px !important;
+    }
+    .Date{ 
+        margin:5px !important;
+    }
+    .FullDescription, .FullDescriptionL, .tag{
+        font-size:12px !important;
+    }
+    .borderRight{
+        width:auto !important;
+     }
+    .ProjectCore{ 
+        margin:0px;
+        width:250px;
+    }
+    .ProjectBorderLeft{
+        height:220% !important;
+    }
+    .ProjectBorder.loaded{
+        width:140%;
+    }
+    .ProjectBorderUpRight.loaded{ 
+        width:280px !important;
+    }
+}
+/* Iphone 5, 5c 5se, 5s - Portrait  */
+@media only screen 
+  and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .videoProject2, .videoProject{
+        height:160px !important;
+    }
+    .ProjectContent.loaded, .ProjectContent2.loaded{
+        width:300px;
+    }
+    .ProjectVideo, .ProjectVideo2{ 
+        justify-content: center !important;
+    }
+    .Project.p1{
+        justify-content: center !important;
+    }
+    .videoProject2{ 
+        margin: 0 auto;
+        width:auto;
+        /* width:310px; */
+        /* width:100vw; */
+    }
+    /* .ProjectCore{
+        width:auto;
+    } */
+}
+/* Iphone X - Portrait  */
+@media  only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait), 
+/* Iphone 6+,7+,8+ - Portrait  */
+        only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+/* Iphone 6,7,8 - Portrait  */
+        only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), 
+/* Iphone 5, 5c 5se, 5s - Portrait  */
+        only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+    .ProjectTitre.ProjectTitre2 p{
+        font-size:16px;
+    }
+    .borderRight{
+        width:inherit !important;
+    }
+    .borderUp, .borderUpRight{ 
+        display:flex;
+        justify-content: center;
+        margin:0 !important;
+        padding:0px !important;
+        width: 100vw;
+    }
+    .Titre, .Date{ 
+        font-size:14px !important;
+    }
+    .Date{ 
+        margin:5px !important;
+    }
+    .FullDescription, .FullDescriptionL, .tag{
+        font-size:12px !important;
+    }
+    .ProjectVideo{ 
+        margin-top:50px;
+    }
+    .videoProject2, .videoProject{ 
+        height:200px;
+        margin:0 auto !important;
+        display: flex;
+        justify-content: center;
+        border-radius:15px !important;
+    }
+    .videoProject{
+        margin-top:-260px !important;
+    }
+    .ProjectContent.loaded, .ProjectContent2.loaded{
+        width:375px;
+        margin:250px 0 0 0 !important; 
+        padding:0;
+    }
+    .Project.p1, .Project.p2{
+        display:block !important;
+        margin:0;
+        width:auto;
+    }
+    .ProjectCore{
+        width:250px;
+        margin:0 auto !important;
+    }
+    .tags{
+        padding-bottom:50px;
+        border-bottom:1px solid var(--green);
+    }
+    .ProjectDescription2 .tags{
+        padding-bottom:300px;
+        border-bottom:1px solid var(--green);
+    }
+    .ProjectBorderLeft, .ProjectBorder.loaded, .ProjectBorderRight.loaded, .ProjectBorderUpRight.loaded{ 
+        display:none !important;
+    }
+    .FullDescription, .FullDescriptionL{
+        text-align:center !important;
+    }
+    #root > div.ProjectOverAll > div:nth-child(5){
+        margin-top:400px !important;
+    }
+    .ProjectVideo2, .ProjectVideo{
+        width:100vw !important;
+    }
+}
+
 @media (max-width:1800px){ 
         .FullDescription,.FullDescriptionL{
-            font-size:15px !important;
+            /* font-size:15px !important; */
         }
-        .Date, .DateL{
+        /* .Date, .DateL{
             font-size:15px !important;
-        }
-        .Titre{
+        } */
+        /* .Titre{
             font-size:18px !important;
-        }
-        .ProjectCore{
+        } */
+        /* .ProjectCore{
             min-width:320px !important;
-        }
-        .ProjectContent{
+        } */
+        /* .ProjectContent{
             margin-left:10vw !important;
         }
         .ProjectContent2.loaded{
@@ -19,12 +231,12 @@
         }
         .ProjectContent2{ 
             margin-right:5vw !important;
-        }
+        } */
         .ProjectVideo2{
-            width:fit-content !important;
+            /* width:fit-content !important;
             position:absolute !important;
             margin-left:5vw;
-            left:36vw !important;
+            left:36vw !important; */
         }
         .overLayProject2{
             left:31vw !important;
@@ -49,7 +261,7 @@
 @media (max-width:1500px){
     .ProjectBorder.loaded{
         content:'';
-        width:140% !important;
+        width:140%;
         display:flex;
         border-top:1px solid var(--green);
         animation:borderUp 0.5s ease-in;
@@ -62,10 +274,10 @@
         margin: 18.2vh 1.5vw 2vh 9.5vw !important;
     }
     .videoProject{
-        margin-left:-0.5vw !important; 
+        /* margin-left:-0.5vw !important;  */
     }
 }
-@media (max-width:1370px){
+/* @media (max-width:1370px){
     .FullDescription{ 
         text-align: center;
     }
@@ -74,7 +286,6 @@
     }
     .ProjectVideo{
         padding:0 !important; 
-        margin: 0!important;
         justify-content: center;
         width:auto !important;
         display:flex;
@@ -91,7 +302,7 @@
         padding: 0 !important; 
         margin-right:0 !important;
         margin-bottom:100px !important;
-        margin-top:82px !important;
+        margin-top:82px;
         height:300px !important;
         display:flex !important; 
         justify-content: center;
@@ -134,7 +345,6 @@
         padding: 0 !important; 
         margin:0 !important;
         margin-bottom:100px !important;
-        height:300px !important;
         display:flex !important; 
         justify-content: center;
     }
@@ -147,8 +357,8 @@
     }
     .ProjectBorder.loaded{
         width:130% !important;
-    }
-    .overLayProject1
+    } */
+    /* .overLayProject1
     {
         height:295px !important;
         width:549.609px !important;
@@ -159,8 +369,8 @@
         display: flex !important;
         justify-self: center;
         margin-top:-40vh !important;
-    }
-    .overLayProject3{
+    } */
+    /* .overLayProject3{
         height:295px !important;
         width:533.594px !important;
         top:56.8vh;
@@ -196,8 +406,8 @@
         justify-self: center;
         margin-top:-40vh !important;
         z-index:0 !important;
-    }
-}
+    } */
+/* } */
 @media (max-width:970px){
     .overLayProject1, .overLayProject3{
         left: 0.15vw !important;
@@ -217,10 +427,10 @@
         width:90vw !important;
     }
     .videoProject2{ 
-        margin-left:5vw !important;
+        /* margin-left:5vw !important; */
     }
     .videoProject{ 
-        margin-left:2vw !important;
+        /* margin-left:2vw !important; */
     }
     .overLayProject1, .overLayProject3{
         left:2.5vw !important;
@@ -234,10 +444,10 @@
 }
 @media (max-width:640px){
     .videoProject{
-        height:250px !important;
+        /* height:250px !important; */
     }
     .videoProject2{
-        height:250px !important;
+        /* height:250px !important; */
     }
     .overLayProject1{
         height:250px !important;
@@ -260,8 +470,8 @@
         top:108.6vh !important;
     }
 }
-@media(max-width:602px){
-    .borderUp{
+/* @media(max-width:602px){ */
+    /* .borderUp{
         margin-left:-10vw !important;
         padding-left:0vw !important;
     }
@@ -282,7 +492,7 @@
         width:80% !important;
         margin-left: 5% !important;
     }
-}
+} */
 @media (max-width:510px){
     .overLayProject1{
         left:2vw !important;
@@ -292,7 +502,7 @@
     }
 }
 @media (max-width:500px){
-    .ProjectOverAll{ 
+    /* .ProjectOverAll{ 
         padding-top:3vh!important;
         padding-bottom:50vh !important;
     }
@@ -319,11 +529,11 @@
         height:45vw !important;
         padding:0px !important; 
         margin:0px !important;
-    }
+    } */
     .ProjectVideo{ 
-        margin-top:30vh !important;
+        /* margin-top:30vh !important; */
     }
-    .FullDescription, .FullDescriptionL{
+    /* .FullDescription, .FullDescriptionL{
         font-size:1.8vh !important;
     }
     .Date, .tag{ 
@@ -383,7 +593,7 @@
     }
     .ProjectBorderRight{ 
         display:none !important;
-    }
+    } */
 }
 
 @media(max-width:5000px){
@@ -425,7 +635,7 @@
     height:0;
 }
 .ProjectVideo2{ 
-    width:fit-content;
+    /* width:fit-content; */
 }
 .ProjectBorderRight.loaded{
     display:flex;
@@ -587,12 +797,12 @@
     width:20vw;
 }
 .videoProject{ 
-    height:435px;
+    /* height:435px; */
     border-radius:10px;
     margin:3vh 0vw 2vh 0vw;
 }
 .videoProject2{ 
-    height:400px;
+    /* height:400px; */
     margin:3vh 0vw 2vh -15vw;
     border-radius:10px;
 }

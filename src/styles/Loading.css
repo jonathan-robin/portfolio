@@ -6,7 +6,7 @@
     justify-content: center;
     width:400px;
 }
-.container{ 
+.container{
     justify-content: center;
     display:flex;
 }
@@ -17,12 +17,13 @@ svg{
     display:flex;
     justify-content: center;
     width:400px;
-    height:20px;
+    height:1.5vh;
     border-radius: 10px; 
     background:var(--green); 
     margin-top:-45vh;
-    animation: loadingBar 3.5s ease-out
+    animation: loadingBar 3.5s ease-out;
 }
+
   @keyframes dash {
       from{
         stroke-dashoffset: 1000;
@@ -39,4 +40,3 @@ to{
         width:400px;
     }
 }
- 

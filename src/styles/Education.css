@@ -1,3 +1,29 @@
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px)
+                    and (max-device-width: 812px) 
+                    and (-webkit-min-device-pixel-ratio: 3)
+                    and (orientation: landscape),
+                    /* Iphone 6,7,8 - Landscapes  */
+        only screen and (min-device-width: 375px) 
+                    and (max-device-width: 667px) 
+                    and (-webkit-min-device-pixel-ratio: 2)
+                    and (orientation: landscape) { 
+
+    .OneSchool div{
+        font-size:12px !important;
+    }
+    .OneExperience div{
+        font-size:12px !important;
+    }
+    .EducationTitre.EducationTitre2 p{
+        font-size:16px;
+    }
+    .Cission{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+}
+
 @media (max-width:1600px){ 
     .OneSchool.OneSchoolR{
         width:250px;
@@ -93,6 +119,19 @@
     }
     .EducationTitre.EducationTitre2{
         padding-top:5vh !important;
+    }
+    .SchoolY{ 
+        margin-top:1vh !important;
+    }
+    .TitleExperienceY{ 
+        margin-left:0.5vh !important; 
+        margin-top:-3vh !important;
+    }
+    .TitleSchoolY{
+        margin-left:-12px !important; 
+    }
+    .OneSchool, .OneExperience{ 
+        padding:0.7vh 1.4vw 0.7vh 1.4vw !important;
     }
 }
 .Education{
@@ -217,7 +256,7 @@
 .EducationTitre p{ 
     margin-right:30px;
     color:var(--green);
-    font-size:2.4vh;
+    font-size:16px;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 .EducationTitre p:last-child{ 
@@ -226,7 +265,7 @@
 }
 .OneExperience{ 
     background: var(--green);
-    border-radius:0.225vw;
+    border-radius:5px;
     z-index:2;
     padding:1vh 2vw 1vh 2vw;
     margin-top:6.5vh;
