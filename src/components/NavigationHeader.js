@@ -51,18 +51,42 @@ function NavigationHeader(props) {
         $('.EducationTitre')[0].scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
 
+    var getDevice = () => { 
+    //Iphone X - landscape
+          if(window.innerWidth == 812 && window.innerHeight == 375 || 
+    //Iphone 6+,7+,8+
+             window.innerWidth == 736 && window.innerHeight == 414 || 
+    //Iphone 6,7,8
+             window.innerWidth == 667 && window.innerHeight == 375 ||
+    // Iphone 5,5c,5s,5se
+             window.innerWidth == 568 && window.innerHeight == 320){
+            return [600, 700, 2500, 3200]
+        }
+    //Iphone X - Portrait
+        else if(window.innerWidth == 375 && window.innerHeight == 812 || 
+    //Iphone 6+,7+,8+
+            window.innerWidth == 414 && window.innerHeight == 736 ||
+    //Iphone 6,7,8
+             window.innerWidth == 375 && window.innerHeight == 667 ||
+    // Iphone 5,5c,5s,5se
+             window.innerWidth == 320 && window.innerHeight == 568){
+            return [600, 700, 4400, 5150]
+        }
+        else if (window.innerWidth > 500 && window.innerWidth <= 1375) {
+            return [600, 700, 5450, 6600]
+        }
+        else if (window.innerWidth > 1375) {
+            return [600, 700, 3250, 4500]
+        }
+        else{
+            return [600,700,3000,4000];
+        }
+    }
+
     useEffect(() => {
-        var device = [];
+        var device = [0];
         window.addEventListener('scroll', (event) => {
-            if (window.innerWidth <= 500) {
-                device = [600, 700, 4800, 5800]
-            }
-            else if (window.innerWidth > 500 && window.innerWidth <= 1375) {
-                device = [600, 700, 5450, 6600]
-            }
-            else if (window.innerWidth > 1375) {
-                device = [600, 700, 3250, 4500]
-            }
+           device = getDevice();
             if ($('html').scrollTop() < device[0]) {
                 setScrollAbout(true);
                 setScrollProject(false);

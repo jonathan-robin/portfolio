@@ -6,6 +6,11 @@
         width:97vw !important;
     }
 }
+@media (max-width:500px){
+    .shortcut-2{
+        display:none; 
+    }
+}
 @media (max-width:775px){
     .logoNavigation{
         display:none;
@@ -23,9 +28,6 @@
     }
     .shortcut.scrolled{
         opacity:1;
-    }
-    .shortcut-2{
-        display:none; 
     }
     .NavigationBar{
         display:flex;
@@ -57,13 +59,13 @@
 @media (max-width:500px){
     .headerNavigation.scroll, .headerNavigation{
         width:100vw !important;
-        justify-content: space-evenly;
+        justify-content:space-around !important;
         position:sticky !important;
     }
     .NavigationBar{ 
-        width:80vw !important; 
-        padding-left:10vw !important; 
-        padding-right:10vw !important;
+        width:100vw !important; 
+        padding-left:5vw !important; 
+        padding-right:5vw !important;
     }
     .olNav{
         font-size:1.5vh !important;
@@ -114,6 +116,7 @@ li:nth-of-type(4).scrollContact:after{
 }
 li.NavigationTag{ 
     margin-top:0.7vh;
+    margin-right: 5vw !important;
 }
 li:first-of-type{
     animation:in 0.1s ease-in;

@@ -1,3 +1,16 @@
+
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px)
+                    and (max-device-width: 812px) 
+                    and (-webkit-min-device-pixel-ratio: 3)
+                    and (orientation: landscape) { 
+    .ContactTitre.ContactTitre2 p{
+        font-size:16px;
+    }
+}
+
+
+
 .ContactTitre{
 opacity:0;
 }
@@ -42,7 +55,7 @@ opacity:0;
 .ContactTitre p{ 
     margin-right:30px;
     color:var(--green);
-    font-size:2.4vh;
+    font-size:16px;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 .ContactTitre p:last-child{ 

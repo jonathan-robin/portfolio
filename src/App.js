@@ -52,7 +52,7 @@ useEffect(() => {
   }
 
   useEffect(() =>{ 
-    if(window.innerWidth <= 500){
+    if($(window).width() < 1000){
       setScrollProject(true);
       setScrollEducation(true);
       setScrollExperience(true);

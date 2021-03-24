@@ -11,7 +11,7 @@ function About(props){
     const [animation2, setAnimation2] = useState(false);
     const [animation3, setAnimation3] = useState(false);
     const [animation4, setAnimation4] = useState(false);
-    const [animation_cission, setAnimation_cission] = useState(false);
+    const [animation_cission, setAnimation_cission] = useState(props.scrollEducation);
 
     useEffect(() => {
         setScroll(props.scrollEducation);
