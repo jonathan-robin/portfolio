@@ -92,79 +92,17 @@
         left:50vw !important;
     }
 }*/
-
-
 /* Iphone 5, 5c 5se, 5s - Portrait  */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .Picture{ 
-        /* top:160px !important;
-        left:120px !important; */
-    }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .AboutMe{
         width:200px;
     }
-    .mainContent{ 
-        /* width:50%; */
-    }
 }
 /* Iphone 6,7,8 Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-    .Picture{ 
-        /* top:170px !important; */
-    }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { 
 }
-/* Iphone 6+,7+,8+ Portrait */
-/* @media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
-    .AboutMe{
-        margin-left:50px !important;
-    }
-    .Picture{ 
-        height:150px !important;
-        left:200px !important;
-        top:180px !important;
-        display:flex; 
-        position:absolute;
-    }
-} */
-
-/* .Picture {
-    height:150px;
-    left:200px;
-    top:190px;
-} */
-
-/* .AboutPage{
-    padding:110px 5px 20px 5px;
-} */
-/* .AboutMe{
-    width:300px;
-    margin-left:5px;
-} */
-/* .selfThaught{ 
-    width:180px;
-}
-.pContent, .selfThaught{
-    width:280px;
-} */
-
 /* TEST IPHONE 5  */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait){
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
     .Picture{
         height:140px;
         left:160px;
@@ -182,17 +120,8 @@ and (orientation: portrait) {
         width:220px;
     }
   }
-/* 
-/* 
- */
-/* 
- */
  /* TEST IPHONE 6 7 8 */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait){
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
     .Picture {
         height:160px;
         left:180px;
@@ -209,16 +138,8 @@ and (orientation: portrait) {
             width:220px;
         }
   }
-/* 
- */
- /* 
-  */
 /* TEST IPHONE X */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait){
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait){
     .Picture {
     height:150px;
     left:190px;
@@ -234,17 +155,8 @@ and (orientation: portrait) {
         width:280px;
     }
 }
-/* 
-/* 
- */
-/* 
- */
  /* TEST IPHONE 6 7 8 +++ */
- @media only screen 
- and (min-device-width: 414px) 
- and (max-device-width: 736px) 
- and (-webkit-min-device-pixel-ratio: 2)
- and (orientation: portrait){
+ @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
    .Picture {
        height:160px;
        left:190px;
@@ -260,30 +172,50 @@ and (orientation: portrait) {
         width:350px;
     }
  }
+/* IPAD 1,2,3 - Portrait  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .Picture{
+        height:260px;
+        position:absolute;
+        top:340px;
+        left:450px;
+    }
+    .AboutMe{ 
+        width:500px;
+    }
+    .Name{
+        font-size:50px !important;
+    }
+    .selfThaught{
+        width:480px;
+    }
+    .sous-titre{
+        font-size:18px !important;
+    }
+    .firstPhrase, .ProjectOpo, .spentMonths, .dive, .getInTouchLink{
+        font-size:20px !important;
+    }
+    .TitreAbout p{
+        font-size:25px !important;
+    }
+    .TitreAbout{ 
+        margin-bottom: 150px !important;
+        margin-top: 100px !important;
+    }
+}
+/* Ipad 1,2,3 - Portrait  */
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1),
+   /* Nexus 7 - Portrait  */
+ only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait), 
 /* Iphone 6+,7+,8+ - Portrait */
- @media only screen 
- and (min-device-width: 414px) 
- and (max-device-width: 736px) 
- and (-webkit-min-device-pixel-ratio: 2)
- and (orientation: portrait),
+    only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
 /* Iphone X - Portrait  */
-  only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait),
+  only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
 /* Iphone 6,7,8 - Portrait */
-  only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait), 
+  only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), 
   /* Iphone 5,5s,5c,5se - Portrait  */
-  only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
+  only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)
+{ 
       .getInTouchLink{ 
           border-radius:5px;
       }
@@ -319,9 +251,6 @@ and (orientation: portrait) {
             margin-bottom:150px;
         }
 }
-
-
-
 /* .Picture{
     height:200px;
 }
@@ -346,55 +275,97 @@ and (orientation: portrait) {
 .TitreAbout p{
     font-size:16px;
 } */
-
-
-/* Iphone X - Landscapes  */
-@media only screen and (min-device-width:375px)
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
+        
+/* Galxy s6 - Landscape
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
     .Picture{
-        height:180px;
+        top:100px !important;
+        left:10px !important;
+    }
+} */
+
+/* IPAD 1,2,3 - Landscapes  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: Landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .Picture{
+        height:240px;
         position:absolute;
-        left:450px;
-        top:170px;
+        top:220px;
+        left:600px;
+    }
+    .Name{
+        font-size:50px !important;
+    }
+    .selfThaught{
+        width:600px;
+    }
+    .sous-titre{
+        font-size:18px !important;
+    }
+    .firstPhrase, .ProjectOpo, .spentMonths, .dive, .getInTouchLink{
+        font-size:20px !important;
+    }
+    .TitreAbout p{
+        font-size:25px !important;
+    }
+    .TitreAbout{ 
+        margin-bottom: 30px !important;
+        margin-top: 50px !important;
+    }
+}
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .Picture{
+        height:160px;
+        position:absolute;
+        left:480px;
+        top:140px;
     }
      .AboutMe{ 
-        width:480px;
+         margin-top:-30px !important;
+        width:550px;
     }
-    .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase{
-        width:450px;
+    .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase, .sous-titre, .dive, .getInTouchLink{
+        width:550px;
+        font-size:16px !important;
+    }
+    .Name{ 
+        font-size:40px !important;
+    }
+    .TitreAbout p { 
+        font-size:20px !important;
+        margin-top:-20px !important;
     }
 }
 /* Iphone 6+,7+,8+ - Landscapes  */
-@media only screen and (min-device-width:414px)
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
+@media only screen and (min-device-width:414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .Picture{
         height:180px;
         position:absolute;
-        left:400px;
-        top:170px;
+        left:470px !important;
+        top:150px !important;
     }
      .AboutMe{ 
-        width:400px;
+        width:500px;
     }
     .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase{
-        width:350px;
+        width:500px;
+    }
+    .TitreAbout{
+        margin-top:50px;
+        margin-bottom:50px;
     }
 }
 /* Iphone 6,7,8 - Landscapes */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape){
+@media only screen and (min-device-width: 375px, 360px) and (max-device-width: 667px, 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
     .Picture{
     height:160px;
     position:absolute;
     left:340px;
-    top:180px;
+    top:170px !important;
 }
  .AboutMe{ 
     width:400px;
@@ -402,32 +373,21 @@ and (orientation: landscape){
 .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase{
     width:350px;
 }
+}
 /* Iphone 5, SE - Landscapes */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape){
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
     .Picture{
-    height:140px;
-    position:absolute;
-    left:330px;
-    top:180px;
+        height:150px ! important;
+    }
+    .AboutMe{ 
+        width:350px !important;
+    }
+    .ProjectOpo, .spentMonths, .firstPhrase, .dive{ 
+        width:320px !important;
+    }
 }
- .AboutMe{ 
-    width:400px;
-}
-.selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase{
-    width:380px;
-}
-}
-
 /* Iphone 6,7,8+  */
-@media only screen 
-    and (min-device-width: 414px) 
-    and (max-device-width: 736px) 
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape){
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
         .Picture{
             height:180px;
             position:absolute;
@@ -459,30 +419,38 @@ and (orientation: landscape){
 .TitreAbout p{
     font-size:16px;
 } */
-}
 
+  /* Galaxy s6 - Landscapes */
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+        .Picture{ 
+            height:150px !important;
+            top:100px !important;
+            left:400px !important;
+        }
+        .selfThaught, .ProjectOpo, .dive, .spentMonths, .firstPhrase, .getInTouchLink, .sous-titre{
+            font-size:12px !important;
+        }
+        .TitreAbout{ 
+            margin-top:40px !important;
+            margin-bottom:0px !important;
+        }
+        .Name{ 
+            font-size:30px !important;
+        }
+        .TitreAbout p{ 
+            font-size:18px !important;
+        }
+    }
 /* Iphone X - Landscapes  */
-@media only screen and (min-device-width:375px)
-                    and (max-device-width: 812px) 
-                    and (-webkit-min-device-pixel-ratio: 3)
-                    and (orientation: landscape),
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
 /* Iphone 6,7,8 - Landscapes  */
-                    only screen 
-                    and (min-device-width: 375px) 
-                    and (max-device-width: 667px) 
-                    and (-webkit-min-device-pixel-ratio: 2)
-                    and (orientation: landscape),
+        only screen and (min-device-width: 375px, 360px) and (max-device-width: 667px, 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
 /* Iphone 5, SE - Landscapes */
-                    only screen 
-                    and (min-device-width: 320px) 
-                    and (max-device-width: 568px) 
-                    and (-webkit-min-device-pixel-ratio: 2)
-                    and (orientation: landscape),
-                    only screen 
-                    and (min-device-width: 414px) 
-                    and (max-device-width: 736px) 
-                    and (-webkit-min-device-pixel-ratio: 2)
-                    and (orientation: landscape) { 
+        only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* Iphone 6+,7+,8+ - Landscapes  */
+        only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
+/* Galaxy s6 - Landscapes */
+        only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) { 
                         .getInTouchLink{ 
                             border-radius:5px;
                         }
@@ -493,13 +461,12 @@ and (orientation: landscape){
                             font-size:12px;
                         }
                         .firstPhrase, .ProjectOpo, .spentMonths, .dive{
-                            margin-bottom: 5px !important;
-                            font-size:12px !important;
+                            margin-bottom: 5px;
+                            font-size:12px;
                         }
                         .TitreAbout{
                             margin-bottom:50px;
                         }
-   
 }
 
 @media (max-width:5000px){

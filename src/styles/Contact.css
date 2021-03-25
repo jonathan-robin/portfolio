@@ -8,7 +8,26 @@
         font-size:16px;
     }
 }
-
+/* IPAD 1,2,3 - Landscapes  */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .ContactTitre.ContactTitre2 p{
+        font-size:25px !important;
+    }
+}
+/* IPAD 1,2,3 - Portrait  */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .ContactTitre.ContactTitre2 p{
+        font-size:25px !important;
+    }
+}
 
 
 .ContactTitre{

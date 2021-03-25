@@ -60,14 +60,14 @@ function AboutTwo(props){
                         </div>
                     </div> 
                         <div className='getInTouch' onClick={handleClickGetInTouch}>
-                            <a href="mailto:contact@jonathan-robin.com" className='getInTouchLink'>Contactez-moi !</a> 
+                            <a href="mailto:contact@jonathan-robin.com" title='Contact' className='getInTouchLink'>Contactez-moi !</a> 
                         </div>
                     </div>
                 </div>
             </div>
             </article>
             <div className='mePicture'>
-                        <img className='Picture' src={picture}/>
+                        <img className='Picture' src={picture} alt='Photo de Jonathan Robin développeur Web' title="Jonathan Robin picture"/>
                     </div>
         </div>
 </>
