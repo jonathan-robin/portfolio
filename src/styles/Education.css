@@ -1,87 +1,4 @@
-/* IPAD 1,2,3 - Landscapes  */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .EducationTitre p{
-        font-size:25px !important;
-    }
-    .OneSchool div{
-        font-size:16px !important;
-    }
-    .OneExperience div{
-        font-size:16px !important;
-    }
-    .Cission{
-        margin-right:120px !important;
-        margin-left:120px !important;
-    }
-    .TitleExperience, .TitleSchoolY.TSL{
-        margin-right: 20px;
-        margin-left:20px;
-    }
-}
-  /* Galaxy s6 - Landscapes */
-  @media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 640px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape){
-    .Education.EducationScroll{
-        width:640px !important;
-    }
-  }
-/* Iphone X - Landscapes  */
-@media only screen and (min-device-width:375px)
-                    and (max-device-width: 812px) 
-                    and (-webkit-min-device-pixel-ratio: 3)
-                    and (orientation: landscape),
-                    /* Iphone 6,7,8 - Landscapes  */
-        only screen and (min-device-width: 375px) 
-                    and (max-device-width: 667px) 
-                    and (-webkit-min-device-pixel-ratio: 2)
-                    and (orientation: landscape),
-                      /* Galaxy s6 - Landscapes */
-                      only screen 
-                      and (min-device-width: 360px) 
-                      and (max-device-width: 640px) 
-                      and (-webkit-min-device-pixel-ratio: 2)
-                      and (orientation: landscape) { 
 
-    .OneSchool div{
-        font-size:12px !important;
-    }
-    .OneExperience div{
-        font-size:12px !important;
-    }
-    .EducationTitre.EducationTitre2 p{
-        font-size:16px;
-    }
-    .Cission{
-        margin-top:50px;
-        margin-bottom:50px;
-    }
-}
-/* IPAD 1,2,3 - Portrait  */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .EducationTitre.EducationTitre2 p{
-        font-size:25px !important;
-    }
-    .OneSchool div{
-        font-size:20px !important;
-    }
-    .OneExperience div{
-        font-size:20px !important;
-    }
-    .EducationTitre.EducationTitre2 p{
-        font-size:16px;
-    }
-}
 @media (max-width:1600px){ 
     .OneSchool.OneSchoolR{
         width:250px;
@@ -314,7 +231,7 @@
 .EducationTitre p{ 
     margin-right:30px;
     color:var(--green);
-    font-size:16px;
+    font-size:22px;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 .EducationTitre p:last-child{ 
@@ -363,6 +280,71 @@
     font-weight:600;
     font-size:1.6vh;
 }
+
+/* IPAD 1,2,3 - Landscapes  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .EducationTitre p{
+        font-size:25px !important;
+    }
+    .OneSchool div{
+        font-size:16px !important;
+    }
+    .OneExperience div{
+        font-size:16px !important;
+    }
+    .Cission{
+        margin-right:120px !important;
+        margin-left:120px !important;
+    }
+    .TitleExperience, .TitleSchoolY.TSL{
+        margin-right: 20px;
+        margin-left:20px;
+    }
+}
+  /* Galaxy s6 - Landscapes */
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+    .Education.EducationScroll{
+        width:640px !important;
+    }
+  }
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+/* Iphone 6,7,8 - Landscapes  */
+        only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* Galaxy s6 - Landscapes */
+        only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+        /* LG optimus l70 - Landscapes  */
+    only screen and (min-device-width: 384px) and (max-device-width: 640px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) { 
+    .OneSchool div{
+        font-size:12px !important;
+    }
+    .OneExperience div{
+        font-size:12px !important;
+    }
+    .EducationTitre.EducationTitre2 p{
+        font-size:20px !important;
+    }
+    .Cission{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+}
+/* IPAD 1,2,3 - Portrait  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .EducationTitre.EducationTitre2 p{
+        font-size:25px !important;
+    }
+    .OneSchool div{
+        font-size:20px !important;
+    }
+    .OneExperience div{
+        font-size:20px !important;
+    }
+    .EducationTitre.EducationTitre2 p{
+        font-size:16px;
+    }
+}
+
 @keyframes fadein{
     0% {opacity:0 }
     10% {opacity:0.1 }

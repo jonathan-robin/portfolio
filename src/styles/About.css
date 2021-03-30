@@ -1,5 +1,4 @@
 
-
 .AboutPage{ 
     padding:15vh 32vw 0vh 12vw;
     display:flex;
@@ -24,7 +23,6 @@
     justify-content: center;
 }
 .TitreAbout p{
-    font-size:16px; 
     margin-right:30px;
     color:var(--green);
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
@@ -47,11 +45,9 @@
 }
 .AboutMe.scrolled .divName{ 
     color:var(--lightest-navy);
-    font-size:1.3vw;
 }
 .AboutMe.scrolled .divSousName{ 
     color:var(--light-navy);
-    font-size:1.2vw;
 }
 .AboutMe.scrolled .divSousTitre{ 
     display:none;
@@ -60,7 +56,6 @@
     color:var(--navy);
     padding-left:80px;
     padding-right:80px;
-    font-size:1.1vw;
 }
 .AboutMe.scrolled .pContent p:last-child{ 
     color:var(--lightest-navy);
@@ -69,9 +64,6 @@
 .AboutMe.scrolled .getInTouchLink{ 
     color:var(--navy);
     border-color: var(--navy);
-}
-.lesLines.scrolled{
-    display:none;
 }
 .Picture.scrolled{
     box-shadow: none;
@@ -85,15 +77,6 @@
     padding:0px;
     transition:all 1s ease;
 }
-.AboutMe.scrolled .pContent{
-    margin:0px;
-}
-.AboutMe.scrolled .getInTouch{
-    display:none;
-}
-.mainContent{
-    display:flex;
-}
 .AboutMe{ 
     padding:0vh 5vw 1vh 5vw;
     background-color:#0d2241;
@@ -102,7 +85,6 @@
     z-index:2;
 }
 .Picture{ 
-    height:32vh;
     z-index:0;
     border-radius:10px;
     box-shadow: -3px 5px 1px 2px var(--lightest-navy), -5px 8px 1px 2px  var(--green);
@@ -116,6 +98,7 @@
 .divSousTitre{ 
     color:var(--green);
     font-size:16px;
+    margin-left:10px;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-weight:100;
 }
@@ -124,7 +107,7 @@
     color: var(--lightest-slate);
     line-height: 1.1;
     font-family:  "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    font-size: 1.5vw;
+    font-size:42px;
     margin-top:-4%;
 }
 .divSousName{
@@ -132,14 +115,13 @@
     color: var(--light-slate);
     line-height: 1.1;
     font-family:  "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    font-size: 1.3vw;
     margin-top:-5%;
 }
 .pContent{ 
     margin-right:25%;
     color: var(--light-slate);
     line-height: 1.5;
-    font-size:1.1vw;
+    font-size:calc(8px + 0.7vw);
     font-family:  "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 }
 .getInTouch{ 
