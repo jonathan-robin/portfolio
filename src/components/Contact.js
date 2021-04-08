@@ -49,7 +49,9 @@ function Contact(props){
         <div className={`ContactTitre ${scroll? 'ContactTitre2' : ''}`}><h1 style={{display:'flex', fontWeight:'inherit'}}><p>04. </p><p>Contact</p></h1></div>
         <div className={`ContactComponent ${animation? 'scrolled' : ''}`} style={{visibility:animation?'visible':'hidden'}}>
         <div className='ContactAdress'>
-            <div className='ContactAd'><a href='https://github.com/jonathan-robin' target='_blank'><img className='imgReseau' src={github}/></a></div>
+            <div className='ContactAd'>
+                <a media='screen' hreflang='fr-fr' href='https://github.com/jonathan-robin' type="text/html" title='Github Page ROBIN Jonathan' author='ROBIN Jonathan' target='_blank'>
+                <img className='imgReseau' alt='Github Logo' src={github}/></a></div>
             <div className='ContactAd'><img className='imgReseau' src={Linkedin}/></div>
             </div>
             <div className='sendMessage' id='sendMessage'>
