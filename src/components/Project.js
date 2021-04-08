@@ -221,7 +221,7 @@ function Project(props){
                                         </div>
                                     </div>
                                     <div className='Date'>
-                                        Janvier 2020
+                                        Janvier 2021
                                     </div>
                                     <div className='FullDescription'>
                                         <article>

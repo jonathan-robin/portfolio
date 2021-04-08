@@ -72,11 +72,17 @@ function NavigationHeader(props) {
              window.innerWidth == 320 && window.innerHeight == 568){
             return [600, 700, 4400, 5150]
         }
+        else if (window.innerWidth > 990 && window.innerWidth < 1375) {
+            return [600, 700, 4000, 5000]
+        }
         else if (window.innerWidth > 500 && window.innerWidth <= 1375) {
             return [600, 700, 5450, 6600]
         }
+        else if (window.innerWidth < 550) {
+            return [600, 700, 5500, 6900]
+        }
         else if (window.innerWidth > 1375) {
-            return [600, 700, 3250, 4500]
+            return [600, 700, 4250, 5600]
         }
         else{
             return [600,700,3000,4000];

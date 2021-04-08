@@ -1,6 +1,9 @@
 .FullDescription{ 
     color:var(--light-slate);
 }
+.FullDescription, .FullDescriptionL{ 
+    font-size:15px;
+}
 .FullDescriptionL{ 
     color:var(--light-slate);
     text-align:right;
@@ -323,6 +326,17 @@
         margin-left:0; 
         padding:0;
         justify-content: center;
+    }
+    #root > div.ProjectOverAll > div:nth-child(5) > div > div.borderUpRight > div.borderRight{
+        margin-top:5vh;
+    }
+    #root > div.ProjectOverAll > div:nth-child(5) > div > div.borderUpRight > div.ProjectBorderUpRight.loaded{
+        margin-top:15vh;
+    }
+    .borderUp, .borderUpRight, .ProjectVideo, .ProjectContent.loaded, .ProjectContent2.loaded, .ProjectVideo2, .Project.p1, .Project.p2{
+        /* width:vw; */
+        /* margin:0; */
+        width:97vw !important;
     }
     .borderUp, .borderLeft, .borderUpRight{
         padding:0;

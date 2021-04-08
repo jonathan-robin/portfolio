@@ -3,6 +3,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import NavigationHeader from '../src/components/NavigationHeader';
 import About from '../src/components/About';
 import AboutTwo from '../src/components/AboutTwo';
+import Design from '../src/components/Design';
 import Project from '../src/components/Project';
 import Education from '../src/components/Education'; 
 import Contact from '../src/components/Contact';
@@ -106,6 +107,7 @@ useEffect(() => {
         <AboutTwo scrolled={scroll}/>
         <Project scrollFirstProject={scrollFirstProject} scrollSecondProject={scrollSecondProject} scrollThirdProject={scrollThirdProject}
         scrollStartProject={scrollStartProject} scrollFourthProject={scrollFourthProject}/>
+        <Design />
         <Education scrollEducation={scrollEducation} scrollExperience={scrollExperience}/>
         <Contact scrollContact={scrollContact}/>
 
