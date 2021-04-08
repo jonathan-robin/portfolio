@@ -31,6 +31,8 @@ function App() {
 
   const [loading, setLoading] = useState(false);
 
+
+
 useEffect(() => { 
   setTimeout(() => {
     setLoading(true);
@@ -44,6 +46,30 @@ useEffect(() => {
 },[])
 
   const refAbout = useRef();
+  function DisableToolTip(elements) {
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        element.onmouseover = function() {
+            this.setAttribute("org_title", this.title);
+            this.title = "";
+        };
+        element.onmouseout = function() {
+            this.title = this.getAttribute("org_title");
+        };
+        element.onmousedown = function() {
+          this.title = this.getAttribute("org_title");
+      };
+      }
+  }
+
+useEffect(() => { 
+    var links = document.getElementsByTagName("a");
+    DisableToolTip(links);
+    var images = document.getElementsByTagName("img");
+    DisableToolTip(images);
+    var videos = document.getElementsByTagName("video");
+    DisableToolTip(videos);
+})
 
   var handleClickBack = () => {
     window.scrollTo({
@@ -98,6 +124,8 @@ useEffect(() => {
 
   return (
     <>
+<link rel='alternate' hreflang='fr-fr' href='https://www.jonathan-robin.com/' />
+<link rel='alternate' hreflang='fr-ca' href='https://www.jonathan-robin.com/' />
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         {!loading && <Loading/>}
@@ -113,10 +141,12 @@ useEffect(() => {
 
         <div className={`${animationLateral ? 'shortcut-2': ''}`}>
         <div className='git'>
-          <a href='https://github.com/jonathan-robin' target='_blank'><img src={github} className='tag-shortcut'/></a>
+          <a hreflang='en' author='ROBIN Jonathan' type="text/html" href='https://github.com/jonathan-robin' title='Portfolio ROBIN Jonathan fullstack dev web link to github' alt="logo github.com" target='_blank'>
+              <img src={github} className='tag-shortcut' title='Link from ROBIN Jonathan portfolio to github' alt="logo github.com"/>
+            </a>
         </div>
         <div className='Lnkdn'>
-        <img src={linkedin} className='tag-shortcut'/>
+        <img src={linkedin} style={{cursor:'wait'}} className='tag-shortcut' title='Link from ROBIN Jonathan portfolio to linkedin Account' alt='linkedin Logo'/>
         </div>
             <div className='dottedLine-2'>
             </div>
@@ -124,7 +154,7 @@ useEffect(() => {
           </div>
         <div className={`${animationLateral2 ? 'shortcut': ''} ${shortcutAnimation ? 'scrolled':''}`}>
         <div className='resumeLink-2'>
-        <a href='https://jonathan-robin.com/ROBIN_JONATHAN_CV.pdf' target='_blank' className='resume'>Resume</a>
+        <a href='https://jonathan-robin.com/ROBIN_JONATHAN_CV.pdf' hreflang='fr' author='ROBIN Jonathan' type='application/pdf' title='CV de Jonathan ROBIN fullstack développeur web' alt='Link to fullstack web developper ROBIN Jonathan resume' target='_blank' className='resume'>Resume</a>
             </div>
             <div className='logoNavigation-2' onClick={handleClickBack}>
                 <svg className='svgNav' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150px" height="80px" viewBox="0 0 87.59 99.306">

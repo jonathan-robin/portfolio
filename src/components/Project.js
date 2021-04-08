@@ -109,7 +109,7 @@ function Project(props){
             <div className={`ProjectContent ${animation1? 'loaded' : ''}`} style={{visibility:animation1?'visible':'hidden'}}>
                 <div className='Project p1' >
                     <div className={` ${animation12? 'ProjectVideo': ''}`}  style={{visibility:animation12?'visible':'hidden'}}>
-                        <video id='videoProject1' controls className='videoProject2' preload='auto'>
+                        <video id='videoProject1' title='portfolio robin jonathan web fullstack project video of copyFacebook' author='ROBIN Jonathan' alt="Portfolio's video of jonathan robin project copyFacebook" controls className='videoProject2' preload='auto'>
                             <source src={videoCopyFacebook}  preload='auto' type="video/mp4"/>
                         </video>
                     </div>
@@ -123,8 +123,16 @@ function Project(props){
                                                 <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>CopyFacebook</h2>
                                             </div>
                                             <div className='share'>
-                                                <div className='tagR'><a target='_blank' href='https://github.com/jonathan-robin/copyFacebook' ><img src={github} className='tagResources'/></a></div>
-                                                <div className='tagR'><a target='_blank' href='https://copiefacebook.web.app/login-signup'><img src={upload} className='tagResources'/></a></div>
+                                                <div className='tagR'>
+                                                    <a author='ROBIN Jonathan' title='Portfolio Robin Jonathan web developper fullstack CopyFacebook project link to github repository' target='_blank' href='https://github.com/jonathan-robin/copyFacebook' hreflang='fr' type="text/html" media='screen'>
+                                                        <img src={github} alt='logo github' title='logo github' author='www.github.com' className='tagResources'/>
+                                                        </a>
+                                                </div>
+                                                <div className='tagR'>
+                                                    <a title='Web fullStack developper Robin Jonathan CopyFacebook portfolio project link to live version' author='ROBIN Jonathan' href='https://copiefacebook.web.app/login-signup' hreflang='fr' type="text/html" media='screen' target='_blank'>
+                                                        <img src={upload} alt='icon upload' title='icon upload' author='unknown' className='tagResources'/>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -165,8 +173,14 @@ function Project(props){
                                         <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>RG STATS</h2>
                                         </div>
                                         <div className='share'>
-                                            <div className='tagR'><a href='https://github.com/jonathan-robin/tracker' target='_blank' ><img src={github} className='tagResources'/></a></div>
-                                            <div className='tagR'><img src={upload} className='tagResources'/></div>
+                                            <div className='tagR'>
+                                                <a hreflang='fr' type="text/html" title='Portfolio web fullstack Robin Jonathan project Rolland Garros Stats' media='screen' author='ROBIN Jonathan' href='https://github.com/jonathan-robin/tracker' target='_blank' >
+                                                    <img src={github} alt='logo Github' title='logo Github' className='tagResources'/>
+                                                </a>
+                                            </div>
+                                            <span>
+                                                <img src={upload} className='tagResources' style={{cursor:'wait'}} alt='icon download' title='coming soon...'/>
+                                                </span>
                                         </div>
                                     </div>
                                     <div className='Date'>
@@ -192,7 +206,7 @@ function Project(props){
                         </div>
                     </div>
                     <div className={` ${animation2? 'ProjectVideo2': ''}`}  style={{visibility:animation2?'visible':'hidden'}}>
-                        <video controls id='videoProject2' className='videoProject' preload='auto'>
+                        <video controls id='videoProject2' className='videoProject' preload='auto' title="video of Robin Jonathan RG_STATS' project for portfolio" author='ROBIN Jonathan' alt="Portfolio's video of jonathan robin project Rg_stats">
                             <source src={videoRGSTATS} type="video/mp4"/>
                         </video>
                     </div>
@@ -202,7 +216,7 @@ function Project(props){
             <div className={`ProjectContent ${thirdProject? 'loaded': ''}`} style={{visibility:thirdProject?'visible':'hidden'}}>
                 <div className='Project p1'>
                     <div className={` ${animation3? 'ProjectVideo': ''}`}  style={{visibility:animation3?'visible':'hidden'}}>
-                        <video id='videoProject3' controls className='videoProject2' preload='auto'>
+                        <video title="ROBIN Jonathan Portfolio's video of Tracker project" author='ROBIN Jonathan' alt="Portfolio's video of jonathan robin project Tracker" id='videoProject3' controls className='videoProject2' preload='auto'>
                             <source src={videoTRACKER} type="video/mp4"/>
                         </video>
                     </div>
@@ -216,8 +230,16 @@ function Project(props){
                                         <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>Tracker</h2>
                                         </div>
                                         <div className='share'>
-                                            <div className='tagR'><a href='https://github.com/jonathan-robin/tracker_soft' target='_blank'><img src={github} className='tagResources'/></a></div>
-                                            <div className='tagR'><img src={upload} className='tagResources'/></div>
+                                            <div className='tagR'>
+                                                <a hreflang='fr' type="text/html" author='ROBIN Jonathan' media='screen' href='https://github.com/jonathan-robin/tracker_soft' title="ROBIN Jonathan fullstack web portfolio's project about Tracking software" target='_blank'>
+                                                    <img src={github} alt='logo github' title='Repository on Github' className='tagResources'/>
+                                                </a>
+                                            </div>
+                                            <div className='tagR'>
+                                                <span>
+                                                <img src={upload} className='tagResources' style={{cursor:'wait'}} alt='icon download' title='coming soon...'/>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='Date'>
@@ -258,8 +280,16 @@ function Project(props){
                                             <h2 style={{fontSize:'inherit', margin:'inherit', fontWeight:'inherit'}}>Tracker.exe</h2>
                                             </div>
                                             <div className='share'>
-                                                <div className='tagR'><a href='https://github.com/jonathan-robin/rg_stats' target='_blank'><img src={github} className='tagResources'/></a></div>
-                                                <div className='tagR'><img src={upload} className='tagResources'/></div>
+                                                <div className='tagR'>
+                                                    <a hreflang='fr' type="text/html" author='ROBIN Jonathan' media='screen' title='Portfolio web fullstack developper ROBIN Jonathan link to tracker project' href='https://github.com/jonathan-robin/rg_stats' target='_blank'>
+                                                        <img src={github} title='link to github repository' alt='github logo' className='tagResources'/>
+                                                    </a>
+                                                </div>
+                                                <div className='tagR'>
+                                                    <span>
+                                                        <img src={upload} className='tagResources' style={{cursor:'wait'}} alt='download icon to visit live version' title='coming soon...'/>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     <div className='Date'>
@@ -281,7 +311,7 @@ function Project(props){
                         </div>
                     </div>
                     <div className={` ${animation41? 'ProjectVideo2': ''}`}  style={{visibility:animation41?'visible':'hidden'}}>
-                        <video id='videoProject4' controls className='videoProject' preload='auto'>
+                        <video title="Portfolio project from Jonathan ROBIN : Tracker.EXE" author='ROBIN Jonathan' alt="Portfolio's video of jonathan robin project Tracker.EXE" id='videoProject4' controls className='videoProject' preload='auto'>
                             <source src={videoTRACKEREXE}  preload='auto' type="video/mp4"/>
                         </video>
                     </div>
