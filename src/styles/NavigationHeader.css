@@ -6,6 +6,11 @@
         width:97vw !important;
     }
 }
+@media (max-width:870px){
+    .logoNavigation{
+        display:none;
+    }
+}
 @media (max-width:500px){
     .shortcut-2{
         display:none; 
@@ -17,7 +22,7 @@
     }
     .olNav{
         float:none !important;
-        width:100%;
+        /* width:100%; */
         display:flex; 
         justify-content: space-around;
     }
@@ -53,7 +58,7 @@
 }
 @media(max-width:550px){
     .headerNavigation.scroll{
-        width:96vw !important;
+        /* width:96vw !important; */
     }
 }
 @media (max-width:500px){

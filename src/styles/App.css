@@ -1,9 +1,14 @@
-@media (max-width:500px){
-  :root {
-    width:95vw;
+@media (max-width:550px){
+ div, body, html{ 
+   max-width:90vw !important;
+ }
+ .Design-outter{ 
+    max-width:200px !important;
+  }
+  .Carrousel-design-1{ 
+    overflow:visible !important;
   }
 }
-
 .content {
   background: var(--navy);
   height:100.1vh;
@@ -66,6 +71,7 @@ html{
   z-index:100;  
   animation:out-2 1s ease-in;
 }
+
 .git{
   padding-bottom:0.5vh;
 }
@@ -128,3 +134,4 @@ html{
     width:100vw !important;
   }
 }
+

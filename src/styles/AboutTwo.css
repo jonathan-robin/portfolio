@@ -51,7 +51,7 @@
         min-height:220px;
     }
     .AboutPage{ 
-        padding:15vh 0 0vh 5vw; 
+        padding:15vh 0vw 0vh 5vw; 
         margin:0px;
     }
 }
@@ -63,7 +63,7 @@
         justify-content: center;
     }
     .AboutPage{ 
-        width:100vw; 
+        width:90vw; 
         padding:0; 
         margin:0;
         justify-content: center;
