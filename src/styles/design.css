@@ -1,0 +1,145 @@
+.Design{
+    max-width:80vw;
+    padding:5vh 2vw 5vh 2vw;
+    justify-content: center;
+    margin:auto;
+}
+.Designs{ 
+    display:flex;
+    justify-content: space-around;
+}
+.Carrousel-design-1{
+    display:flex;
+    max-height:280px;
+    animation:carouAnim infinite 30s ease-in-out; 
+    overflow:hidden;
+    margin:auto;
+}
+.TitreDesign{ 
+    margin-bottom:20vh;
+    margin-top:25vh;
+}
+.Design-1{ 
+    max-width:25vw;
+    min-width:250px;
+    padding:2vh;
+    background-color:var(--lightest-navy);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.firstLine-2{ 
+    margin:2vh 1vw 2vh 1vw;
+    
+}
+.tags-design{ 
+    display:flex; 
+    margin-left:auto;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:var(--green);
+    font-size:12px;
+}
+.Text-design-1{ 
+    margin-top:5vh;
+    text-align: center;
+    color:var(--light-slate);;
+}
+#root > div.Design > div > div:nth-child(1) > div.Text-design-1 > a{
+    text-decoration: underline;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:var(--green);
+}
+.Design-img{
+    height:250px; 
+    width:250px;
+    min-width:250px;
+    margin-right:0.1px;
+    border-radius:5px;
+}
+.framework-design-1{ 
+    margin-top:5vh;
+    display:flex; 
+    justify-content: space-around;
+    width:100%;
+}
+.Date-design{ 
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: var(--light-slate);
+}
+.framework-design{ 
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:var(--green);
+    font-size:12px;
+}
+
+.Design-outter{ 
+    min-width:250px;
+    max-width:250px;
+    display:flex;
+    max-height:250px;
+    overflow:hidden;
+    margin:auto;
+}
+
+@keyframes carouAnim {
+    0% {
+        margin-left:0%;
+    }
+    7% {
+        margin-left:0%;
+    }
+    12.5%{
+        margin-left:-100%;
+    }
+    19.5%{
+        margin-left:-100%;
+    }
+    25%{
+        margin-left:-200%;
+    }
+    32%{
+        margin-left:-200%;
+    }
+    37.5%{
+        margin-left:-300%;
+    }
+    44.5%{
+        margin-left:-300%;
+    }
+    50%{
+        margin-left:-400%;
+
+    }
+    57%{
+        margin-left:-400%;
+
+    }
+    62.5%{
+        margin-left:-500%;
+
+    }
+    69.5%{
+        margin-left:-500%;
+
+    }
+    75%{ 
+        margin-left:-600%;
+
+    }
+    82%{ 
+        margin-left:-600%;
+
+    }
+    87.5%{ 
+        margin-left:-700%;
+
+    }
+    94.5%{ 
+        margin-left:-700%;
+
+    }
+    100%{
+        margin-left:0%;
+
+    }
+}

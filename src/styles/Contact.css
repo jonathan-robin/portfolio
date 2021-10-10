@@ -1,0 +1,154 @@
+    .ContactTitre{
+        opacity:0;
+        }
+    .ContactTitre{ 
+        padding-top:10vh !important;
+        margin-top:12.5vh;
+        opacity:0;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+    .ContactTitre.ContactTitre2{
+        opacity:1;
+        width:40vw;
+        margin-top:0 !important;
+        margin-left:30vw;
+        display:flex;
+        margin-top:60vh;
+        animation:outUp 0.5s ease-in;
+    }
+    .sendMessage{
+        margin:1vh auto;
+        text-align: center;
+        padding: 0.5vh 0vw 0.5vh 0vw;
+        color:var(--navy);
+        background:var(--green);
+        min-width:255.990px;
+        width:12vw;
+        border-radius:10px;
+    }
+    .imgReseau{
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(102%) contrast(105%);
+    }
+    .imgReseau:hover{ 
+        cursor:pointer; 
+        filter: invert(91%) sepia(43%) saturate(599%) hue-rotate(83deg) brightness(100%) contrast(106%);
+    }
+    .meform{
+        min-width:280px !important; 
+        min-height:355px !important;
+    }
+    .ContactTitre p{ 
+        margin-right:30px;
+        color:var(--green);
+        font-size:22px;
+        font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    }
+    .ContactTitre p:last-child{ 
+        color:var(--light-slate);
+        text-decoration:underline
+    }
+    .ContactForm{ 
+        display:flex;
+        justify-content: center;
+        min-width:280px; 
+        min-height:355px;
+    }
+    .ContactAdress{ 
+        justify-content: center;
+        margin-top:5vh;
+        display:flex;
+    }
+    .Name-group, .email-group, .Message-group{ 
+        padding-bottom:2vh;
+    }
+    .name, .message, .email{ 
+        font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        color:var(--green);
+        font-weight: 400;
+        font-size:18px;
+    }
+    .fc-Message{ 
+        height:180px !important;
+    }
+    .messageSent{
+        background:var(--green);
+        display:flex; 
+        width:fit-content;
+        justify-content: center;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        padding:5px 3px 5px 3px;
+        color:var(--navy); 
+        margin-top:1vh;
+        border-radius:15px; 
+        font-size:600;
+        font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    }
+    .form-control{ 
+        height:25px;
+        border-radius:5px;
+        margin-top:10px;
+        width:280px;
+    }
+    .butonSubmit{ 
+        float:right;
+        padding:0.8vh 1.5vh 0.8vh 1.5vh;
+        background:var(--green);
+        font-size:16px;
+        color:var(--navy);
+        font-weight:600;
+        border-radius:5px;
+    }
+    .butonSubmit:hover{ 
+        cursor:pointer; 
+        background:var(--lightest-navy); 
+        color:var(--green);
+    }
+    .GitHubAccount, .LinkedinAccount{ 
+        color:var(--lightest-slate);
+        font-size:15px;
+    }
+    .imgReseau{ 
+        height:40px;
+        border-radius:50px;
+        margin-top:-6px;
+    }
+    .ContactComponent.scrolled{
+        visibility:visible;
+        animation:outUp 0.5s ease-in;
+        padding-bottom:200px;
+    }
+    .ContactAd{
+        padding:15px;
+        width:fit-content;
+        display:flex;
+    }
+/* IPAD 1,2,3 - Landscapes  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .ContactTitre.ContactTitre2 p{
+        font-size:25px !important;
+    }
+}
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { 
+    .ContactTitre.ContactTitre2 p{
+        font-size:20px !important;
+    }
+}
+/* IPAD 1,2,3 - Portrait  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .ContactTitre.ContactTitre2 p{
+        font-size:25px !important;
+    }
+}
+@keyframes fade-out {
+    from{
+        opacity:1; 
+    }
+    to{
+        opacity:0;
+    }
+}

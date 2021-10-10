@@ -1,0 +1,529 @@
+    .TitreAbout p{ 
+        font-size:22px;
+    }
+.AboutPage{ 
+    display:flex;
+}
+.selfThaught p{ 
+    line-height: 1.3;
+    width:25vw;
+}
+.emph{
+    color:var(--green);
+    font-weight:600;
+}
+.AboutMe{
+    padding:0 2vw 0 2vw;
+    margin-left:10vw;
+}
+.TitreAbout
+{
+    animation:out 1s ease-in;
+    animation-delay:0.6s;
+}
+.Picture{
+    animation:out 1s ease-in;
+    animation-delay:0.7s;
+    position:absolute;
+    left:55vw;
+    top:28vh;
+    height:280px;
+}
+.AboutMe{
+    animation:out 1s ease-in;
+    animation-delay:0.8s;
+}
+@media (max-width:1545px){
+    .AboutMe{
+        width:670px;
+        margin-right:0;
+        padding-right:0;
+        margin-left:150px;
+    }
+    .pContent{
+        margin-right:0px;
+        font-size:19px;
+    }
+    .Picture{ 
+        top:26vh;
+        left:750px;
+        height:20vw;
+        min-height:220px;
+    }
+    .AboutPage{ 
+        padding:15vh 0vw 0vh 5vw; 
+        margin:0px;
+    }
+}
+@media (max-width:1000px){
+    .AboutMe{
+        width:60vw;
+        padding-right:0;
+        margin: 0 auto; 
+        justify-content: center;
+    }
+    .AboutPage{ 
+        width:90vw; 
+        padding:0; 
+        margin:0;
+        justify-content: center;
+    }
+    .pContent{
+        margin-right:0px;
+        font-size:18px;
+    }
+    .Name{ 
+        font-size:44px;
+    }
+    .Picture{ 
+        top:26vh;
+        left:55vw;
+        right:auto;
+        height:20vw;
+        min-height:180px;
+    }
+    .AboutPage{ 
+        padding:15vh 0 0vh 0vw; 
+        margin:0px;
+    }
+}
+.getInTouchLink:hover{ 
+    color:var(--navy); 
+    background:var(--green); 
+    cursor:pointer;
+}
+/* Iphone 5, 5c 5se, 5s - Portrait  */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .Picture{
+        height:140px !important;
+        min-height:140px !important;
+        left:160px;
+        top:190px;
+    } 
+    .AboutMe{
+        width:250px;
+        margin-top: 20px;
+        margin-left:-20px;
+    }
+    .selfThaught{
+        width:250px;
+    }
+    .selfThaught, .firstPhrase,.ProjectOpo, .spentMonths{
+        width:220px;
+    }
+}
+ /* IPHONE 6 7 8 - Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+    .Picture {
+        height:160px !important;
+        min-height:160px !important;
+        left:180px;
+        top:185px;
+        } 
+        .AboutMe{ 
+            width:300px;
+            margin-left:-20px;
+        }
+        .selfThaught{
+            width:280px;
+        }
+        .firstPhrase,.ProjectOpo, .spentMonths{
+            width:220px;
+        }
+  }
+/* IPHONE X - Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait){
+    .Picture {
+    height:150px !important;
+    min-height:150px !important; 
+    left:190px;
+    top:220px;
+    } 
+    .AboutMe{
+        width:300px;
+    } 
+    .selfThaught{ 
+        width:180px;
+    }
+    .pContent, .selfThaught{
+        width:280px;
+    }
+}
+ /* IPHONE 6 7 8 +++ - Portrait*/
+ @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait){
+   .Picture {
+       height:160px !important;
+       min-height:160px !important;
+       left:190px;
+       top:200px;
+       } 
+    .AboutMe{
+        width:340px;
+    }
+    .pContent, .selfThaught{
+        width:300px;
+    }
+    .selfThaught, .ProjectOpo, .spentMonths{
+        width:350px;
+    }
+ }
+/* IPAD 1,2,3 - Portrait  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .Picture{
+        height:260px !important;
+        min-height:260px !important;
+        position:absolute;
+        top:340px;
+        left:450px;
+    }
+    .AboutMe{ 
+        width:500px;
+    }
+    .Name{
+        font-size:50px !important;
+    }
+    .selfThaught{
+        width:480px;
+    }
+    .sous-titre{
+        font-size:18px !important;
+    }
+    .firstPhrase, .ProjectOpo, .spentMonths, .dive, .getInTouchLink{
+        font-size:20px !important;
+    }
+    .TitreAbout p{
+        font-size:25px !important;
+    }
+    .TitreAbout{ 
+        margin-bottom: 150px !important;
+        margin-top: 100px !important;
+    }
+}
+/* Ipad 1,2,3 - Portrait  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1),
+/* Nexus 7 - Portrait  */
+only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait), 
+/* Iphone 6+,7+,8+ - Portrait */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+/* Iphone X - Portrait  */
+only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+/* Iphone 6,7,8 - Portrait */
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), 
+/* Iphone 5,5s,5c,5se - Portrait  */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)
+{ 
+      .getInTouchLink{ 
+          border-radius:5px;
+      }
+      .TitreAbout{ 
+            margin-bottom:60px;
+        }
+        .Picture{ 
+            display:flex; 
+            position:absolute;
+        }
+        .TitreAbout{
+            margin-top:20px;
+        }
+        .TitreAbout p{
+            font-size:16px;
+        }
+        .Name{ 
+            font-size:32px;
+        }
+        .sous-titre{
+            font-size:12px;
+        }
+        .firstPhrase, .ProjectOpo, .spentMonths, .dive{
+            width:fit-content;
+            margin-right:0px;
+            margin-bottom: 5px;
+            font-size:12px;
+        }
+        .getInTouchLink{
+            font-size:12px ;
+        }
+        .AboutPage{
+            margin-bottom:150px;
+        }
+}
+/* IPAD 1,2,3 - Landscapes  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: Landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .Picture{
+        height:240px !important;
+        min-height:240px !important;
+        position:absolute;
+        top:220px;
+        left:600px;
+    }
+    .Name{
+        font-size:50px !important;
+    }
+    .selfThaught{
+        width:600px;
+    }
+    .sous-titre{
+        font-size:18px !important;
+    }
+    .firstPhrase, .ProjectOpo, .spentMonths, .dive, .getInTouchLink{
+        font-size:20px !important;
+    }
+    .TitreAbout p{
+        font-size:25px !important;
+    }
+    .TitreAbout{ 
+        margin-bottom: 30px !important;
+        margin-top: 50px !important;
+    }
+}
+/* Window Phone - Landscape  */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape){
+    .Picture{
+        height:200px !important;
+        min-height:200px !important;
+        position:absolute;
+        left:550px !important;
+        top:220px !important;
+    }
+     .AboutMe{ 
+        width:600px;
+    }
+}
+/* Iphone 6+,7+,8+ - Landscapes  */
+@media only screen and (min-device-width:414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .Picture{
+        height:180px !important;
+        min-height:180px !important;
+        position:absolute;
+        left:470px !important;
+        top:150px !important;
+    }
+     .AboutMe{ 
+        width:500px;
+    }
+    .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase{
+        width:500px;
+    }
+    .TitreAbout{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+}
+ /* Pixel 2 XL - Landscape */
+ @media only screen and (min-device-width: 411px) and (max-device-width:823px) and (-webkit-min-device-pixel-ratio: 3.5) and (orientation: landscape){ 
+    .Picture{
+        height:160px !important;
+        min-height:160px !important;
+        position:absolute;
+        left:480px;
+        top:140px;
+    }
+     .AboutMe{ 
+         margin-top:-30px !important;
+        width:550px;
+    }
+    .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase, .sous-titre, .dive, .getInTouchLink{
+        width:550px;
+        font-size:16px !important;
+    }
+    .Name{ 
+        font-size:40px !important;
+    }
+    .TitreAbout p { 
+        font-size:20px !important;
+        margin-top:-20px !important;
+    }
+}
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .Picture{
+        height:160px !important;
+        min-height:160px !important;
+        position:absolute;
+        left:480px;
+        top:140px;
+    }
+     .AboutMe{ 
+         margin-top:-30px !important;
+        width:550px;
+    }
+    .selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase, .sous-titre, .dive, .getInTouchLink{
+        width:550px;
+        font-size:16px !important;
+    }
+    .Name{ 
+        font-size:40px !important;
+    }
+    .TitreAbout p { 
+        font-size:20px !important;
+        margin-top:-20px !important;
+    }
+}
+/* Iphone 6,7,8 - Landscapes */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+    .Picture{
+    height:160px !important;
+    min-height:160px !important;
+    position:absolute;
+    left:380px !important;
+    top:190px !important;
+}
+ .AboutMe{ 
+    width:400px;
+}
+.selfThaugt, .ProjectOpo, .spentMonths, .firstPhrase{
+    width:350px;
+}
+}
+/* Iphone 5, SE - Landscapes */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+    .Picture{
+        height:150px ! important;
+    }
+    .AboutMe{ 
+        width:350px !important;
+    }
+    .ProjectOpo, .spentMonths, .firstPhrase, .dive{ 
+        width:320px !important;
+    }
+}
+/* LG optimus l70 - Landscapes  */
+@media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) { 
+    .Picture{
+        height:120px !important;
+        top:180px;
+        left:380px;
+    }
+}
+  /* Galaxy s6 - Landscapes */
+  @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+        .Picture{ 
+            height:150px !important;
+            top:70px !important;
+            left:400px !important;
+        }
+        .selfThaught, .ProjectOpo, .dive, .spentMonths, .firstPhrase, .getInTouchLink, .sous-titre{
+            font-size:12px !important;
+        }
+        .TitreAbout{ 
+            margin-top:40px !important;
+            margin-bottom:0px !important;
+        }
+        .Name{ 
+            font-size:30px !important;
+        }
+        .TitreAbout p{ 
+            font-size:18px !important;
+        }
+    }
+/* Iphone X - Landscapes  */
+@media only screen and (min-device-width:375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+/* Iphone 6,7,8 - Landscapes  */
+only screen and (min-device-width: 375px, 360px) and (max-device-width: 667px, 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* Iphone 5, SE - Landscapes */
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* Iphone 6+,7+,8+ - Landscapes  */
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), 
+/* Galaxy s6 - Landscapes */
+only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+/* LG optimus l70 - Landscapes  */
+only screen and (min-device-width: 384px) and (max-device-width: 640px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1),
+  /* Window Phone - Landscape  */
+only screen and (min-device-width: 480px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape), 
+ /* Pixel 2 XL - Landscape */
+only screen and (min-device-width: 411px) and (max-device-width:823px) and (-webkit-min-device-pixel-ratio: 3.5) and (orientation: landscape){ 
+                        .getInTouchLink{ 
+                            border-radius:5px;
+                        }
+                        .Name{ 
+                            font-size:28px;
+                        }
+                        .getInTouchLink{
+                            font-size:12px;
+                        }
+                        .firstPhrase, .ProjectOpo, .spentMonths, .dive{
+                            margin-bottom: 5px;
+                            font-size:12px;
+                        }
+                        .TitreAbout{
+                            margin-bottom:50px;
+                        }
+}
+@keyframes shortcutanim{
+    0%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+    20%{
+        transform: translateY(50px);
+        opacity:0.5;
+    }
+    40%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+    60%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+    80%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+    100%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+}
+@keyframes out {
+    0%{
+        transform: translateY(30px);
+        opacity:0;
+    }
+    20%{
+        transform: translateY(30px);
+        opacity:0.1;
+    }
+    40%{
+        transform: translateY(30px);
+        opacity:0.1;
+    }
+    60%{
+        transform: translateY(30px);
+        opacity:0.2;
+    }
+    80%{
+        transform: translateY(30px);
+        opacity:0.2;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes out-2 {
+    0%{
+        transform: translateY(100px);
+        opacity:0;
+    }
+    20%{
+        transform: translateY(100px);
+        opacity:0.1;
+    }
+    40%{
+        transform: translateY(100px);
+        opacity:0.1;
+    }
+    60%{
+        transform: translateY(100px);
+        opacity:0.2;
+    }
+    80%{
+        transform: translateY(100px);
+        opacity:0.2;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
