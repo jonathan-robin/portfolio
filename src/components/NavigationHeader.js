@@ -50,6 +50,9 @@ function NavigationHeader(props) {
     var handleClickEducation = () => {
         $('.EducationTitre')[0].scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
+    const handleClickLoading = () => {
+        props.setLoading(false);
+    }
 
     var getDevice = () => { 
     //Iphone X - landscape
@@ -60,7 +63,7 @@ function NavigationHeader(props) {
              window.innerWidth == 667 && window.innerHeight == 375 ||
     // Iphone 5,5c,5s,5se
              window.innerWidth == 568 && window.innerHeight == 320){
-            return [600, 700, 2500, 3200]
+                return [600, 700, 3000, 4000]
         }
     //Iphone X - Portrait
         else if(window.innerWidth == 375 && window.innerHeight == 812 || 
@@ -70,19 +73,19 @@ function NavigationHeader(props) {
              window.innerWidth == 375 && window.innerHeight == 667 ||
     // Iphone 5,5c,5s,5se
              window.innerWidth == 320 && window.innerHeight == 568){
-            return [600, 700, 4400, 5150]
+            return [600, 700, 3000, 4000]
         }
         else if (window.innerWidth > 990 && window.innerWidth < 1375) {
-            return [600, 700, 4000, 5000]
+            return [600, 700, 2100, 2800]
         }
-        else if (window.innerWidth > 500 && window.innerWidth <= 1375) {
-            return [600, 700, 5450, 6600]
+        else if (window.innerWidth > 500 && window.innerWidth <=  990) {
+            return [600, 700, 3200, 3800]
         }
         else if (window.innerWidth < 550) {
-            return [600, 700, 5500, 6900]
+            return [600, 700, 3200, 4500]
         }
         else if (window.innerWidth > 1375) {
-            return [600, 700, 4250, 5600]
+            return [600, 700, 2100, 2800]
         }
         else{
             return [600,700,3000,4000];
@@ -162,7 +165,7 @@ function NavigationHeader(props) {
         <>
             <div className={`headerNavigation ${scroll ? 'scroll' : ''}`}>
                 <div className='NavigationBar'>
-                    <div className='logoNavigation' onClick={handleClickAbout}>
+                    <div className='logoNavigation' onClick={handleClickLoading}>
                         <svg className='svgNav' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="150px" height="80px" viewBox="0 0 87.59 99.306">
                             <g>
                                 <path className='pathNav-2' stroke="#ccd6f6" stroke-miterlimit="10" d="M45.377,98.392c-0.953,0.55-2.513,0.552-3.467,0.005l-39.68-22.75 c-0.954-0.547-1.732-1.895-1.729-2.995l0.139-45.739c0.003-1.1,0.785-2.45,1.738-3l39.837-23c0.953-0.55,2.513-0.552,3.467-0.005 l39.68,22.75c0.954,0.547,1.732,1.895,1.729,2.995l-0.139,45.739c-0.003,1.1-0.785,2.45-1.738,3L45.377,98.392z"/>

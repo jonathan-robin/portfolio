@@ -25,8 +25,8 @@
     animation:out 1s ease-in;
     animation-delay:0.7s;
     position:absolute;
-    left:55vw;
-    top:28vh;
+    left:58vw;
+    top:22vh;
     height:280px;
 }
 .AboutMe{
@@ -45,10 +45,12 @@
         font-size:19px;
     }
     .Picture{ 
-        top:26vh;
-        left:750px;
+        top:12vw ;
+        /* top:26vh;
+        left:inherit !important;
+        right:10vw !important;
         height:20vw;
-        min-height:220px;
+        min-height:220px; */
     }
     .AboutPage{ 
         padding:15vh 0vw 0vh 5vw; 
@@ -525,5 +527,171 @@ only screen and (min-device-width: 411px) and (max-device-width:823px) and (-web
     100%{
         transform: translateY(0px);
         opacity:1;
+    }
+}
+.planete{
+    position:absolute;
+    animation:out 1s ease-in;
+    animation-delay:1s;
+}
+.planete1{ 
+height:22vw; 
+top:22vw;
+left:66vw;
+}
+.planete2{
+height:31vw; 
+z-index:-2;
+max-height:70vw;
+top:16vw;
+left:6vw;
+}
+.planete3{
+height:18vw;
+top:18vw;
+left:6vw;
+z-index:-2;
+}
+.sous-titre, .Name{
+    position:relative;
+    width:fit-content;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace !important;
+}
+.Name{
+    letter-spacing:-3px !important;
+}
+/* .Name{
+    animation:index 4s ease 6.6s forwards ;
+} */
+.divJeff{ 
+    position:absolute;
+    width:fit-content;
+    font-size:1.5em;
+    animation:index 7.4s ease forwards; 
+    /* z-index:0; */
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace !important;
+}
+
+@media (max-width:680px){
+    .Name::before, .Name::after, .divJeff, .divJeff::before, .divJeff::after{
+        animation:none !important;
+        background:none !important;
+    }
+    .divJeff, .divJeff::before, .divJeff::after, .Name::before, .Name::after{
+        visibility: hidden;
+    }
+    .pContent, .Name{ 
+        opacity:0;
+        animation:fadein 1.8s ease-in-out forwards 4.2s !important;
+    }
+}
+
+.pContent{ 
+    opacity:0;
+    animation:fadein 1s ease-in-out forwards 7.6s;
+}
+@keyframes fadein{
+    to {
+        opacity:1;
+    }
+}
+/* typewriting */
+.sous-titre::after, .sous-titre::before, .Name::before, .Name::after, .divJeff::after, .divJeff::before{
+    content:''; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    bottom:0; 
+    left:0; 
+
+}
+.sous-titre::before{ 
+    background:var(--light-navy);
+    animation:typewriting 0.7s steps(11) 3s forwards;
+}
+.sous-titre::after{ 
+    background:var(--green);
+    width:0.125em;
+    animation:
+    typewriting 0.7s steps(11) 3s forwards,
+    blink 300ms steps(11) infinite 2s, 
+    blink 100ms forwards 3.7s;
+}
+
+.divJeff::before{ 
+    background:var(--light-navy);
+    animation:typewriting-2 1.2s steps(8) alternate 4s;
+}
+.divJeff::after{ 
+    background:transparent;
+    width:0.055em;
+    animation:
+    typewriting-2 1.2s steps(8) alternate 4s,
+    blink-2 300ms steps(8) infinite 3.7s,
+    blink 100ms forwards 5.3s;
+}
+.Name::before{ 
+    background:var(--light-navy);
+    animation:typewriting-3 1.2s steps(14) 5.7s forwards;
+}
+.Name::after{ 
+    background:transparent;
+    width:0.055em;
+    animation:
+    typewriting-3 1.2s steps(14) 5.7s forwards,
+    blink-2 300ms steps(14) 5.4s infinite , 
+    blink 100ms forwards 7.5s;
+}
+
+@keyframes blink-2 {
+    to{
+        background:white;
+    }
+}
+@keyframes index {
+    from{
+        z-index:10;
+    }
+    to{
+        z-index:0;
+    }
+}
+
+@keyframes blink {
+    to{
+        background:transparent;
+    }
+}
+
+@keyframes typewriting-2 {
+    0%{
+        left:0;
+        z-index:10;
+    }
+    40%{
+        left:100%;
+        z-index:10;
+    }
+    60%{
+        left:100%;
+        z-index:10;
+    }
+    0%{
+        left:0;
+        z-index:0;
+    }
+}
+@keyframes typewriting-3 {
+    to{
+        left:100%;
+        z-index:10;
+    }
+    
+}
+
+
+@keyframes typewriting {
+    to{
+        left:100%;
     }
 }

@@ -541,10 +541,10 @@
         margin:0 auto ;
         border:none !important;
     }
-    .tags{
+    /* .tags{
         padding-bottom:50px;
         border-bottom:1px solid var(--green);
-    }
+    } */
     .ProjectDescription2 .tags{
         padding-bottom:300px;
         border-bottom:1px solid var(--green);

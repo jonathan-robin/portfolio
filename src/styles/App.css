@@ -130,6 +130,9 @@ html{
   --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
   --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
+div#preload { 
+  display:none;
+}
 @media (max-width:500px){ 
   html{ 
     width:100vw; 
@@ -138,4 +141,31 @@ html{
     width:100vw !important;
   }
 }
+
+@media (max-width:400px){ 
+.EducationTitre{
+  margin-top:90vw !important;
+}
+}
+
+::-webkit-scrollbar{
+  width:1em;
+}
+::-webkit-scrollbar-track{
+  background:var(--lightest-navy);
+  border-radius:100vw;
+  margin-block:.5em;
+}
+::-webkit-scrollbar-thumb{
+  background:var(--green);
+  border-radius:100vw;
+  border: .15em solid var(--light-navy);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #0ae2b0;
+}
+@supports (scrollbar-color:(var(--green) var(--lightest-navy))){
+  * {scrollbar-color:var(--green) var(--light-navy);
+    scrollbar-width:  thin;
+  }}
 

@@ -9,6 +9,13 @@ function AboutTwo(props){
     const [scroll, setScroll] = useState(false); 
     const [animation, setAnimation] = useState(true);
     const [animation2, setAnimation2] = useState(true);
+    const [value, setValue] = useState(window.scrollY)
+
+    useEffect(() =>{ 
+     
+    },[value])
+    // const planete1 = document.getElementById('plan-1');
+    let planete3 = document.getElementsByClassName('planete3 planete')[0];
 
     useEffect(() => { 
         setTimeout(() => {
@@ -35,6 +42,9 @@ function AboutTwo(props){
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <div className='TitreAbout' style={{visibility: animation? 'hidden': 'visible'}}><h1 style={{display:'flex', fontWeight:'inherit'}}><p>01. </p><p>About</p></h1></div>
         <div className='AboutPage' style={{visibility: animation2? 'hidden': 'visible'}} onMouseMove={firstMouseMove}> 
+        <img className='planete planete1' style={{visibility: animation? 'hidden': 'visible'}} id ="plan-1" src={require('../resources/planete1.png').default} />
+        <img className='planete planete2' style={{visibility: animation? 'hidden': 'visible'}} id ="plan-2" src={require('../resources/planete2.png').default} />
+        <img className='planete planete3' style={{visibility: animation? 'hidden': 'visible'}} id ="plan-3" src={require('../resources/planete3.png').default} />
             <article style={{display:'inherit'}}>
             <div className='mainContent'>
                 <div className="AboutMe">
@@ -42,6 +52,8 @@ function AboutTwo(props){
                     <p className='sous-titre'>Hi, my name is</p>
                     </div>
                     <div className='divName'>
+                    <div className='divJeff'>
+                        Jeff</div>
                     <h2 className='Name'>Jonathan Robin</h2>
                     </div>
                     <div className='pContent'>
@@ -70,6 +82,50 @@ function AboutTwo(props){
                         <img className='Picture' author='ROBIN Jonathan' src={picture} alt='Photo de Jonathan Robin développeur Web | Portfolio' title="Jonathan Robin's portfolio picture"/>
                     </div>
         </div>
+        <script> 
+       { 
+        window.addEventListener('scroll', function(){ 
+            let planete1 = document.getElementById('plan-1');
+            let planete2 = document.getElementById('plan-2');
+            let planete3 = document.getElementById('plan-3');
+
+            if (window.innerWidth > 800 && planete1){
+                try{
+                    planete1.style.left = 70 + value * 0.05 + "%" ;
+                    planete1.style.top = 33 + value * -0.05 + "%" ;
+                    planete2.style.height = 31 + value * 0.05 + "vw" ;
+                    planete3.style.left = 6 + value * -0.05 + "%" ;
+                    planete3.style.top = 29 + value * -0.05 + "%" ;
+                }
+                catch{
+                    return
+                }
+
+            }
+            // console.log(planete1.style.top)
+            // console.log(planete1.style)
+
+            setValue(window.scrollY);
+        })}
+               { 
+        window.addEventListener('resize', function(){ 
+            let planete1 = document.getElementById('plan-1');
+            let planete2 = document.getElementById('plan-2');
+            let planete3 = document.getElementById('plan-3');
+
+            if (window.innerWidth > 800){
+                planete1.style.left = 70 + value * 0.05 + "%" ;
+                planete1.style.top = 33 + value * -0.05 + "%" ;
+                planete2.style.height = 31 + value * 0.05 + "vw" ;
+                planete3.style.left = 6 + value * -0.05 + "%" ;
+                planete3.style.top = 29 + value * -0.05 + "%" ;
+            }
+            // console.log(planete1.style.top)
+            // console.log(planete1.style)
+
+            setValue(window.scrollY);
+        })}
+        </script>
 </>
     )
 

@@ -32,8 +32,6 @@ function App() {
 
   const [loading, setLoading] = useState(false);
 
-
-
 useEffect(() => { 
   setTimeout(() => {
     setLoading(true);
@@ -79,6 +77,13 @@ useEffect(() => {
   })
   }
 
+  const setRefreshLoading = () => { 
+    setLoading(false);
+    setTimeout(() => {
+      setLoading(true)
+    }, 3500)
+  }
+
   useEffect(() =>{ 
     if($(window).width() < 1000){
       setScrollProject(true);
@@ -111,13 +116,13 @@ useEffect(() => {
         if ($('html').scrollTop() > 2800) { 
           setScrollFourthProject(true)
         }
-        if ($('html').scrollTop() > 3450) { 
+        if ($('html').scrollTop() > 2050) { 
           setScrollEducation(true)
         }
-        if ($('html').scrollTop() > 3650) { 
+        if ($('html').scrollTop() > 2250) { 
           setScrollExperience(true)
         }
-        if ($('html').scrollTop() > 4200) { 
+        if ($('html').scrollTop() > 3000) { 
           setScrollContact(true)
         }
     })
@@ -129,15 +134,56 @@ useEffect(() => {
 <link rel='alternate' hreflang='fr-ca' href='https://www.jonathan-robin.com/' />
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <div id="preload">
+          <img src="https://jonathan-robin.com/static/media/picture.220b03cd.png" width="1" height="1" alt="picture of Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/planete1.be060529.png" width="1" height="1" alt="planete-1" />
+          <img src="https://jonathan-robin.com/static/media/planete2.de887b51.png" width="1" height="1" alt="planete-2" />
+          <img src="https://jonathan-robin.com/static/media/planete3.1c2d2fb2.png" width="1" height="1" alt="planete-3" />
+
+          <img src="https://jonathan-robin.com/static/media/copyfb.fa49d0ba.PNG" width="1" height="1" alt="Projet Jonathan ROBIN CopyFacebook photo-1" />
+          <img src="https://jonathan-robin.com/static/media/copyfb2.4a4befc2.PNG" width="1" height="1" alt="Projet Jonathan ROBIN CopyFacebook photo-2" />
+          <img src="https://jonathan-robin.com/static/media/copyfb4.bc1d76aa.PNG" width="1" height="1" alt="Projet Jonathan ROBIN CopyFacebook photo-3" />
+
+          <img src="https://jonathan-robin.com/static/media/double-exposure_16sept21.075ad016.png" width="2000" height="2000" alt="Double exposure Effect Photoshop Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/glitch2.84229e41.png" width="2956" height="4448" alt="Glitch Effect Photoshop Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/ivy.6d00b32e.png" width="3618" height="5427" alt=" Photoshop Project Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/lion2.30502c48.png" width="2000" height="2000" alt="Image in Letter Phootshop Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/néon2.0c6da928.png" width="2000" height="1000" alt="Néon effect Photoshop Jonathan ROBIN" />
+
+          <img src="https://jonathan-robin.com/static/media/Oiseaux_15sept21.c22bdc08.png" width="6537" height="4358" alt="Photoshop Project ROBIN Jonathan" />
+          <img src="https://jonathan-robin.com/static/media/pokka-lemon,.5aae4bd3.png" width="1400" height="2000" alt="POKKA ad Photoshop Jonathan ROBIN" />
+
+          <img src="https://jonathan-robin.com/static/media/pop-up_15sept21.94f9204d.png" width="2000" height="1400" alt="Pop up Effect photoshop ROBIN Jonathan" />
+          <img src="https://jonathan-robin.com/static/media/sphere.02ba52a3.png" width="1400" height="807" alt="Photoshop project ROBIN Jonathan" />
+          <img src="https://jonathan-robin.com/static/media/square_effect.a5133d74.png" width="1420" height="2000" alt="Square effect photoshop ROBIN Jonathan" />
+          <img src="https://jonathan-robin.com/static/media/sunflower.5fb5aed1.png" width="3456" height="4608" alt="Photoshop project ROBIN Jonathan" />
+
+          <img src="https://jonathan-robin.com/static/media/Tête-découpe_15sept21.b2afe63c.png" width="2000" height="1400" alt="Photoshop project ROBIN Jonathan" />
+
+          <img src="https://jonathan-robin.com/static/media/ui_mountainx2.11e2bc79.png" width="3840" height="2160" alt="UI/UX Design Adobe Xd Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/ui_space.4d69e531.png" width="3000" height="2000" alt="UI/UX Design Adobe Xd Jonathan ROBIN" />
+
+          <img src="https://jonathan-robin.com/static/media/rgs-mo1.693b73c7.jpg" width="1920" height="1080" alt="Mock-up RG STATS ROBIN Jonathan project Adobe Xd" />
+          <img src="https://jonathan-robin.com/static/media/rgs-mo2.79dd4ee2.jpg" width="1920" height="1080" alt="UI/UX Design Adobe Xd Jonathan ROBIN" />
+          <img src="https://jonathan-robin.com/static/media/rgs-mo4.78060bca.png" width="1920" height="1080" alt="UI/UX Design Adobe Xd Jonathan ROBIN" />
+
+          <img src="https://jonathan-robin.com/static/media/Gentecz-1.432925ba.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-1" />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-2.1e1a8855.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-2" />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-3.e8904335.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-3"  />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-4.70d8697b.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-4" />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-5.bedc5666.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-5" />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-6.39ab411f.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-6" />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-7.57577e58.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-7" />
+          <img src="https://jonathan-robin.com/static/media/Gentecz-8.30713866.PNG" width="1" height="1" alt="Projet Jonathan ROBIN Gentecz photo-8" />
+
+        </div>
         {!loading && <Loading/>}
        {loading && 
         <>
-       <NavigationHeader scrollStartProject={scrollStartProject} scroll={scroll} scrollProject={scrollProject} scrollEducation={scrollEducation} scrollContact={scrollContact}/>
+       <NavigationHeader setLoading={setRefreshLoading} scrollStartProject={scrollStartProject} scroll={scroll} scrollProject={scrollProject} scrollEducation={scrollEducation} scrollContact={scrollContact}/>
         <AboutTwo scrolled={scroll}/>
         <Cards scrollStartProject={scrollStartProject}/>
-        {/* <Project scrollFirstProject={scrollFirstProject} scrollSecondProject={scrollSecondProject} scrollThirdProject={scrollThirdProject}
-        scrollStartProject={scrollStartProject} scrollFourthProject={scrollFourthProject}/> */}
-        <Design />
+        {/* <Design /> */}
         <Education scrollEducation={scrollEducation} scrollExperience={scrollExperience}/>
         <Contact scrollContact={scrollContact}/>
 
@@ -174,5 +220,7 @@ useEffect(() => {
         </> 
   );
 }
+   {/* <Project scrollFirstProject={scrollFirstProject} scrollSecondProject={scrollSecondProject} scrollThirdProject={scrollThirdProject}
+        scrollStartProject={scrollStartProject} scrollFourthProject={scrollFourthProject}/> */}
 
 export default App;
